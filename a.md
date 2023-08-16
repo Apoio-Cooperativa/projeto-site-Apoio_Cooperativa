@@ -1,0 +1,1 @@
+gente, to mt feliz, aprendi usa o git pelo cmd e pelo visual code
