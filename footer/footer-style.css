@@ -1,0 +1,10 @@
+footer {
+    background: var(--cor-base);
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    color: white;
+  }

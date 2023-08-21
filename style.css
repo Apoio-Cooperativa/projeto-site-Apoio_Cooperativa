@@ -1,0 +1,18 @@
+/* foundation framework */
+
+:root {
+  --cor-base: rgb(0, 0, 0);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+  margin: 0;
+}
+
+section {
+  padding: 100rem;
+}
