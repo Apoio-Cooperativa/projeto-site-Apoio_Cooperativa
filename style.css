@@ -6,6 +6,9 @@
   --cor-base-2: rgb(176, 223, 155);
   --cor-base-3: rgb(71, 89, 63);
   --cor-base-4: rgb(96, 166, 67);
+
+  --cor-letras: rgb(0, 0, 0);
+  --cor-fundo: rgb(255, 255, 255);
 }
 
 *, 
@@ -17,9 +20,206 @@
 body {
   scroll-behavior: smooth;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin-top: 4rem;
+  font-family: Inter;
 }
 
 section {
-  padding-top: 100rem;
-  padding-bottom: 100rem;
+  flex: 1;
+  padding: 20px;
+  color: black;
+}
+
+.background {
+  display: flex;
+  justify-content:flex-start;
+  align-items: flex-end;
+  text-align: center;
+  background: var(--cor-base-4);
+  color: white;
+  position: relative;
+  overflow: hidden;
+  min-height: calc(100svh - 3rem);
+}
+
+.video-bg {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 100%;
+  min-width: 100%;
+}
+
+ .background h1 {
+  font-family: "Source Code Pro", monospace;
+  font-size: clamp(3rem, 8vw, 5rem);
+}
+
+#txtbackground {
+  transition: opacity 400ms ease-in-out;
+  margin-left: 5rem;
+  margin-bottom: 10rem;
+}
+
+.abtUs-content{
+  margin-left: 50%;
+  font-size: .8rem;
+  margin-top: 5rem;
+}
+
+.btnSaibaMais{
+  margin-left: 60%;
+    background-color: var(--cor-base-3);
+    color: var(--cor-fundo);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 5rem;
+}
+
+.main-section {
+  background: linear-gradient(180deg, rgba(10, 0, 0, 0.40) 0%, rgba(10, 0, 0, 0.00) 100%), #7ED957;
+  color: var(--cor-fundo);
+}
+
+.mainTitle{
+font-size: 44px;
+font-style: normal;
+font-weight: 300;
+line-height: 50.4px; /* 114.545% */
+letter-spacing: -1.68px;
+text-transform: uppercase;
+margin-bottom: -3rem;
+margin-top: 4rem;
+}
+
+.mainText{
+  margin-right: 70%;
+  margin-left: 1rem;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+  font-size: 19px;
+font-style: normal;
+font-weight: 400;
+line-height: 29.4px; /* 154.737% */
+}
+
+.perguntas-frequentes {
+background-color: #363636;
+color: var(--cor-fundo);
+padding-top: 5rem;
+padding-bottom: 10rem;
+}
+
+.perguntas-frequentes h1, .perguntas-frequentes p{
+  text-transform: uppercase;
+  justify-content: center;
+  display: flex;
+  justify-content: center;
+}
+
+.perguntas-frequentes p{
+  font-size: .8rem;
+  text-transform:capitalize;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.card {
+  background-color: var(--cor-fundo);
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  flex: 1;
+  overflow: hidden;
+}
+
+.card-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.card-content h2 {
+  color: var(--cor-base-4);
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.card-content p {
+  color: var(--cor-letras);
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.card-content button {
+  background-color: var(--cor-base-4);
+  color: var(--cor-fundo);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-content button:hover {
+  background-color: var(--cor-base-3);
+}
+
+.localizacao {
+  background-color: #DFF2D7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 0;
+}
+
+.textos {
+  flex: 1;
+  padding: 1rem;
+  text-align:justify;
+  margin: 2rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.texto {
+  margin-bottom: 1.5rem;
+}
+
+.texto h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.texto p {
+  font-size: 1rem;
+}
+
+.mapa {
+  flex: 1;
+  height: 300px;
+  width: 4rem;
+  margin-right: 4rem;
+  border: 10px solid var(--cor-base-4);
 }
