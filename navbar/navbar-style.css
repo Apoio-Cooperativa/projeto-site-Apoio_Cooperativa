@@ -1,80 +1,80 @@
 header {
-    background: var(--cor-base-3);
-    text-align: center;
-    position: fixed;
-    top: 0;
-    z-index: 999;
-    height: 4rem;
-    width: 100%;
-    display: grid;
-    grid-template-columns: .2fr 1fr .5fr .25fr;
-    background: whitesmoke;
-  }
+  background: var(--cor-base-3);
+  text-align: center;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  height: 4rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: .2fr 1fr .5fr .25fr;
+  background: whitesmoke;
+}
 
 .logo {
-    background-color: var(--cor-base-2);
-    grid-column: 1 / 2;
-    height: 100%;
-    margin-top: 0;
-  }
+  background-color: var(--cor-base-2);
+  grid-column: 1 / 2;
+  height: 100%;
+  margin-top: 0;
+}
 
 nav {
-    all: unset;
-    grid-column: 3 / 4;
-    display: flex;
-    align-items: center;  
+  all: unset;
+  grid-column: 3 / 4;
+  display: flex;
+  align-items: center;
 }
 
 
 nav ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
-  }
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
 
-  nav li:nth-child(2) {
-    margin-left: 3em;
-  }
+nav li:nth-child(2) {
+  margin-left: 3em;
+}
 
-  nav a {
-    color: var(--cor-base-3);
-    opacity: 1;
-    position: relative;
-    text-decoration: none;
-    font-family: Inter;
-    text-transform: uppercase;
-  }
+nav a {
+  color: var(--cor-base-3);
+  opacity: 1;
+  position: relative;
+  text-decoration: none;
+  font-family: Inter;
+  text-transform: uppercase;
+}
 
-  nav a::before {
-    content: '';
-    display: block;
-    height: 2px;
-    background: var(--cor-base-3);
-    position: absolute;
-    top: 1.2em;
-    left: 0;
-    right: 0;
-    transform: scale(0, 1);
-    transition: transform ease-in-out 250ms;
-  }
+nav a::before {
+  content: '';
+  display: block;
+  height: 2px;
+  background: var(--cor-base-3);
+  position: absolute;
+  top: 1.2em;
+  left: 0;
+  right: 0;
+  transform: scale(0, 1);
+  transition: transform ease-in-out 250ms;
+}
 
-  nav a:hover::before {
-    transform: scale(1, 1);
-  }
+nav a:hover::before {
+  transform: scale(1, 1);
+}
 
-  .btnDoar {
-    grid-column: 7 / 8;
-    margin: 1rem 2rem 1rem 1rem;
-    background-color: var(--cor-base-3);
-    color: var(--cor-fundo);
-  }
+.btnDoar {
+  grid-column: 7 / 8;
+  margin: 1rem 2rem 1rem 1rem;
+  background-color: var(--cor-base-3);
+  color: var(--cor-fundo);
+}
 
-  .icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .icon-button-1 {
-    margin-right: 1rem;
-  }
+.icon-button-1 {
+  margin-right: 1rem;
+}
