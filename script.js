@@ -1,6 +1,6 @@
 const btnDoar = document.getElementById("btnDoar");
 
-btnDoar.addEventListener("click", function() {
+btnDoar.addEventListener("click", function () {
     window.location.href = "doacao.html";
 });
 
@@ -25,12 +25,12 @@ function closeModal() {
 }
 
 // Adiciona ouvintes de eventos aos botões e cartões
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const modalTriggers = document.querySelectorAll('.modal-trigger');
     const cards = document.querySelectorAll('.card');
 
     modalTriggers.forEach(trigger => {
-        trigger.addEventListener('click', function() {
+        trigger.addEventListener('click', function () {
             const card = this.closest('.card');
             const title = card.querySelector('h2').textContent;
             const text = card.querySelector('p').textContent;
@@ -42,11 +42,11 @@ document.addEventListener('DOMContentLoaded', function() {
     modalCloseButton.addEventListener('click', closeModal);
 
     cards.forEach(card => {
-        card.addEventListener('mouseenter', function() {
+        card.addEventListener('mouseenter', function () {
             card.style.backgroundColor = '#ddd';
         });
 
-        card.addEventListener('mouseleave', function() {
+        card.addEventListener('mouseleave', function () {
             card.style.backgroundColor = '#f7f7f7';
         });
     });

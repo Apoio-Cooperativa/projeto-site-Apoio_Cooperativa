@@ -11,8 +11,8 @@
   --cor-fundo: rgb(255, 255, 255);
 }
 
-*, 
-*::before, 
+*,
+*::before,
 *::after {
   box-sizing: border-box;
 }
@@ -35,7 +35,7 @@ section {
 
 .background {
   display: flex;
-  justify-content:flex-start;
+  justify-content: flex-start;
   align-items: flex-end;
   text-align: center;
   background: var(--cor-base-4);
@@ -55,7 +55,7 @@ section {
   min-width: 100%;
 }
 
- .background h1 {
+.background h1 {
   font-family: "Source Code Pro", monospace;
   font-size: clamp(3rem, 8vw, 5rem);
 }
@@ -66,19 +66,19 @@ section {
   margin-bottom: 10rem;
 }
 
-.abtUs-content{
+.abtUs-content {
   margin-left: 50%;
   font-size: .8rem;
   margin-top: 5rem;
 }
 
-.btnSaibaMais{
+.btnSaibaMais {
   margin-left: 60%;
-    background-color: var(--cor-base-3);
-    color: var(--cor-fundo);
-    padding: 1rem;
-    border-radius: 10px;
-    margin-bottom: 5rem;
+  background-color: var(--cor-base-3);
+  color: var(--cor-fundo);
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 5rem;
 }
 
 .main-section {
@@ -86,45 +86,48 @@ section {
   color: var(--cor-fundo);
 }
 
-.mainTitle{
-font-size: 44px;
-font-style: normal;
-font-weight: 300;
-line-height: 50.4px; /* 114.545% */
-letter-spacing: -1.68px;
-text-transform: uppercase;
-margin-bottom: -3rem;
-margin-top: 4rem;
+.mainTitle {
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 50.4px;
+  /* 114.545% */
+  letter-spacing: -1.68px;
+  text-transform: uppercase;
+  margin-bottom: -3rem;
+  margin-top: 4rem;
 }
 
-.mainText{
+.mainText {
   margin-right: 70%;
   margin-left: 1rem;
   margin-bottom: 5rem;
   margin-top: 5rem;
   font-size: 19px;
-font-style: normal;
-font-weight: 400;
-line-height: 29.4px; /* 154.737% */
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29.4px;
+  /* 154.737% */
 }
 
 .perguntas-frequentes {
-background-color: #363636;
-color: var(--cor-fundo);
-padding-top: 5rem;
-padding-bottom: 10rem;
+  background-color: #363636;
+  color: var(--cor-fundo);
+  padding-top: 5rem;
+  padding-bottom: 10rem;
 }
 
-.perguntas-frequentes h1, .perguntas-frequentes p{
+.perguntas-frequentes h1,
+.perguntas-frequentes p {
   text-transform: uppercase;
   justify-content: center;
   display: flex;
   justify-content: center;
 }
 
-.perguntas-frequentes p{
+.perguntas-frequentes p {
   font-size: .8rem;
-  text-transform:capitalize;
+  text-transform: capitalize;
 }
 
 .card-container {
@@ -197,7 +200,7 @@ padding-bottom: 10rem;
 .textos {
   flex: 1;
   padding: 1rem;
-  text-align:justify;
+  text-align: justify;
   margin: 2rem;
   margin-left: 4rem;
   margin-right: 4rem;
@@ -224,7 +227,7 @@ padding-bottom: 10rem;
   border: 10px solid var(--cor-base-4);
 }
 
-.table{
+.table {
   padding: 10rem;
   background-color: #DFF2D7;
   display: flex;
@@ -236,11 +239,13 @@ padding-bottom: 10rem;
 .table table {
   border-collapse: collapse;
   border: 1px solid #000;
-  width: calc(50% - 1rem); /* 2 tabelas por linha */
+  width: calc(50% - 1rem);
+  /* 2 tabelas por linha */
   margin-bottom: 2rem;
 }
 
-.table table th, .table table td {
+.table table th,
+.table table td {
   border: 1px solid #000;
   padding: 0.5rem;
   text-align: center;
