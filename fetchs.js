@@ -10,12 +10,24 @@ const nav = () => {
         });
 }
 
+const body = () => {
+    const url = "inicio.html",
+        nav = document.getElementById("corpo");
+
+    fetch(url)
+        .then(res => res.text())
+        .then(text => nav.innerHTML = text)
+        .catch(error => {
+            console.error("Ocorreu um erro:", error);
+        });
+}
+
 const foot = () => {
 
-    const url2 = "footer/footer.html",
+    const url = "footer/footer.html",
         footer = document.getElementById("footer");
 
-    fetch(url2)
+    fetch(url)
         .then(res => res.text())
         .then(text => footer.innerHTML = text)
         .catch(error => {
