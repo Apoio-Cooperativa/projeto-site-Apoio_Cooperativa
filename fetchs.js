@@ -1,8 +1,6 @@
-onload = () => {
+const nav = () => {
     const url = "navbar/navbar.html",
-        url2 = "footer/footer.html";
-    var nav = document.getElementById("nav"),
-        footer = document.getElementById("footer");
+        nav = document.getElementById("nav");
 
     fetch(url)
         .then(res => res.text())
@@ -10,6 +8,12 @@ onload = () => {
         .catch(error => {
             console.error("Ocorreu um erro:", error);
         });
+}
+
+const foot = () => {
+
+    const url2 = "footer/footer.html",
+        footer = document.getElementById("footer");
 
     fetch(url2)
         .then(res => res.text())
