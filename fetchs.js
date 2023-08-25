@@ -14,6 +14,9 @@ const inicio = () => {
     fetch(url)
         .then(res => res.text())
         .then(text => body.innerHTML = text)
+        .catch(error => {
+            body.innerHTML = "<p>Página indisponével</p>"
+        });
 }
 
 const doacao = () => {
