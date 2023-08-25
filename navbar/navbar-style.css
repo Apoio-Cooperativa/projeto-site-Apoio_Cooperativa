@@ -25,11 +25,11 @@ nav {
   align-items: center;
 }
 
-
 nav ul {
   display: flex;
   align-items: center;
   list-style: none;
+  cursor: pointer;
 }
 
 nav li:nth-child(2) {

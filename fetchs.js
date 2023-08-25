@@ -5,32 +5,49 @@ const nav = () => {
     fetch(url)
         .then(res => res.text())
         .then(text => nav.innerHTML = text)
-        .catch(error => {
-            console.error("Ocorreu um erro:", error);
-        });
 }
 
-const body = () => {
+const inicio = () => {
     const url = "inicio.html",
-        nav = document.getElementById("corpo");
+        body = document.getElementById("corpo");
 
     fetch(url)
         .then(res => res.text())
-        .then(text => nav.innerHTML = text)
-        .catch(error => {
-            console.error("Ocorreu um erro:", error);
-        });
+        .then(text => body.innerHTML = text)
+}
+
+const doacao = () => {
+    const url = "doacao.html",
+        body = document.getElementById("corpo");
+
+    fetch(url)
+        .then(res => res.text())
+        .then(text => body.innerHTML = text)
+}
+
+const horarios = () => {
+    const url = "horarios.html",
+        body = document.getElementById("corpo");
+
+    fetch(url)
+        .then(res => res.text())
+        .then(text => body.innerHTML = text)
+}
+
+const reciclar = () => {
+    const url = "comoReciclar.html",
+        body = document.getElementById("corpo");
+
+    fetch(url)
+        .then(res => res.text())
+        .then(text => body.innerHTML = text)
 }
 
 const foot = () => {
-
     const url = "footer/footer.html",
         footer = document.getElementById("footer");
 
     fetch(url)
         .then(res => res.text())
         .then(text => footer.innerHTML = text)
-        .catch(error => {
-            console.error("Ocorreu um erro:", error);
-        });
 }
