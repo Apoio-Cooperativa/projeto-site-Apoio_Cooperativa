@@ -16,6 +16,7 @@ header {
   grid-column: 1 / 2;
   height: 100%;
   margin-top: 0;
+  cursor: pointer;
 }
 
 nav {
@@ -29,7 +30,6 @@ nav ul {
   display: flex;
   align-items: center;
   list-style: none;
-  cursor: pointer;
 }
 
 nav li:nth-child(2) {
@@ -43,6 +43,7 @@ nav a {
   text-decoration: none;
   font-family: Inter;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 nav a::before {
@@ -67,6 +68,7 @@ nav a:hover::before {
   margin: 1rem 2rem 1rem 1rem;
   background-color: var(--cor-base-3);
   color: var(--cor-fundo);
+  cursor: pointer;
 }
 
 .icons {
