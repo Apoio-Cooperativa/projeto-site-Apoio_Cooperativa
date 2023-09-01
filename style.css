@@ -10,14 +10,13 @@
   --cor-letras: rgb(0, 0, 0);
   --cor-fundo: rgb(255, 255, 255);
 
-  --font:"Inter";
+  --font: Inter;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-  font-family: var(--font);
 }
 
 body {
@@ -27,7 +26,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   margin-top: 4rem;
-  font-family: Inter;
+  font-family: var(--font);
 }
 
 section {
