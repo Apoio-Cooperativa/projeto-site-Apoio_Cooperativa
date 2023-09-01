@@ -1,3 +1,12 @@
+let id;
+
+const verif = () => {
+    if (sessionStorage.getItem('reloaded')) {
+
+    }
+    sessionStorage.setItem('reloaded', 'true');
+}
+
 const nav = () => {
     const url = "navbar/navbar.html",
         nav = document.getElementById("nav");
@@ -17,6 +26,8 @@ const inicio = () => {
         .catch(error => {
             body.innerHTML = "<p>Página indisponével</p>"
         });
+
+    id = "inicio";
 }
 
 const doacao = () => {
@@ -26,6 +37,8 @@ const doacao = () => {
     fetch(url)
         .then(res => res.text())
         .then(text => body.innerHTML = text)
+
+    id = "doacao";
 }
 
 const horarios = () => {
@@ -35,6 +48,8 @@ const horarios = () => {
     fetch(url)
         .then(res => res.text())
         .then(text => body.innerHTML = text)
+
+    id = "horarios"
 }
 
 const reciclar = () => {
@@ -44,6 +59,8 @@ const reciclar = () => {
     fetch(url)
         .then(res => res.text())
         .then(text => body.innerHTML = text)
+
+    id = "reciclar";
 }
 
 const foot = () => {
