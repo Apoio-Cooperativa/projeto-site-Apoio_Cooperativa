@@ -2,8 +2,8 @@
 function openModal(title, text, image) {
     const modal = document.querySelector('.modal');
     const modalTitle = modal.querySelector('.modal-title');
-    const modalText = modal.querySelector('.modal-text');
-    const modalImage = modal.querySelector('.modal-image');
+    /*const modalText = modal.querySelector('.modal-text');
+    const modalImage = modal.querySelector('.modal-image');*/
 
     modalTitle.textContent = title;
     modalText.textContent = text;
@@ -20,7 +20,7 @@ function closeModal() {
 
 // Adiciona ouvintes de eventos aos botões e cartões
 function modal () {
-    const modalTriggers = document.querySelectorAll('.modal-trigger');
+    /*const modalTriggers = document.querySelectorAll('.modal-trigger');
     const cards = document.querySelectorAll('.card');
 
     modalTriggers.forEach(trigger => {
@@ -43,5 +43,5 @@ function modal () {
         card.addEventListener('mouseleave', function () {
             card.style.backgroundColor = '#f7f7f7';
         });
-    });
+    });*/
 }
