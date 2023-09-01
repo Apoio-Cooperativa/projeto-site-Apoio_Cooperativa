@@ -9,12 +9,15 @@
 
   --cor-letras: rgb(0, 0, 0);
   --cor-fundo: rgb(255, 255, 255);
+
+  --font:"Inter";
 }
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+  font-family: var(--font);
 }
 
 body {
