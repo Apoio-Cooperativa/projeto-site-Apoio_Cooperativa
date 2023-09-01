@@ -1,12 +1,12 @@
-/* let id;
+let id;
 
 const verif = () => {
     if (sessionStorage.getItem('reloaded')) {
-        
+
     }
     sessionStorage.setItem('reloaded', 'true');
 }
- */
+
 const nav = () => {
     const url = "navbar/navbar.html",
         nav = document.getElementById("nav");

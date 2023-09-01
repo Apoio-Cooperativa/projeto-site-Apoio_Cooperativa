@@ -1,101 +1,57 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Cooperativa São José</title>
-    <link rel="icon" href=*>
-
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="navbar/navbar-style.css">
-    <link rel="stylesheet" href="footer/footer-style.css">
-
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-</head>
-
-<body>
-    <header>
-        <h1 class="logo"><a href="index.html">.</a></h1>
-        <nav>
-            <ul>
-                <li><a href="comoReciclar.html">Como reciclar</a></li>
-                <li><a href="horarios.html">Horários</a></li>
-            </ul>
-        </nav>
-        <div class="icons">
-            <a href="https://www.facebook.com" class="icon-button-1"><img src="img/icon_facebook.svg" alt="Ícone 1"></a>
-            <a href="https://www.instagram.com" class="icon-button-2"><img src="img/icon_instagram.svg"
-                    alt="Ícone 2"></a>
+<section class="cards">
+    <div class="card-row">
+        <div class="card">
+            <h2>Título 1</h2>
+            <p>Texto do Cartão 1</p>
+            <button class="modal-trigger" onclick="modal()()">Ver Detalhes</button>
         </div>
-        <button id="btnDoar" class="btnDoar">Doar</button>
-    </header>
-
-    <section class="cards">
-        <div class="card-row">
-            <div class="card">
-                <h2>Título 1</h2>
-                <p>Texto do Cartão 1</p>
-                <button class="modal-trigger">Ver Detalhes</button>
-            </div>
-            <div class="card">
-                <h2>Título 1</h2>
-                <p>Texto do Cartão 1</p>
-                <button class="modal-trigger">Ver Detalhes</button>
-            </div>
-            <div class="card">
-                <h2>Título 1</h2>
-                <p>Texto do Cartão 1</p>
-                <button class="modal-trigger">Ver Detalhes</button>
-            </div>
-            <div class="card">
-                <h2>Título 1</h2>
-                <p>Texto do Cartão 1</p>
-                <button class="modal-trigger">Ver Detalhes</button>
-            </div>
-            <!-- Repita para mais 3 cartões -->
+        <div class="card">
+            <h2>Título 2</h2>
+            <p>Texto do Cartão 2</p>
+            <button class="modal-trigger" onclick="modal()">Ver Detalhes</button>
         </div>
-        <div class="card-row">
-            <div class="card">
-                <h2>Título 1</h2>
-                <p>Texto do Cartão 1</p>
-                <button class="modal-trigger">Ver Detalhes</button>
-            </div>
-            <div class="card">
-                <h2>Título 1</h2>
-                <p>Texto do Cartão 1</p>
-                <button class="modal-trigger">Ver Detalhes</button>
-            </div>
-            <div class="card">
-                <h2>Título 1</h2>
-                <p>Texto do Cartão 1</p>
-                <button class="modal-trigger">Ver Detalhes</button>
-            </div>
-            <div class="card">
-                <h2>Título 1</h2>
-                <p>Texto do Cartão 1</p>
-                <button class="modal-trigger">Ver Detalhes</button>
-            </div>
-            <!-- Repita para mais 4 cartões -->
+        <div class="card">
+            <h2>Título 3</h2>
+            <p>Texto do Cartão 3</p>
+            <button class="modal-trigger" onclick="modal()">Ver Detalhes</button>
         </div>
-    </section>
-
-    <div class="modal">
-        <div class="modal-content">
-            <h2 class="modal-title"></h2>
-            <p class="modal-text"></p>
-            <img src="" alt="" class="modal-image">
-            <button class="modal-close">Fechar</button>
+        <div class="card">
+            <h2>Título 4</h2>
+            <p>Texto do Cartão 4</p>
+            <button class="modal-trigger" onclick="modal()">Ver Detalhes</button>
         </div>
+        <!-- Repita para mais 3 cartões -->
     </div>
+    <div class="card-row">
+        <div class="card">
+            <h2>Título 5</h2>
+            <p>Texto do Cartão 5</p>
+            <button class="modal-trigger" onclick="modal()">Ver Detalhes</button>
+        </div>
+        <div class="card">
+            <h2>Título 6</h2>
+            <p>Texto do Cartão 6</p>
+            <button class="modal-trigger" onclick="modal()">Ver Detalhes</button>
+        </div>
+        <div class="card">
+            <h2>Título 7</h2>
+            <p>Texto do Cartão 7</p>
+            <button class="modal-trigger" onclick="modal()">Ver Detalhes</button>
+        </div>
+        <div class="card">
+            <h2>Título 8</h2>
+            <p>Texto do Cartão 8</p>
+            <button class="modal-trigger" onclick="modal()">Ver Detalhes</button>
+        </div>
+        <!-- Repita para mais 4 cartões -->
+    </div>
+</section>
 
-    <footer>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto impedit molestias odit!</p>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-
-</html>
+<div class="modal">
+    <div class="modal-content">
+        <h2 class="modal-title">Ponha o título aqui</h2>
+        <p class="modal-text">Ponha a dica aqui</p>
+        <img src="" alt="" class="modal-image">
+        <button class="modal-close" onclick="closeModal()">Fechar</button>
+    </div>
+</div>
