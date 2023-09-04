@@ -64,11 +64,15 @@ nav a:hover::before {
 }
 
 .btnDoar {
+  width: 3rem;
+  height: 2rem;
   grid-column: 7 / 8;
   margin: 1rem 2rem 1rem 1rem;
   background-color: var(--cor-base-3);
   color: var(--cor-fundo);
   cursor: pointer;
+  border: none;
+  border-radius: 5px;
 }
 
 .icons {
