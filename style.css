@@ -24,6 +24,7 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
+  justify-items: center;
   min-height: 100vh;
   margin-top: 4rem;
   font-family: var(--font);
@@ -304,4 +305,19 @@ section {
   position: absolute;
   bottom: 1rem;
   right: 1rem;
+}
+
+.pg-doação {
+  margin-top: 20px;
+  margin-left: 200px;
+  width: 878px;
+  height: 700px;
+  border-radius: 15px;
+  background: linear-gradient(135deg, rgba(19, 111, 39, 0.9), rgba(95, 236, 33, 0.7));
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  
+
 }
