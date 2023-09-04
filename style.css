@@ -321,7 +321,9 @@ section {
 }
 
 #qd-doacao{
-  width: 40px;
-  height: 40px;
+  width: 300px;
+  height: 660px;
+  margin-left: 50px;
   background-color: #47593F;
+  border-radius: 0 0 5px 5px;
 }
