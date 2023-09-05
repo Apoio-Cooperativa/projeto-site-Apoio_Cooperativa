@@ -1,8 +1,13 @@
-let id;
+let valor = sessionStorage.getItem("id");
 
 const verif = () => {
     if (sessionStorage.getItem('reloaded')) {
-        id()
+        alert(valor)
+        if (typeof window[valor] === 'function') {
+            window[functionName](); // Chama a função com o nome armazenado em 'functionName'
+          } else {
+            console.log('A função não existe.');
+          }
     }
     sessionStorage.setItem('reloaded', 'true');
 }
@@ -26,11 +31,11 @@ const inicio = () => {
         .catch(error => {
             body.innerHTML = "<p>Página indisponével</p>"
         });
-
-    id = "inicio";
+    sessionStorage.setItem("id", "inicio");
 }
 
 const doacao = () => {
+    alert("aaaaaaa")
     const url = "doacao.html",
         body = document.getElementById("corpo");
 
@@ -38,7 +43,7 @@ const doacao = () => {
         .then(res => res.text())
         .then(text => body.innerHTML = text)
 
-    id = "doacao";
+    sessionStorage.setItem("id", "doacao");
 }
 
 const horarios = () => {
@@ -49,7 +54,7 @@ const horarios = () => {
         .then(res => res.text())
         .then(text => body.innerHTML = text)
 
-    id = "horarios"
+    sessionStorage.setItem("id", "horarios");
 }
 
 const reciclar = () => {
@@ -60,7 +65,7 @@ const reciclar = () => {
         .then(res => res.text())
         .then(text => body.innerHTML = text)
 
-    id = "reciclar";
+    sessionStorage.setItem("id", "reciclar");
 }
 
 const foot = () => {
