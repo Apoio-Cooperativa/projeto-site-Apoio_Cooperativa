@@ -31,7 +31,7 @@ const inicio = () => {
 }
 
 const doacao = () => {
-    const url = "doacao.html",
+    const url = "doacao/doacao.html",
         body = document.getElementById("corpo");
 
     fetch(url)
@@ -42,7 +42,7 @@ const doacao = () => {
 }
 
 const horarios = () => {
-    const url = "horarios.html",
+    const url = "horarios/horarios.html",
         body = document.getElementById("corpo");
 
     fetch(url)
@@ -53,7 +53,7 @@ const horarios = () => {
 }
 
 const reciclar = () => {
-    const url = "comoReciclar.html",
+    const url = "comoReciclar/comoReciclar.html",
         body = document.getElementById("corpo");
 
     fetch(url)
