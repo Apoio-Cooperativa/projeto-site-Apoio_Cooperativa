@@ -2,7 +2,7 @@ let id;
 
 const verif = () => {
     if (sessionStorage.getItem('reloaded')) {
-
+        id()
     }
     sessionStorage.setItem('reloaded', 'true');
 }
