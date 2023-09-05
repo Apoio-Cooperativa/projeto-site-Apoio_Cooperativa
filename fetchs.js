@@ -9,6 +9,21 @@ const nav = () => {
         .then(text => nav.innerHTML = text)
 }
 
+/* Esse cód é uma "gambiarra", tenho que mudar depois */
+const verif = () => {
+    if (sessionStorage.getItem('reloaded')) {
+        switch (valor) {
+            case ("inicio"): inicio(); break
+            case ("reciclar"): reciclar(); break
+            case ("doacao"): doacao(); break
+            case ("horarios"): horarios(); break
+            //case ("adm"): adm(); break
+            default: alert("tenho que programar ainda!"); inicio()
+        }
+    } else inicio()
+    sessionStorage.setItem('reloaded', 'true');
+}
+
 const inicio = () => {
     const url = "inicio.html",
         body = document.getElementById("corpo");
@@ -22,16 +37,15 @@ const inicio = () => {
     sessionStorage.setItem("id", "inicio");
 }
 
-const doacao = () => {
-    alert("aaaaaaa")
-    const url = "doacao.html",
+const reciclar = () => {
+    const url = "comoReciclar.html",
         body = document.getElementById("corpo");
 
     fetch(url)
         .then(res => res.text())
         .then(text => body.innerHTML = text)
 
-    sessionStorage.setItem("id", "doacao");
+    sessionStorage.setItem("id", "reciclar");
 }
 
 const horarios = () => {
@@ -45,15 +59,15 @@ const horarios = () => {
     sessionStorage.setItem("id", "horarios");
 }
 
-const reciclar = () => {
-    const url = "comoReciclar.html",
+const doacao = () => {
+    const url = "doacao.html",
         body = document.getElementById("corpo");
 
     fetch(url)
         .then(res => res.text())
         .then(text => body.innerHTML = text)
 
-    sessionStorage.setItem("id", "reciclar");
+    sessionStorage.setItem("id", "doacao");
 }
 
 const foot = () => {
@@ -63,15 +77,4 @@ const foot = () => {
     fetch(url)
         .then(res => res.text())
         .then(text => footer.innerHTML = text)
-}
-
-const verif = () => {
-    if (sessionStorage.getItem('reloaded')) {
-        switch (valor) {
-            case ("inicio"): inicio(); alert(valor); break
-            case ("reciclar"): reciclar(); break
-            default: alert("tenho que programar ainda!"); inicio()
-        }
-    }
-    sessionStorage.setItem('reloaded', 'true');
 }
