@@ -1,17 +1,5 @@
 let valor = sessionStorage.getItem("id");
 
-const verif = () => {
-    if (sessionStorage.getItem('reloaded')) {
-        alert(valor)
-        if (typeof window[valor] === 'function') {
-            window[functionName](); // Chama a função com o nome armazenado em 'functionName'
-          } else {
-            console.log('A função não existe.');
-          }
-    }
-    sessionStorage.setItem('reloaded', 'true');
-}
-
 const nav = () => {
     const url = "navbar/navbar.html",
         nav = document.getElementById("nav");
@@ -75,4 +63,15 @@ const foot = () => {
     fetch(url)
         .then(res => res.text())
         .then(text => footer.innerHTML = text)
+}
+
+const verif = () => {
+    if (sessionStorage.getItem('reloaded')) {
+        switch (valor) {
+            case ("inicio"): inicio(); alert(valor); break
+            case ("reciclar"): reciclar(); break
+            default: alert("tenho que programar ainda!"); inicio()
+        }
+    }
+    sessionStorage.setItem('reloaded', 'true');
 }
