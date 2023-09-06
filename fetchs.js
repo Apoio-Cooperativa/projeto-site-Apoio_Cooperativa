@@ -17,14 +17,14 @@ const nav = () => {
 }
 
 const inicio = () => {
-    const url = "inicio.html",
+    const url = "inicio/inicio.html",
         body = document.getElementById("corpo");
 
     fetch(url)
         .then(res => res.text())
         .then(text => body.innerHTML = text)
         .catch(error => {
-            body.innerHTML = "<p>Página indisponével</p>"
+            body.innerHTML = "<p>Página indisponível</p>"
         });
 
     id = "inicio";

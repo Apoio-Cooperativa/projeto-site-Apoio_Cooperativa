@@ -1,4 +1,5 @@
 // Função para abrir o modal
+
 // Função para fechar o modal
 function closeModal() {
     const modal = document.querySelector('.modal');
