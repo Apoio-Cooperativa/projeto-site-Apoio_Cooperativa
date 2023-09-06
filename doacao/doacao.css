@@ -1,6 +1,13 @@
-.pg-doação {
-    margin-top: 20px;
-    margin-left: 200px;
+  .corpo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+.pg-doacao {
+    margin-top: 1rem;
     width: 878px;
     height: 700px;
     border-radius: 15px;
@@ -9,9 +16,10 @@
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     border: 1px solid rgba( 255, 255, 255, 0.18 );
+
   }
   
-  #qd-doacao{
+  .qd-doacao{
     width: 300px;
     height: 660px;
     margin-left: 50px;
@@ -19,13 +27,13 @@
     border-radius: 0 0 5px 5px;
   }
   
-  #qr-code-doacao{
+  .img-qr-code-doacao{
     width: 15rem;
     margin-left: 10px;
     margin-top: 80px;
   }
   
-  #text-qr{
+  .text-qr{
     text-align: center;
     color: #fff;
     font-family:Arial, Helvetica, sans-serif;
