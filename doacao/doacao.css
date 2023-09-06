@@ -41,7 +41,7 @@
     font-size: 2.5rem;
   }
 
-  .qd_resultado{
+  .resultado_doacao{
     
     margin-top: 6rem;
     width: 878px;
@@ -53,4 +53,13 @@
     -webkit-backdrop-filter: blur( 4px );
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 
+  }
+
+  .qd_resultado{
+    margin-top: 10px;
+    width: 230px;
+    height: 280px;
+    margin-left: 50px;
+    background-color: #47593F;
+    border-radius: 5px;
   }
