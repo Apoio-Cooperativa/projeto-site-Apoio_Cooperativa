@@ -1,6 +1,12 @@
+#tela-doacao{
+  display: flex;
+}
+
+  
+
 .pg-doação {
     margin-top: 20px;
-    margin-left: 200px;
+    margin-left: 250px;
     width: 878px;
     height: 700px;
     border-radius: 15px;
@@ -19,7 +25,7 @@
     border-radius: 0 0 5px 5px;
   }
   
-  #qr-code-doacao{
+  #img-qr-code-doacao{
     width: 15rem;
     margin-left: 10px;
     margin-top: 80px;
