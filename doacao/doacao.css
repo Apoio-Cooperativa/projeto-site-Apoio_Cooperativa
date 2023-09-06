@@ -1,14 +1,17 @@
 #tela-doacao{
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
 }
 
   
 
-.pg-doação {
-    margin-top: 20px;
-    margin-left: 250px;
+.prt-doação {
     width: 878px;
     height: 700px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     border-radius: 15px;
     background: linear-gradient(135deg, rgba(19, 111, 39, 0.9), rgba(95, 236, 33, 0.7));
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -37,4 +40,24 @@
     font-family:Arial, Helvetica, sans-serif;
     font-style: italic;
     font-size: 2.5rem;
+  }
+
+  .resultado-doacao{
+    width: 878px;
+    height: 300px;
+    margin-top: 20px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, rgba(19, 111, 39, 0.9), rgba(95, 236, 33, 0.7));
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+  }
+
+  .qd-resultado{
+    width: 300px;
+    height: 660px;
+    margin-left: 50px;
+    background-color: #47593F;
+    border-radius: 0 0 5px 5px;
   }
