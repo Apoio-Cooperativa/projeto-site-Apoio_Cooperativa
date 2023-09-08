@@ -1,13 +1,18 @@
-// Função para abrir o modal
-
-// Função para fechar o modal
-function closeModal() {
+const closeModal = () => {
     const modal = document.querySelector('.modal');
     modal.style.display = 'none';
 }
 
-// Adiciona ouvintes de eventos aos botões e cartões
-function modal () {
+const modal = () => {
     const modal = document.querySelector('.modal');
     modal.style.display = 'flex';
 }
+
+/*const ler = () => {
+    var json;
+    var title, text;
+
+    fetch(comoReciclar.json)
+        .then(res => res.text())
+        .then(text => = text)
+}*/

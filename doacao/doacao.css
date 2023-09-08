@@ -1,4 +1,4 @@
-  .corpo_doacao{
+  .corpo_doacao {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,60 +6,92 @@
 
 
 
-.pg_doacao {
+  .pg_doacao {
     margin-top: 1rem;
     width: 878px;
     height: 700px;
     border-radius: 15px;
     background: linear-gradient(135deg, rgba(19, 111, 39, 0.9), rgba(95, 236, 33, 0.7));
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+   
 
   }
-  
-  .qd_doacao{
+
+  .qd_doacao {
     width: 300px;
     height: 660px;
     margin-left: 50px;
     background-color: #47593F;
     border-radius: 0 0 5px 5px;
   }
-  
-  .img_qr_code_doacao{
+
+  .img_qr_code_doacao {
     width: 15rem;
     margin-left: 10px;
     margin-top: 80px;
   }
-  
-  .text_qr{
+
+  .text_qr {
     text-align: center;
     color: #fff;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
     font-size: 2.5rem;
   }
 
-  .resultado_doacao{
+  .resultado_doacao {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
     
     margin-top: 6rem;
     width: 878px;
     height: 300px;
     border-radius: 15px;
-    background: linear-gradient(135deg, rgba(19, 111, 39, 0.9), rgba(95, 236, 33, 0.7));
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+   background: linear-gradient(135deg, rgba(19, 111, 39, 0.9), rgba(95, 236, 33, 0.7));
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 10px;
+    
 
   }
 
-  .qd_resultado{
+  .qd_resultado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 10px;
-    width: 230px;
-    height: 280px;
+    width: 280px;
     margin-left: 50px;
-    background-color: #47593F;
-    border-radius: 5px;
+    background-color: #f5f5f5;
+    border-radius: 7px;
   }
+
+#h1-resultado{
+  margin-top: 0px;
+}
+
+#img-verificacao{
+  align-items: center;
+  width: 80%;
+  height: 70%;
+}
+
+#descricao-pagamento{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  
+  margin-top: 6rem;
+  width: 878px;
+  height: 300px;
+  border-radius: 15px;
+ background: linear-gradient(135deg, rgba(19, 111, 39, 0.9), rgba(95, 236, 33, 0.7));
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+}

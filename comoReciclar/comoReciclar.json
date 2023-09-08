@@ -1,11 +1,27 @@
 {
-    "titulo": [
-        "Dica 1",
-        "Dica 2",
-        "Dica 3",
-        "Dica 4",
-        "Dica 5"
-    ],
-    "texto": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet distinctio culpa adipisci unde quasi molestias?",
-    "img": "img/1.jpg"
+    "card": {
+        "titulo": [
+            "Dica 1",
+            "Dica 2",
+            "Dica 3",
+            "Dica 4",
+            "Dica 5"
+        ],
+        "texto":[
+            "Texto 1",
+            "Texto 2",
+            "Texto 3",
+            "Texto 4",
+            "Texto 5"
+        ]
+    },
+
+    "conteudo": {
+        "titulo": [
+            "Esse é o titulo da dica"
+        ],
+        "texto":[
+            "Esse é o texto da dica"
+        ]
+    }
 }
