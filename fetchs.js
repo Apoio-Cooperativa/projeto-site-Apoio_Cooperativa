@@ -25,7 +25,7 @@ const verif = () => {
 }
 
 const inicio = () => {
-    const url = "inicio.html",
+    const url = "inicio/inicio.html",
         body = document.getElementById("corpo");
 
     fetch(url)
@@ -38,7 +38,7 @@ const inicio = () => {
 }
 
 const reciclar = () => {
-    const url = "comoReciclar.html",
+    const url = "comoReciclar/comoReciclar.html",
         body = document.getElementById("corpo");
 
     fetch(url)
@@ -49,7 +49,7 @@ const reciclar = () => {
 }
 
 const horarios = () => {
-    const url = "horarios.html",
+    const url = "horarios/horarios.html",
         body = document.getElementById("corpo");
 
     fetch(url)
@@ -60,7 +60,7 @@ const horarios = () => {
 }
 
 const doacao = () => {
-    const url = "doacao.html",
+    const url = "doacao/doacao.html",
         body = document.getElementById("corpo");
 
     fetch(url)

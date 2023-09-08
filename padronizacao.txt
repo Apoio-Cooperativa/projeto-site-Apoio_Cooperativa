@@ -1,0 +1,3 @@
+Classes: minusculo_minusculo
+ID: minusculo-minusculo
+Título: minusculoMaiusculo
