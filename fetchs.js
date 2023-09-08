@@ -2,13 +2,13 @@ let id;
 
 const verif = () => {
     if (sessionStorage.getItem('reloaded')) {
-        switch (valor) {
+        switch (id) {
             case ("inicio"): inicio(); break
             case ("reciclar"): reciclar(); break
             case ("doacao"): doacao(); break
             case ("horarios"): horarios(); break
             //case ("adm"): adm(); break
-            default: alert("tenho que programar ainda!"); inicio()
+            default: inicio()
         }
     } else inicio()
     sessionStorage.setItem('reloaded', 'true');
