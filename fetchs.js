@@ -9,7 +9,7 @@ const nav = () => {
         .then(text => nav.innerHTML = text)
 }
 
-/* Esse cód é uma "gambiarra", tenho que mudar depois */
+/* Esse cód é uma "gambiarra", tenho que mudar depois *///Edit: vou arrumar o crl KKKKKKKKKK, funcinando tá bom
 const verif = () => {
     if (sessionStorage.getItem('reloaded')) {
         switch (valor) {
@@ -18,7 +18,7 @@ const verif = () => {
             case ("doacao"): doacao(); break
             case ("horarios"): horarios(); break
             //case ("adm"): adm(); break
-            default: alert("tenho que programar ainda!"); inicio()
+            default: inicio()
         }
     } else inicio()
     sessionStorage.setItem('reloaded', 'true');

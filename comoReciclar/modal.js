@@ -1,3 +1,15 @@
+window.onkeydown = function (event) {
+    if (event.keyCode === 27) {
+        if (document.querySelector('.modal').style.display === 'flex') closeModal()
+    }
+};
+
+const delay = (ms) => {
+    return new Promise((resolve) => {
+        setTimeout(resolve, ms);
+    });
+};
+
 const closeModal = () => {
     const modal = document.querySelector('.modal');
     modal.style.display = 'none';
@@ -13,7 +25,7 @@ const closeModal = () => {
 
 const card = () => {/*aqui vai ficar a automatização do card*/ }
 
-const modal = (id) => {
+const modal = async (id) => {
 
     const site = new XMLHttpRequest();
 
@@ -35,6 +47,8 @@ const modal = (id) => {
 
     site.open("GET", 'comoReciclar/comoReciclar.json');
     site.send();
+
+    await delay(160);
 
     const modal = document.querySelector('.modal');
     modal.style.display = 'flex';
