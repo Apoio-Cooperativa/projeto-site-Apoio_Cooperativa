@@ -9,7 +9,7 @@ const nav = () => {
         .then(text => nav.innerHTML = text)
 }
 
-/* Esse cód é uma "gambiarra", tenho que mudar depois */
+/* Esse cód é uma "gambiarra", tenho que mudar depois */ //Edit: vou arrumar o crl KKKKKKKKKK, funcinando tá bom
 const verif = () => {
     if (sessionStorage.getItem('reloaded')) {
         switch (valor) {
