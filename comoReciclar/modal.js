@@ -1,6 +1,14 @@
 const closeModal = () => {
     const modal = document.querySelector('.modal');
     modal.style.display = 'none';
+
+    const titulo = document.getElementById("titulo");
+    const paragrafo = document.getElementById("paragrafo");
+    const foto = document.getElementById("foto");
+
+    titulo.innerHTML = ""
+    paragrafo.innerHTML = ""
+    foto.src = ""
 }
 
 const card = () => {/*aqui vai ficar a automatização do card*/ }
@@ -19,7 +27,7 @@ const modal = (id) => {
 
             titulo.innerHTML = dados.conteudo.titulo[id]
             paragrafo.innerHTML = dados.conteudo.texto[id]
-            //foto.src = dados.conteudo.img[id]
+            foto.src = dados.conteudo.img[id]
         } else {
             console.error("Erro ao carregar o arquivo JSON");
         }
