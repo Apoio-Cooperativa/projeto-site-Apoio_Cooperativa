@@ -1,56 +1,56 @@
 <section class="card_container_reciclar">
-    <div class="card_row_reciclar">
-        <div class="card_reciclar">
-            <h2>Título 1</h2>
-            <p>Texto do Cartão 1</p>
-            <button class="modal-trigger" onclick="modal()">Ver Detalhes</button>
-        </div>
-        <div class="card_reciclar">
-            <h2>Título 2</h2>
-            <p>Texto do Cartão 2</p>
-            <button class="modal-trigger" onclick="modal()">Ver Detalhes</button>
-        </div>
-        <div class="card_reciclar">
-            <h2>Título 3</h2>
-            <p>Texto do Cartão 3</p>
-            <button class="modal-trigger" onclick="modal()">Ver Detalhes</button>
-        </div>
-        <div class="card_reciclar">
-            <h2>Título 4</h2>
-            <p>Texto do Cartão 4</p>
-            <button class="modal-trigger" onclick="modal()">Ver Detalhes</button>
-        </div>
+    <div class="card_row_reciclar" id="row">
+            <div class="card_reciclar">
+                <h2>Título 1</h2>
+                <p>Texto do Cartão 1</p>
+                <button class="modal-trigger" onclick="modal(0)">Ver Detalhes</button>
+            </div>
+            <div class="card_reciclar">
+                <h2>Título 2</h2>
+                <p>Texto do Cartão 2</p>
+                <button class="modal-trigger" onclick="modal(1)">Ver Detalhes</button>
+            </div>
+            <div class="card_reciclar">
+                <h2>Título 3</h2>
+                <p>Texto do Cartão 3</p>
+                <button class="modal-trigger" onclick="modal(2)">Ver Detalhes</button>
+            </div>
+            <div class="card_reciclar">
+                <h2>Título 4</h2>
+                <p>Texto do Cartão 4</p>
+                <button class="modal-trigger" onclick="modal(3)">Ver Detalhes</button>
+            </div>
     </div>
 
     <div class="card_row_reciclar">
         <div class="card_reciclar">
             <h2>Título 5</h2>
             <p>Texto do Cartão 5</p>
-            <button class="modal-trigger" onclick="modal()">Ver Detalhes</button>
+            <button class="modal-trigger" onclick="modal(4)">Ver Detalhes</button>
         </div>
         <div class="card_reciclar">
             <h2>Título 6</h2>
             <p>Texto do Cartão 6</p>
-            <button class="modal-trigger" onclick="modal()">Ver Detalhes</button>
+            <button class="modal-trigger" onclick="modal(5)">Ver Detalhes</button>
         </div>
         <div class="card_reciclar">
             <h2>Título 7</h2>
             <p>Texto do Cartão 7</p>
-            <button class="modal-trigger" onclick="modal()">Ver Detalhes</button>
+            <button class="modal-trigger" onclick="modal(6)">Ver Detalhes</button>
         </div>
         <div class="card_reciclar">
             <h2>Título 8</h2>
             <p>Texto do Cartão 8</p>
-            <button class="modal-trigger" onclick="modal()">Ver Detalhes</button>
+            <button class="modal-trigger" onclick="modal(7)">Ver Detalhes</button>
         </div>
     </div>
 </section>
 
 <div class="modal">
     <div class="modal_content">
-        <h2 class="modal_title">Ponha o título aqui</h2>
-        <p class="modal_text">Ponha a dica aqui</p>
-        <img src="" alt="" class="modal_image">
+        <h2 class="modal_title" id="titulo"><!-- Ponha o título aqui --></h2>
+        <p class="modal_text" id="paragrafo"><!-- Ponha a dica aqui --></p>
+        <img src="" alt="" class="modal_image" id="foto" alt="sem foto">
         <button class="modal_close" onclick="closeModal()">Fechar</button>
     </div>
 </div>

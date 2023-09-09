@@ -43,6 +43,7 @@ const reciclar = () => {
     const url = "comoReciclar/comoReciclar.html",
         body = document.getElementById("corpo"),
         css = document.getElementById("atual")
+
     css.href = "comoReciclar/comoReciclar.css"
 
     fetch(url)
