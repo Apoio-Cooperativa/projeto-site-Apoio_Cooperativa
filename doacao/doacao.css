@@ -33,7 +33,7 @@
     margin-top: 80px;
   }
 
-  .text_qr {
+  .text_qr_code_doacao {
     text-align: center;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
@@ -59,7 +59,7 @@
 
   }
 
-  .qd_resultado {
+  .qd_resultado_doacao {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -70,17 +70,17 @@
     border-radius: 7px;
   }
 
-#h1-resultado{
+#resultado-doacao{
   margin-top: 0px;
 }
 
-#img-verificacao{
+#verificacao-doacao{
   align-items: center;
   width: 80%;
   height: 70%;
 }
 
-#descricao-pagamento{
+#descricao-pagamento-doacao{
   display: flex;
   flex-direction: column;
   align-items: start;

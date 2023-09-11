@@ -11,7 +11,7 @@ header {
   background: whitesmoke;
 }
 
-.logo {
+.logo_navbar {
   background-color: var(--cor-base-2);
   grid-column: 1 / 2;
   height: 100%;
@@ -63,7 +63,7 @@ nav a:hover::before {
   transform: scale(1, 1);
 }
 
-.btnDoar {
+.btn_doar_navbar {
   width: 3rem;
   height: 2rem;
   grid-column: 7 / 8;
@@ -75,12 +75,12 @@ nav a:hover::before {
   border-radius: 5px;
 }
 
-.icons {
+.icones_redes_navbar {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.icon-button-1 {
+.icon_face_navbar {
   margin-right: 1rem;
 }
