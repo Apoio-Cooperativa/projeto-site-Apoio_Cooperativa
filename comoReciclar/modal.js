@@ -1,6 +1,6 @@
 window.onkeydown = function (event) {
     if (event.keyCode === 27) {
-        if (document.querySelector('.modal').style.display === 'flex') closeModal()
+        if (document.querySelector('.modal-reciclar').style.display === 'flex') closeModal()
     }
 };
 
@@ -11,7 +11,7 @@ const delay = (ms) => {
 };
 
 const closeModal = () => {
-    const modal = document.querySelector('.modal');
+    const modal = document.querySelector('.modal-reciclar');
     modal.style.display = 'none';
 
     const titulo = document.getElementById("titulo");
@@ -50,6 +50,6 @@ const modal = async (id) => {
 
     await delay(160);
 
-    const modal = document.querySelector('.modal');
+    const modal = document.querySelector('.modal-reciclar');
     modal.style.display = 'flex';
 }
