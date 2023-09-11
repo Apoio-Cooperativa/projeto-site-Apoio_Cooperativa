@@ -1,6 +1,6 @@
 window.onkeydown = function (event) {
     if (event.keyCode === 27) {
-        if (document.querySelector('.modal-reciclar').style.display === 'flex') closeModal()
+        if (document.querySelector('.modal_reciclar').style.display === 'flex') closeModal()
     }
 };
 
@@ -11,12 +11,12 @@ const delay = (ms) => {
 };
 
 const closeModal = () => {
-    const modal = document.querySelector('.modal-reciclar');
+    const modal = document.querySelector('.modal_reciclar');
     modal.style.display = 'none';
 
-    const titulo = document.getElementById("titulo");
-    const paragrafo = document.getElementById("paragrafo");
-    const foto = document.getElementById("foto");
+    const titulo = document.getElementById("titulo-reciclar");
+    const paragrafo = document.getElementById("paragrafo-reciclar");
+    const foto = document.getElementById("foto-reciclar");
 
     titulo.innerHTML = ""
     paragrafo.innerHTML = ""
@@ -33,9 +33,9 @@ const modal = async (id) => {
         if (site.status === 200) { // Verificar se a solicitação foi bem-sucedida (status 200 OK)
             const dados = JSON.parse(site.responseText);
 
-            const titulo = document.getElementById("titulo");
-            const paragrafo = document.getElementById("paragrafo");
-            const foto = document.getElementById("foto");
+            const titulo = document.getElementById("titulo-reciclar");
+            const paragrafo = document.getElementById("paragrafo-reciclar");
+            const foto = document.getElementById("foto-reciclar");
 
             titulo.innerHTML = dados.conteudo.titulo[id]
             paragrafo.innerHTML = dados.conteudo.texto[id]
@@ -50,6 +50,6 @@ const modal = async (id) => {
 
     await delay(160);
 
-    const modal = document.querySelector('.modal-reciclar');
+    const modal = document.querySelector('.modal_reciclar');
     modal.style.display = 'flex';
 }
