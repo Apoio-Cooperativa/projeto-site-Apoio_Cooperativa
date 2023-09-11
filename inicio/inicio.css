@@ -38,13 +38,13 @@ section {
     margin-bottom: 10rem;
   }
   
-  .abtUs-content {
+  .content_sobre_inicio {
     margin-left: 50%;
     font-size: .8rem;
     margin-top: 5rem;
   }
   
-  .btnSaibaMais {
+  .btn_sobre_inicio {
     margin-left: 60%;
     background-color: var(--cor-base-3);
     color: var(--cor-fundo);
@@ -53,12 +53,12 @@ section {
     margin-bottom: 5rem;
   }
   
-  .main-section {
+  .section_principal_inicio {
     background: linear-gradient(180deg, rgba(10, 0, 0, 0.40) 0%, rgba(10, 0, 0, 0.00) 100%), #7ED957;
     color: var(--cor-fundo);
   }
   
-  .mainTitle {
+  .titulo_principal_inicio {
     font-size: 44px;
     font-style: normal;
     font-weight: 300;
@@ -70,7 +70,7 @@ section {
     margin-top: 4rem;
   }
   
-  .mainText {
+  .texto_principal_inicio {
     margin-right: 70%;
     margin-left: 1rem;
     margin-bottom: 5rem;
@@ -82,22 +82,22 @@ section {
     /* 154.737% */
   }
   
-  .perguntas-frequentes {
+  .perguntas-frequentes_inicio {
     background-color: #363636;
     color: var(--cor-fundo);
     padding-top: 5rem;
     padding-bottom: 10rem;
   }
   
-  .perguntas-frequentes h1,
-  .perguntas-frequentes p {
+  .perguntas-frequentes_inicio h1,
+  .perguntas-frequentes_inicio p {
     text-transform: uppercase;
     justify-content: center;
     display: flex;
     justify-content: center;
   }
   
-  .perguntas-frequentes p {
+  .perguntas-frequentes_inicio p {
     font-size: .8rem;
     text-transform: capitalize;
   }
@@ -161,7 +161,7 @@ section {
     background-color: var(--cor-base-3);
   }
   
-  .localizacao {
+  .section_localizacao_inicio {
     background-color: #DFF2D7;
     display: flex;
     justify-content: space-between;
@@ -169,7 +169,7 @@ section {
     padding: 3rem 0;
   }
   
-  .textos {
+  .container_textos_localizacao_inicio {
     flex: 1;
     padding: 1rem;
     text-align: justify;
@@ -178,20 +178,20 @@ section {
     margin-right: 4rem;
   }
   
-  .texto {
+  .texto_localizacao_inicio {
     margin-bottom: 1.5rem;
   }
   
-  .texto h2 {
+  .texto_localizacao_inicio h2 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
   }
   
-  .texto p {
+  .texto_localizacao_inicio p {
     font-size: 1rem;
   }
   
-  .mapa {
+  .mapa_inicio {
     flex: 1;
     height: 300px;
     width: 4rem;
