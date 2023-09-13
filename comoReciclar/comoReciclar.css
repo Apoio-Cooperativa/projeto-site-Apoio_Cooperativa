@@ -1,4 +1,4 @@
-.modal {
+.modal_reciclar {
     display: none;
     position: fixed;
     top: 0;
@@ -10,7 +10,7 @@
     justify-content: center;
   }
   
-  .modal-content {
+  .modal_reciclar .modal_content_reciclar {
     background-color: #fff;
     padding: 2rem;
     text-align: center;
@@ -18,12 +18,34 @@
     position: relative;
   }
   
-  .modal-title {
+  .modal_reciclar .modal_content_reciclar .modal_title_reciclar {
     margin-top: 0;
   }
   
-  .modal-close {
+  .modal_reciclar .modal_content_reciclar .modal_close_reciclar {
     position: absolute;
     bottom: 1rem;
     right: 1rem;
   }
+
+.card_container_reciclar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.card_row_reciclar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.card_row_reciclar .card_reciclar {
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  width: calc(50% - 1rem);
+  text-align: center;
+  margin: 1rem;
+}
