@@ -27,7 +27,7 @@ const inicio = () => {
     const url = "inicio/inicio.html",
         body = document.getElementById("corpo"),
         css = document.getElementById("atual");
-    css.href = "inicio/inicio.css";
+    
 
     fetch(url)
         .then(res => res.text())
@@ -36,6 +36,7 @@ const inicio = () => {
             body.innerHTML = "<p>Página indisponével</p>"
         });
     sessionStorage.setItem("id", "inicio");
+    css.href = "inicio/inicio.css";    
 }
 
 const reciclar = () => {
@@ -43,39 +44,39 @@ const reciclar = () => {
         body = document.getElementById("corpo"),
         css = document.getElementById("atual")
 
-    css.href = "comoReciclar/comoReciclar.css"
-
     fetch(url)
         .then(res => res.text())
         .then(text => body.innerHTML = text)
 
     sessionStorage.setItem("id", "reciclar");
+
+    css.href = "comoReciclar/comoReciclar.css"
 }
 
 const horarios = () => {
     const url = "horarios/horarios.html",
         body = document.getElementById("corpo"),
         css = document.getElementById("atual");
-    css.href = "horarios/horarios.css"
 
     fetch(url)
         .then(res => res.text())
         .then(text => body.innerHTML = text)
 
     sessionStorage.setItem("id", "horarios");
+    css.href = "horarios/horarios.css"
 }
 
 const doacao = () => {
     const url = "doacao/doacao.html",
         body = document.getElementById("corpo"),
         css = document.getElementById("atual");
-    css.href = "doacao/doacao.css"
 
     fetch(url)
         .then(res => res.text())
         .then(text => body.innerHTML = text)
 
     sessionStorage.setItem("id", "doacao");
+    css.href = "doacao/doacao.css"
 }
 
 const foot = () => {
