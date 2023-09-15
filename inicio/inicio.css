@@ -82,22 +82,22 @@ section {
     /* 154.737% */
   }
   
-  .perguntas-frequentes_inicio {
+  .section_perguntas_inicio {
     background-color: #363636;
     color: var(--cor-fundo);
     padding-top: 5rem;
     padding-bottom: 10rem;
   }
   
-  .perguntas-frequentes_inicio h1,
-  .perguntas-frequentes_inicio p {
+  .section_perguntas_inicio h1,
+  .section_perguntas_inicio p {
     text-transform: uppercase;
     justify-content: center;
     display: flex;
     justify-content: center;
   }
   
-  .perguntas-frequentes_inicio p {
+  .section_perguntas_inicio p {
     font-size: .8rem;
     text-transform: capitalize;
   }
