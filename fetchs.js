@@ -2,7 +2,7 @@ let valor = sessionStorage.getItem("id");
 
 const nav = () => {
     const url = "navbar/navbar.html",
-        nav = document.getElementById("nav");
+        nav = document.getElementById("nav_index");
 
     fetch(url)
         .then(res => res.text())
@@ -81,7 +81,7 @@ const doacao = () => {
 
 const foot = () => {
     const url = "footer/footer.html",
-        footer = document.getElementById("footer");
+        footer = document.getElementById("footer_index");
 
     fetch(url)
         .then(res => res.text())
