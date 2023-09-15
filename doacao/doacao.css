@@ -8,14 +8,16 @@
 
 
   .pg_doacao {
+    display: flex;
     margin-top: 1rem;
     width: 53.125rem;
     height: 43.75rem;
     border-radius: 15px;
     background: linear-gradient(135deg, rgba(19, 111, 39, 0.9), rgba(95, 236, 33, 0.7));
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
+    flex-direction: row;
 
 
   }
