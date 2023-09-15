@@ -25,10 +25,7 @@ const verif = () => {
 
 const inicio = () => {
     const url = "inicio/inicio.html",
-        body = document.getElementById("corpo_index"),
-        css = document.getElementById("atual");
-    
-
+        body = document.getElementById("corpo_index")
     fetch(url)
         .then(res => res.text())
         .then(text => body.innerHTML = text)
@@ -36,52 +33,44 @@ const inicio = () => {
             body.innerHTML = "<p>Página indisponével</p>"
         });
     sessionStorage.setItem("id", "inicio");
-    css.href = "inicio/inicio.css";    
 }
 
 const reciclar = () => {
     const url = "comoReciclar/comoReciclar.html",
-        body = document.getElementById("corpo_index"),
-        css = document.getElementById("atual")
+        body = document.getElementById("corpo_index")
 
     fetch(url)
         .then(res => res.text())
         .then(text => body.innerHTML = text)
 
     sessionStorage.setItem("id", "reciclar");
-
-    css.href = "comoReciclar/comoReciclar.css"
 }
 
 const horarios = () => {
     const url = "horarios/horarios.html",
-        body = document.getElementById("corpo_index"),
-        css = document.getElementById("atual");
+        body = document.getElementById("corpo_index")
 
-    fetch(url)
-        .then(res => res.text())
-        .then(text => body.innerHTML = text)
+        fetch(url)
+            .then(res => res.text())
+            .then(text => body.innerHTML = text)
 
-    sessionStorage.setItem("id", "horarios");
-    css.href = "horarios/horarios.css"
+    sessionStorage.setItem("id", "horarios")
 }
 
 const doacao = () => {
     const url = "doacao/doacao.html",
-        body = document.getElementById("corpo_index"),
-        css = document.getElementById("atual");
+        body = document.getElementById("corpo_index")
 
     fetch(url)
         .then(res => res.text())
         .then(text => body.innerHTML = text)
 
-    sessionStorage.setItem("id", "doacao");
-    css.href = "doacao/doacao.css"
+    sessionStorage.setItem("id", "doacao")
 }
 
 const foot = () => {
     const url = "footer/footer.html",
-        footer = document.getElementById("footer_index");
+        footer = document.getElementById("footer_index")
 
     fetch(url)
         .then(res => res.text())
