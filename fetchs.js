@@ -42,7 +42,6 @@ const reciclar = () => {
     fetch(url)
         .then(res => res.text())
         .then(text => body.innerHTML = text)
-
     sessionStorage.setItem("id", "reciclar");
 }
 
@@ -53,7 +52,6 @@ const horarios = () => {
         fetch(url)
             .then(res => res.text())
             .then(text => body.innerHTML = text)
-
     sessionStorage.setItem("id", "horarios")
 }
 
@@ -64,7 +62,6 @@ const doacao = () => {
     fetch(url)
         .then(res => res.text())
         .then(text => body.innerHTML = text)
-
     sessionStorage.setItem("id", "doacao")
 }
 
