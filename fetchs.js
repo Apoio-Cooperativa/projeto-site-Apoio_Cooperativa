@@ -2,11 +2,14 @@ let valor = sessionStorage.getItem("id");
 
 const nav = () => {
     const url = "navbar/navbar.html",
-        nav = document.getElementById("nav_index");
+        nav = document.getElementById("nav_index"),
+        css = `<link rel="stylesheet" href="navbar/navbar.css">`
+
+    nav.innerHTML = css;
 
     fetch(url)
         .then(res => res.text())
-        .then(text => nav.innerHTML = text)
+        .then(text => nav.innerHTML += text)
 }
 
 const verif = () => {
@@ -25,10 +28,14 @@ const verif = () => {
 
 const inicio = () => {
     const url = "inicio/inicio.html",
-        body = document.getElementById("corpo_index")
+        body = document.getElementById("corpo_index"),
+        css = `<link rel="stylesheet" href="inicio/inicio.css">`
+
+    body.innerHTML = css
+
     fetch(url)
         .then(res => res.text())
-        .then(text => body.innerHTML = text)
+        .then(text => body.innerHTML += text)
         .catch(error => {
             body.innerHTML = "<p>Página indisponével</p>"
         });
@@ -37,39 +44,51 @@ const inicio = () => {
 
 const reciclar = () => {
     const url = "comoReciclar/comoReciclar.html",
-        body = document.getElementById("corpo_index")
+        body = document.getElementById("corpo_index"),
+        css = `<link rel="stylesheet" href="comoReciclar/comoReciclar.css">`
+
+    body.innerHTML = css
 
     fetch(url)
         .then(res => res.text())
-        .then(text => body.innerHTML = text)
+        .then(text => body.innerHTML += text)
     sessionStorage.setItem("id", "reciclar");
 }
 
 const horarios = () => {
     const url = "horarios/horarios.html",
-        body = document.getElementById("corpo_index")
+        body = document.getElementById("corpo_index"),
+        css = `<link rel="stylesheet" href="horarios/horarios.css">`
 
-        fetch(url)
-            .then(res => res.text())
-            .then(text => body.innerHTML = text)
+    body.innerHTML = css;
+
+    fetch(url)
+        .then(res => res.text())
+        .then(text => body.innerHTML += text)
     sessionStorage.setItem("id", "horarios")
 }
 
 const doacao = () => {
     const url = "doacao/doacao.html",
-        body = document.getElementById("corpo_index")
+        body = document.getElementById("corpo_index"),
+        css = `<link rel="stylesheet" href="doacao/doacao.css">`
+
+    body.innerHTML = css
 
     fetch(url)
         .then(res => res.text())
-        .then(text => body.innerHTML = text)
+        .then(text => body.innerHTML += text)
     sessionStorage.setItem("id", "doacao")
 }
 
 const foot = () => {
     const url = "footer/footer.html",
-        footer = document.getElementById("footer_index")
+        footer = document.getElementById("footer_index"),
+        css = `<link rel="stylesheet" href="footer/footer.css">`
+
+    footer.innerHTML = css
 
     fetch(url)
         .then(res => res.text())
-        .then(text => footer.innerHTML = text)
+        .then(text => footer.innerHTML += text)
 }
