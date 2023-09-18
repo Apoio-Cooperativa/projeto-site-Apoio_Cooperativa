@@ -25,7 +25,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-items: center;
-  min-height: 100vh;
+  /*min-height: 100vh; */
   margin-top: 4rem;
   font-family: var(--font);
+}
+
+#corpo_index{
+  min-height: 75vh;
 }
