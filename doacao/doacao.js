@@ -1,17 +1,21 @@
-function mudarImagem() {
+/* const confirm = () => {
+    let
+} */
+
+const qrcode = () => {
     let radios = document.getElementsByName('radio');
-    let imagem = document.getElementById('imagemExibida');
+    let imagem = document.getElementById('image');
 
     for (let i = 0; i < radios.length; i++) {
         if (radios[i].checked) {
-            switch (radios[i].value) {
-                case 'imagem1':
+            switch (i) {
+                case 0:
                     imagem.src = 'img/lindo.jpg';
                     break;
-                case 'imagem2':
+                case 1:
                     imagem.src = 'img/qrcode2.png';
                     break;
-                case 'imagem3':
+                case 2:
                     imagem.src = 'img/sergio.jpg';
                     break;
                 default:
