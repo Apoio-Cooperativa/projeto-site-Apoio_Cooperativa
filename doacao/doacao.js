@@ -1,9 +1,10 @@
 function mudarImagem() {
-    var radios = document.getElementsByName('radio');
-    var imagem = document.getElementById('imagemExibida');
+    let radios = document.getElementsByName('radio');
+    let imagem = document.getElementById('imagemExibida');
 
-    for (var i = 0; i < radios.length; i++) {
-        if (radios[i].checked) {
+    for (let i = 0; i < radios.length; i++) {
+        if (radios[0].checked) {
+            alert(radios[i].value)
             switch (radios[i].value) {
                 case 'imagem1':
                     imagem.src = 'img/lindo.jpg';
