@@ -3,8 +3,7 @@ function mudarImagem() {
     let imagem = document.getElementById('imagemExibida');
 
     for (let i = 0; i < radios.length; i++) {
-        if (radios[0].checked) {
-            alert(radios[i].value)
+        if (radios[i].checked) {
             switch (radios[i].value) {
                 case 'imagem1':
                     imagem.src = 'img/lindo.jpg';
