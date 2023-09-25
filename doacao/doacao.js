@@ -41,8 +41,7 @@ const qrcode = (cond) => {
 const uncheck = () => {
     let msg = document.getElementById("msg");
     let radios = document.getElementsByName('radio');
-    let imagem = document.getElementById('image');
-
+    
     msg.innerHTML = null;
 
     for (let i = 0; i < radios.length; i++) {
