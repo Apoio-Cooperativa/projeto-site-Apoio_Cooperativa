@@ -139,6 +139,11 @@ input:checked+.radio-tile label {
 
 
 /* ---------------------------------------------- */
+
+#msg-verificacao{
+  display: none;
+}
+
 .resultado_doacao {
   display: flex;
   flex-direction: row;
@@ -152,8 +157,6 @@ input:checked+.radio-tile label {
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-radius: 10px;
-
-
 }
 
 .qd_resultado {

@@ -2,7 +2,11 @@
     <div class="pg_doacao">
         <div class="qd_doacao">
 
-            <div id="msg"></div>
+            <div id="msg-verificacao">
+                <p>Deseja doar <span id="valor-cash"></span>?</p>
+                <input type='button' value='Sim' onclick='qrcode(true)'>
+                <input type='button' value='Não' onclick='qrcode(false)'>
+            </div>
 
             <img src="" class="img_qr_code_doacao" alt="" id="image">
 

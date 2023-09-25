@@ -4,25 +4,23 @@ const formatarMoeda = (valor) => {
 }
 
 const confirm = (valor) => {
-    let cash = formatarMoeda(valor);
+    const cash = formatarMoeda(valor);
+    const vlr = document.getElementById("valor-cash");
+    const imagem = document.getElementById("image");
+    const msg = document.getElementById("msg-verificacao");
 
-    let imagem = document.getElementById('image');
-    let msg = document.getElementById("msg");
-
-    imagem.src = ""
-
-    msg.innerHTML = "<p>Deseja doar " + cash + "?</p>";
-    msg.innerHTML += "<input type='button' value='Sim' onclick='qrcode(true)'>"
-        + "<input type='button' value='Não' onclick='qrcode(false)'>";
+    imagem.src = "";
+    vlr.innerHTML = cash;
+    msg.style.display = "flex";
 }
 
 const qrcode = (cond) => {
-    let msg = document.getElementById("msg");
-    let radios = document.getElementsByName('radio');
-    let imagem = document.getElementById('image');
+    const msg = document.getElementById("msg-verificacao");
+    const radios = document.getElementsByName('radio');
+    const imagem = document.getElementById('image');
 
     if (cond) {
-        msg.innerHTML = null;
+        msg.style.display = "none";
 
         for (let i = 0; i < radios.length; i++) {
             if (radios[i].checked) {
@@ -36,20 +34,27 @@ const qrcode = (cond) => {
                     case 2:
                         imagem.src = 'img/sergio.jpg';
                         break;
+                    case 3:
+                        imagem.src = 'img/lindo.jpg';
+                        break;
+                    case 4:
+                        imagem.src = 'img/qrcode2.png';
+                        break;
                     default:
                         break;
                 }
             }
         }
+    } else {
+        uncheck();
     }
-    else uncheck();
 }
 
 const uncheck = () => {
-    let msg = document.getElementById("msg");
-    let radios = document.getElementsByName('radio');
+    const msg = document.getElementById("msg-verificacao");
+    const radios = document.getElementsByName('radio');
 
-    msg.innerHTML = null;
+    msg.style.display = "none";
 
     for (let i = 0; i < radios.length; i++) {
         radios[i].checked = false;
