@@ -1,10 +1,17 @@
+const formatarMoeda = (valor) => {
+    const valorFormatado = parseFloat(valor).toFixed(2);
+    return `R$ ${valorFormatado.replace('.', ',')}`;
+}
+
 const confirm = (valor) => {
+    let cash = formatarMoeda(valor);
+
     let imagem = document.getElementById('image');
     let msg = document.getElementById("msg");
 
     imagem.src = ""
 
-    msg.innerHTML = "<p>Deseja doar " + valor + " para a Cooperativa?</p>";
+    msg.innerHTML = "<p>Deseja doar " + cash + "?</p>";
     msg.innerHTML += "<input type='button' value='Sim' onclick='qrcode(true)'>"
         + "<input type='button' value='Não' onclick='qrcode(false)'>";
 }
@@ -41,7 +48,7 @@ const qrcode = (cond) => {
 const uncheck = () => {
     let msg = document.getElementById("msg");
     let radios = document.getElementsByName('radio');
-    
+
     msg.innerHTML = null;
 
     for (let i = 0; i < radios.length; i++) {
