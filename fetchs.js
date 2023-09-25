@@ -13,7 +13,6 @@ const nav = () => {
 }
 
 const verif = () => {
-    //goUp();
     if (sessionStorage.getItem('reloaded')) {
         switch (valor) {
             case ("inicio"): inicio(); break
