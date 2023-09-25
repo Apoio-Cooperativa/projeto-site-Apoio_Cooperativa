@@ -2,12 +2,13 @@
 
 :root {
   --cor-base-0: rgb(126, 217, 86);
-  --cor-case-1: rgb(52, 89, 37);
+  --cor-base-1: rgb(52, 89, 37);
   --cor-base-2: rgb(176, 223, 155);
   --cor-base-3: rgb(71, 89, 63);
   --cor-base-4: rgb(96, 166, 67);
 
-  --cor-letras: rgb(0, 0, 0);
+  --cor-letras-w: rgb(255, 255, 255);
+  --cor-letras-b: rgb(0, 0, 0);
   --cor-fundo: rgb(255, 255, 255);
 
   --font: Inter;
@@ -32,4 +33,11 @@ body {
 
 #corpo_index{
   min-height: 75vh;
+}
+
+section {
+  flex: 1;
+  padding: 1.5rem 5rem 1.5rem 5rem;
+  color: var(--cor-letras-b);
+  text-align: justify;
 }

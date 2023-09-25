@@ -1,9 +1,3 @@
-section {
-    flex: 1;
-    padding: 20px;
-    color: black;
-  }
-  
   .container_background_inicio {
     display: flex;
     justify-content: flex-start;
@@ -50,6 +44,12 @@ section {
     padding: 1rem;
     border-radius: 10px;
     margin-bottom: 5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn_sobre_inicio:hover {
+    background-color: var(--cor-base-4);
   }
   
   .section_principal_inicio {
@@ -141,9 +141,10 @@ section {
   }
   
   .card_content_inicio p {
-    color: var(--cor-letras);
-    margin: 0.5rem 0;
+    color: var(--cor-letras-b);
+    margin: 0.5rem 4rem;
     font-size: 0.9rem;
+    text-align: justify;
   }
   
   .card_content_inicio button {
