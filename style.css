@@ -13,6 +13,8 @@
   --cor-fundo-subir: rgb(27, 61, 12);
 
   --font: Inter;
+
+  --margin-base: 6rem;
 }
 
 *,
@@ -37,8 +39,7 @@ body {
 }
 
 section {
-  flex: 1;
-  padding: 1.5rem 5rem 1.5rem 5rem;
+  padding: 5rem var(--margin-base) 5rem var(--margin-base);
   color: var(--cor-letras-b);
   text-align: justify;
 }
