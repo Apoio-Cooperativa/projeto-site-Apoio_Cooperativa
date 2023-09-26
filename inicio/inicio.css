@@ -47,13 +47,6 @@
     align-items: center;
   }
 
-  .image_sobre_inicio {
-    content: "";
-    height: 15rem;
-    width: 15rem;
-    background: red;
-  }
-
   .content_sobre_inicio {
     font-size: .8rem;
   }
@@ -119,73 +112,96 @@
     padding-bottom: 10rem;
   }
   
-  .section_perguntas_inicio h1,
-  .section_perguntas_inicio p {
+  .section_perguntas_inicio h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 47px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 52.8px; /* 112.34% */
+    letter-spacing: -1.68px;
     text-transform: uppercase;
-    justify-content: center;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .section_perguntas_inicio p {
-    font-size: .8rem;
-    text-transform: capitalize;
   }
   
   .card_container_inicio {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
     margin-top: 3rem;
-  }
+}
   
-  .card_inicio {
-    background-color: var(--cor-fundo);
-    border-radius: 10px;
-    padding: 1rem;
-    text-align: center;
-    flex: 1;
-    overflow: hidden;
-    flex-direction: row;
-  }
+.card_inicio {
+  margin-top: 5rem;
+  background-color: var(--cor-fundo);
+  border-radius: 5px;
+  padding: 3rem 1rem 1rem 1rem;
+  text-align: center;
+  flex: 1;
+  flex-direction: column;
+  max-width: 17rem;
+  position: relative;
+}
   
   .card_image_inicio {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    width: 100px;
+    height: 7rem;
+    width: 7rem;
     border-radius: 50%;
-    margin: 0 auto 1rem;
     overflow: hidden;
-  }
+    position: absolute;
+    display: block;
+    left: 5rem;
+    top: -4rem;
+}
   
   .card_image_inicio img {
     width: 100%;
     height: auto;
-    border-radius: 50%;
   }
-  
-  .card_content_inicio h2 {
+
+  .card_content_inicio {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start; /* Altere para alinhar no topo */
+    height: 100%;
+    position: relative;
+    padding-bottom: 4rem;
+}
+
+.card_content_inicio h2 {
     color: var(--cor-base-4);
-    font-size: 1.2rem;
-  }
-  
-  .card_content_inicio p {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin: 2rem 1rem .5rem 1rem;
+}
+
+.card_content_inicio p {
     color: var(--cor-letras-b);
-    margin: 0.5rem 4rem;
+    margin: 0.5rem 1rem;
     font-size: 0.9rem;
     text-align: justify;
-  }
+    font-weight: bold;
+}
   
   .card_content_inicio button {
     background-color: var(--cor-base-4);
     color: var(--cor-fundo);
-    padding: 0.5rem 1rem;
+    padding: 1em 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
     border: none;
-    border-radius: 5px;
+    border-radius: 5px 15px 5px 15px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin: .5rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
   }
   
   .card_content_inicio button:hover {

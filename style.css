@@ -12,7 +12,7 @@
   --cor-fundo: rgb(255, 255, 255);
   --cor-fundo-subir: rgb(27, 61, 12);
 
-  --font: Inter;
+  --font: 'Inter', sans-serif;
 
   --margin-base: 10rem;
 }
