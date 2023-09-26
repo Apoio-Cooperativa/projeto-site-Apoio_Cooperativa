@@ -10,6 +10,7 @@
   --cor-letras-w: rgb(255, 255, 255);
   --cor-letras-b: rgb(0, 0, 0);
   --cor-fundo: rgb(255, 255, 255);
+  --cor-fundo-subir: rgb(27, 61, 12);
 
   --font: Inter;
 }
@@ -40,4 +41,26 @@ section {
   padding: 1.5rem 5rem 1.5rem 5rem;
   color: var(--cor-letras-b);
   text-align: justify;
+}
+
+.seta-ao-topo {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  font-size: 1.5rem;
+  background-color: var(--cor-fundo-subir);
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 999;
+  transition: 1s;
+}
+
+.seta-ao-topo:hover {
+  transform: scale(110%);
+  transition: 1s;
 }
