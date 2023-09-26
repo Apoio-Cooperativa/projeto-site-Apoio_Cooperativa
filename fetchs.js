@@ -8,12 +8,6 @@ const goUp = async () => {
     });
 }
 
-const delay = (ms) => {
-    return new Promise((resolve) => {
-        setTimeout(resolve, ms);
-    });
-};
-
 const nav = () => {
     const url = "navbar/navbar.html",
         nav = document.getElementById("nav_index"),
@@ -54,7 +48,6 @@ const inicio = () => {
             body.innerHTML = "<p>Página indisponével</p>"
         });
     sessionStorage.setItem("id", "inicio");
-    goUp()
 }
 
 const reciclar = () => {
@@ -68,7 +61,6 @@ const reciclar = () => {
         .then(res => res.text())
         .then(text => body.innerHTML += text)
     sessionStorage.setItem("id", "reciclar");
-    goUp()
 }
 
 const horarios = () => {
@@ -82,7 +74,6 @@ const horarios = () => {
         .then(res => res.text())
         .then(text => body.innerHTML += text)
     sessionStorage.setItem("id", "horarios")
-    goUp()
 }
 
 const doacao = () => {
@@ -96,7 +87,6 @@ const doacao = () => {
         .then(res => res.text())
         .then(text => body.innerHTML += text)
     sessionStorage.setItem("id", "doacao")
-    goUp()
 }
 
 const foot = () => {
