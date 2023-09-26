@@ -41,7 +41,7 @@ nav a {
   opacity: 1;
   position: relative;
   text-decoration: none;
-  font-family: Inter;
+  font-family: var(--font);
   text-transform: uppercase;
   cursor: pointer;
 }
