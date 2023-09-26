@@ -37,6 +37,8 @@
   
   .section_sobre_inicio {
     display: flex;
+    flex-direction: row;
+    gap: 10rem;
   }
 
   .container_sobre_inicio {
@@ -49,6 +51,7 @@
     content: "";
     height: 15rem;
     width: 15rem;
+    background: red;
   }
 
   .content_sobre_inicio {
@@ -143,6 +146,7 @@
     text-align: center;
     flex: 1;
     overflow: hidden;
+    flex-direction: row;
   }
   
   .card_image_inicio {
@@ -222,4 +226,10 @@
     flex: 1;
     height: 30rem;
     border: .5rem solid var(--cor-base-4);
+  }
+
+  @media only screen and (max-width: 600px) { 
+    .card_inicio {
+      flex-direction: column;
+    } 
   }
