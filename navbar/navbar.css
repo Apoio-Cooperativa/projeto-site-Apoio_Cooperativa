@@ -9,6 +9,7 @@ header {
   display: grid;
   grid-template-columns: .2fr 1fr .5fr .25fr;
   background: whitesmoke;
+  font-weight: bold;
 }
 
 .logo_navbar {
