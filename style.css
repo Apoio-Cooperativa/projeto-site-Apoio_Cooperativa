@@ -38,7 +38,6 @@ body {
 }
 
 section {
-  flex: 1;
   padding: 5rem var(--margin-base) 5rem var(--margin-base);
   color: var(--cor-letras-b);
   text-align: justify;

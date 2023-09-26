@@ -35,23 +35,34 @@
 
   /*-------------section-sobre-inicio-------------*/
   
-  .content_sobre_inicio {
-    margin-left: 50%;
-    /*mudar*/ 
+  .section_sobre_inicio {
+    display: flex;
+  }
 
+  .container_sobre_inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image_sobre_inicio {
+    content: "";
+    height: 15rem;
+    width: 15rem;
+  }
+
+  .content_sobre_inicio {
     font-size: .8rem;
   }
   
   .btn_sobre_inicio {
-    margin-left: 60%; 
-    /*mudar*/ 
-
     background-color: var(--cor-base-3);
     color: var(--cor-fundo);
     padding: 1rem;
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    width: 10rem;
   }
   
   .btn_sobre_inicio:hover {
@@ -66,19 +77,29 @@
   }
   
   .titulo_principal_inicio {
-    font-size: 44px;
+    font-size: 3rem;
     font-style: normal;
     font-weight: 300;
     line-height: 50.4px;
     /* 114.545% */
     letter-spacing: -1.68px;
     text-transform: uppercase;
-    margin-bottom: -3rem;
-    margin-top: 4rem;
+    margin-top: 2rem;
+    position: relative;
+  }
+
+  .titulo_principal_inicio::before {
+    content: "";
+    position: absolute;
+    top: -1.5rem;
+    height: 1.5px;
+    width: 10.5rem;
+    background: var(--cor-letras-w);
+    display: block;
   }
   
   .texto_principal_inicio {
-    margin: 5rem 70% 5rem 0;
+    margin: 0 70% 8rem 0;
     font-size: 19px;
     font-style: normal;
     font-weight: 400;
@@ -200,5 +221,5 @@
   .mapa_inicio {
     flex: 1;
     height: 30rem;
-    border: 10px solid var(--cor-base-4);
+    border: .5rem solid var(--cor-base-4);
   }
