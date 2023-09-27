@@ -161,7 +161,7 @@
   
   .card_image_inicio img {
     width: 100%;
-    height: auto;
+    height: 100%;
   }
 
   .card_content_inicio {
