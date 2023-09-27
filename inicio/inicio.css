@@ -47,13 +47,15 @@
   
   .btn_sobre_inicio {
     background-color: var(--cor-base-3);
-    color: var(--cor-fundo);
+    color: var(--cor-letras-w);
     padding: 1rem;
     border-radius: 5px 15px 5px 15px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     width: 10rem;
-    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: .5rem;
   }
   
   .btn_sobre_inicio:hover {
@@ -218,8 +220,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 5rem;
+    gap: 10rem;
     position: relative;
+  }
+
+  .triangulo_localizacao_inicio{
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-style: solid;
+    border-width: 13rem 0 0 7rem;
+    border-color: transparent transparent transparent var(--cor-base-4);
   }
 
   .triangulo_localizacao_inicio::before{
@@ -231,16 +243,6 @@
     border-style: solid;
     border-width: 12rem 0 0 6rem;
     border-color: transparent transparent transparent var(--cor-base-3);
-  }
-
-  .triangulo_localizacao_inicio{
-    display: block;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    border-style: solid;
-    border-width: 13rem 0 0 7rem;
-    border-color: transparent transparent transparent var(--cor-base-4);
   }
   
   .container_textos_localizacao_inicio {
