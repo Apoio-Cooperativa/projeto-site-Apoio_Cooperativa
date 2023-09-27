@@ -26,19 +26,19 @@ const qrcode = (cond) => {
             if (radios[i].checked) {
                 switch (i) {
                     case 0:
-                        imagem.src = 'img/lindo.jpg';
+                        imagem.src = 'img/qrcode0.png';
                         break;
                     case 1:
-                        imagem.src = 'img/qrcode2.png';
+                        imagem.src = 'img/qrcode1.png';
                         break;
                     case 2:
-                        imagem.src = 'img/sergio.jpg';
+                        imagem.src = 'img/qrcode2.png';
                         break;
                     case 3:
-                        imagem.src = 'img/lindo.jpg';
+                        imagem.src = 'img/qrcode3.png';
                         break;
                     case 4:
-                        imagem.src = 'img/qrcode2.png';
+                        imagem.src = 'img/sergio.jpg';
                         break;
                     default:
                         break;
