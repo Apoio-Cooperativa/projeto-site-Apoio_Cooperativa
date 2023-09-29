@@ -71,15 +71,6 @@
   display: flex;
 }
 
-:root {
-  --primary-color: #045214;
-}
-
-* {
-  font-family: sans-serif;
-}
-
-
 .input-container {
   position: relative;
   height: 5rem;

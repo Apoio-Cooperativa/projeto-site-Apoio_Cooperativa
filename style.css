@@ -6,11 +6,12 @@
   --cor-base-2: rgb(176, 223, 155);
   --cor-base-3: rgb(71, 89, 63);
   --cor-base-4: rgb(96, 166, 67);
+  --primary-color: rgb(4, 82, 20);
+  --cor-fundo: rgb(255, 255, 255);
+  --cor-fundo-subir: rgb(27, 61, 12);
 
   --cor-letras-w: rgb(255, 255, 255);
   --cor-letras-b: rgb(0, 0, 0);
-  --cor-fundo: rgb(255, 255, 255);
-  --cor-fundo-subir: rgb(27, 61, 12);
 
   --font: 'Inter', sans-serif;
 
