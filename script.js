@@ -14,7 +14,7 @@ setaAoTopo.addEventListener('click', () => {
 // Função para verificar a posição de rolagem e mostrar/ocultar a seta
 function verificarPosicaoRolagem() {
     const setaAoTopo = document.querySelector('.seta-ao-topo');
-    const limiteExibicao = 200; // Define a altura da página em pixels para mostrar a seta
+    const limiteExibicao = 0; // Define a altura da página em pixels para mostrar a seta
 
     if (window.scrollY > limiteExibicao) {
         setaAoTopo.style.display = 'block'; // Mostra a seta quando a rolagem é maior que o limite
