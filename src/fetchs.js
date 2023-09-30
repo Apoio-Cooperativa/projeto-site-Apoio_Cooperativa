@@ -9,9 +9,9 @@ const goUp = async () => {
 }
 
 const nav = () => {
-    const url = "navbar/navbar.html",
+    const url = "pages/navbar/navbar.html",
         nav = document.getElementById("nav_index"),
-        css = `<link rel="stylesheet" href="navbar/navbar.css">`
+        css = `<link rel="stylesheet" href="pages/navbar/navbar.css">`
 
     nav.innerHTML = css;
 
@@ -35,9 +35,9 @@ const verif = () => {
 }
 
 const inicio = () => {
-    const url = "inicio/inicio.html",
+    const url = "pages/inicio/inicio.html",
         body = document.getElementById("corpo_index"),
-        css = `<link rel="stylesheet" href="inicio/inicio.css">`
+        css = `<link rel="stylesheet" href="pages/inicio/inicio.css">`
 
     body.innerHTML = css
 
@@ -52,9 +52,9 @@ const inicio = () => {
 }
 
 const reciclar = () => {
-    const url = "comoReciclar/comoReciclar.html",
+    const url = "pages/comoReciclar/comoReciclar.html",
         body = document.getElementById("corpo_index"),
-        css = `<link rel="stylesheet" href="comoReciclar/comoReciclar.css">`
+        css = `<link rel="stylesheet" href="pages/comoReciclar/comoReciclar.css">`
 
     body.innerHTML = css
 
@@ -66,9 +66,9 @@ const reciclar = () => {
 }
 
 const horarios = () => {
-    const url = "horarios/horarios.html",
+    const url = "pages/horarios/horarios.html",
         body = document.getElementById("corpo_index"),
-        css = `<link rel="stylesheet" href="horarios/horarios.css">`
+        css = `<link rel="stylesheet" href="pages/horarios/horarios.css">`
 
     body.innerHTML = css;
 
@@ -80,9 +80,9 @@ const horarios = () => {
 }
 
 const doacao = () => {
-    const url = "doacao/doacao.html",
+    const url = "pages/doacao/doacao.html",
         body = document.getElementById("corpo_index"),
-        css = `<link rel="stylesheet" href="doacao/doacao.css">`
+        css = `<link rel="stylesheet" href="pages/doacao/doacao.css">`
 
     body.innerHTML = css
 
@@ -94,9 +94,9 @@ const doacao = () => {
 }
 
 const foot = () => {
-    const url = "footer/footer.html",
+    const url = "pages/footer/footer.html",
         footer = document.getElementById("footer_index"),
-        css = `<link rel="stylesheet" href="footer/footer.css">`
+        css = `<link rel="stylesheet" href="pages/footer/footer.css">`
 
     footer.innerHTML = css
 
