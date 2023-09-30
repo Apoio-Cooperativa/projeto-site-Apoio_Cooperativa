@@ -1,5 +1,13 @@
 let isAdmin;
 
+const goUp = async () => {
+    await delay(10);
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
 //Seta:
 
 const setaAoTopo = document.querySelector('.seta-ao-topo');

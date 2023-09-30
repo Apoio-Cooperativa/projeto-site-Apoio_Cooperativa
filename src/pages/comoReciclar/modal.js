@@ -45,7 +45,7 @@ const modal = async (id) => {
         }
     });
 
-    site.open("GET", 'comoReciclar/comoReciclar.json');
+    site.open("GET", 'pages/comoReciclar/comoReciclar.json');
     site.send();
 
     await delay(160);

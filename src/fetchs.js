@@ -1,11 +1,22 @@
 let valor = sessionStorage.getItem("id");
+const container = document.querySelector('#corpo_index')
 
-const goUp = async () => {
-    await delay(10);
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
+const init = () => window.addEventListener('hashchange', renderPage);
+const validateHash = (hash) => hash === "" ? 'inicio' : hash.replace('#', '');
+
+const renderPage = () => {
+    const page = validateHash(window.location.hash);
+    alert(page)
+    container.innerHTML = '';
+    delay(1000);
+    switch (page) {
+        case ("inicio"): inicio(); break
+        case ("reciclar"): reciclar(); break
+        case ("doacao"): doacao(); break
+        case ("horarios"): horarios(); break
+        //case ("adm"): adm(); break
+        default: inicio()
+    }
 }
 
 const nav = () => {
@@ -21,6 +32,7 @@ const nav = () => {
 }
 
 const verif = () => {
+    init()
     if (sessionStorage.getItem('reloaded')) {
         switch (valor) {
             case ("inicio"): inicio(); break
@@ -35,6 +47,7 @@ const verif = () => {
 }
 
 const inicio = () => {
+    history.pushState(null, null, './#')
     const url = "pages/inicio/inicio.html",
         body = document.getElementById("corpo_index"),
         css = `<link rel="stylesheet" href="pages/inicio/inicio.css">`
@@ -52,6 +65,7 @@ const inicio = () => {
 }
 
 const reciclar = () => {
+    history.pushState(null, null, './#reciclar')
     const url = "pages/comoReciclar/comoReciclar.html",
         body = document.getElementById("corpo_index"),
         css = `<link rel="stylesheet" href="pages/comoReciclar/comoReciclar.css">`
