@@ -1,21 +1,16 @@
-let valor = sessionStorage.getItem("id");
-const container = document.querySelector('#corpo_index')
-
 const init = () => window.addEventListener('hashchange', renderPage);
 const validateHash = (hash) => hash === "" ? 'inicio' : hash.replace('#', '');
 
 const renderPage = () => {
     const page = validateHash(window.location.hash);
-    alert(page)
-    container.innerHTML = '';
-    delay(1000);
     switch (page) {
         case ("inicio"): inicio(); break
         case ("reciclar"): reciclar(); break
         case ("doacao"): doacao(); break
         case ("horarios"): horarios(); break
-        //case ("adm"): adm(); break
-        default: inicio()
+        case ("adm"): adm(); break
+        case ("login"): login(); break
+        default: inicio() //lost();
     }
 }
 
@@ -32,22 +27,11 @@ const nav = () => {
 }
 
 const verif = () => {
+    renderPage()
     init()
-    if (sessionStorage.getItem('reloaded')) {
-        switch (valor) {
-            case ("inicio"): inicio(); break
-            case ("reciclar"): reciclar(); break
-            case ("doacao"): doacao(); break
-            case ("horarios"): horarios(); break
-            //case ("adm"): adm(); break
-            default: inicio()
-        }
-    } else inicio()
-    sessionStorage.setItem('reloaded', 'true');
 }
 
-const inicio = () => {
-    history.pushState(null, null, './#')
+/* const lost = () => {
     const url = "pages/inicio/inicio.html",
         body = document.getElementById("corpo_index"),
         css = `<link rel="stylesheet" href="pages/inicio/inicio.css">`
@@ -60,12 +44,26 @@ const inicio = () => {
         .catch(error => {
             body.innerHTML = "<p>Página indisponével</p>"
         });
-    sessionStorage.setItem("id", "inicio");
+    goUp()
+} */
+
+const inicio = () => {
+    const url = "pages/inicio/inicio.html",
+        body = document.getElementById("corpo_index"),
+        css = `<link rel="stylesheet" href="pages/inicio/inicio.css">`
+
+    body.innerHTML = css
+
+    fetch(url)
+        .then(res => res.text())
+        .then(text => body.innerHTML += text)
+        .catch(error => {
+            body.innerHTML = "<p>Página indisponével</p>"
+        });
     goUp()
 }
 
 const reciclar = () => {
-    history.pushState(null, null, './#reciclar')
     const url = "pages/comoReciclar/comoReciclar.html",
         body = document.getElementById("corpo_index"),
         css = `<link rel="stylesheet" href="pages/comoReciclar/comoReciclar.css">`
@@ -75,7 +73,6 @@ const reciclar = () => {
     fetch(url)
         .then(res => res.text())
         .then(text => body.innerHTML += text)
-    sessionStorage.setItem("id", "reciclar");
     goUp()
 }
 
@@ -89,7 +86,6 @@ const horarios = () => {
     fetch(url)
         .then(res => res.text())
         .then(text => body.innerHTML += text)
-    sessionStorage.setItem("id", "horarios")
     goUp()
 }
 
@@ -103,7 +99,6 @@ const doacao = () => {
     fetch(url)
         .then(res => res.text())
         .then(text => body.innerHTML += text)
-    sessionStorage.setItem("id", "doacao")
     goUp()
 }
 

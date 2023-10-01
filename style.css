@@ -70,5 +70,5 @@ section {
 
 .seta-ao-topo:hover {
   transform: scale(110%);
-  transition: 1s;
+  transition: 1s ease;
 }

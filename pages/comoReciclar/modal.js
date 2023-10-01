@@ -4,12 +4,6 @@ window.onkeydown = function (event) {
     }
 };
 
-const delay = (ms) => {
-    return new Promise((resolve) => {
-        setTimeout(resolve, ms);
-    });
-};
-
 const closeModal = () => {
     const modal = document.querySelector('.modal_reciclar');
     modal.style.display = 'none';
