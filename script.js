@@ -23,9 +23,11 @@ function verificarPosicaoRolagem() {
     const limiteExibicao = 0; // Define a altura da página em pixels para mostrar a seta
 
     if (window.scrollY > limiteExibicao) {
-        setaAoTopo.style.display = 'block'; // Mostra a seta quando a rolagem é maior que o limite
+        setaAoTopo.style.opacity = '1'; // Mostra a seta suavemente
+        setaAoTopo.style.pointerEvents = 'auto'; // Ative a capacidade de clique quando visível
     } else {
-        setaAoTopo.style.display = 'none'; // Oculta a seta quando a rolagem está no topo
+        setaAoTopo.style.opacity = '0'; // Oculta a seta suavemente
+        setaAoTopo.style.pointerEvents = 'none'; // Desative a capacidade de clique quando invisível
     }
     setaAoTopo.addEventListener('click', () => {
         goUp();

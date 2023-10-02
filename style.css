@@ -40,7 +40,7 @@ body {
   font-family: var(--font);
 }
 
-#corpo_index{
+#corpo_index {
   min-height: 75vh;
 }
 
@@ -51,7 +51,6 @@ section {
 }
 
 .seta-ao-topo {
-  display: none;
   position: fixed;
   bottom: 2rem;
   right: 2rem;
@@ -65,10 +64,11 @@ section {
   cursor: pointer;
   border-radius: 50%;
   z-index: 999;
-  transition: 1s;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease-in-out;
 }
 
 .seta-ao-topo:hover {
   transform: scale(110%);
-  transition: 1s ease;
 }
