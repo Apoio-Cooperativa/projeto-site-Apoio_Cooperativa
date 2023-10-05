@@ -42,7 +42,7 @@ const modal = async (id) => {
     site.open("GET", 'pages/comoReciclar/comoReciclar.json');
     site.send();
 
-    await delay(160);
+    //await delay(160);
 
     const modal = document.querySelector('.modal_reciclar');
     modal.style.display = 'flex';
