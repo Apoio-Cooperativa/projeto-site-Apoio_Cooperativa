@@ -26,7 +26,6 @@ https://codemyui.com/pure-css-material-quotation-cards/ */
 *::before,
 *::after {
   box-sizing: border-box;
-  /* zoom: 95%; */
 }
 
 body {
@@ -48,7 +47,6 @@ section {
   padding: 5rem var(--margin-base) 5rem var(--margin-base);
   color: var(--cor-letras-b);
   text-align: justify;
-  zoom: 80%;
 }
 
 .seta-ao-topo {
