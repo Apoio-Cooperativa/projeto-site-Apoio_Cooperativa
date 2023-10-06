@@ -40,7 +40,7 @@ const verif = () => {
 
     fetch(url)
         .then(res => res.text())
-        .then(text => body.innerHTML += text)
+        .then(text => body.innerHTML = text)
         .catch(error => {
             body.innerHTML = "<p>Página indisponével</p>"
         });
@@ -53,7 +53,7 @@ const inicio = async () => {
 
     fetch(url)
         .then(res => res.text())
-        .then(text => body.innerHTML += text)
+        .then(text => body.innerHTML = text)
         .catch(error => {
             body.innerHTML = "<p>Página indisponével</p>"
         });
@@ -68,7 +68,7 @@ const reciclar = () => {
 
     fetch(url)
         .then(res => res.text())
-        .then(text => body.innerHTML += text)
+        .then(text => body.innerHTML = text)
     //goUp(400)
 }
 
@@ -78,7 +78,7 @@ const horarios = () => {
 
     fetch(url)
         .then(res => res.text())
-        .then(text => body.innerHTML += text)
+        .then(text => body.innerHTML = text)
     //goUp(400)
 }
 
@@ -88,7 +88,7 @@ const doacao = () => {
 
     fetch(url)
         .then(res => res.text())
-        .then(text => body.innerHTML += text)
+        .then(text => body.innerHTML = text)
     //goUp(400)
 }
 
