@@ -47,6 +47,8 @@ const verif = () => {
     //goUp(400)
 } */
 
+// const login = () =>{}
+
 const inicio = async () => {
     const url = "pages/inicio/inicio.html",
         body = document.getElementById("corpo_index");
