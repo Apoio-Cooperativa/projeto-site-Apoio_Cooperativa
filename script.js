@@ -6,8 +6,8 @@ const delay = (ms) => {
     });
 };
 
-const goUp = async () => {
-    await delay(10);
+const goUp = async (t) => {
+    await delay(t);
     window.scrollTo({
         top: 0,
         behavior: 'smooth'
@@ -30,6 +30,6 @@ function verificarPosicaoRolagem() {
         setaAoTopo.style.pointerEvents = 'none'; // Desative a capacidade de clique quando invisível
     }
     setaAoTopo.addEventListener('click', () => {
-        goUp();
+        goUp(0);
     });
 }

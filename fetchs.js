@@ -44,15 +44,12 @@ const verif = () => {
         .catch(error => {
             body.innerHTML = "<p>Página indisponével</p>"
         });
-    goUp()
+    //goUp(400)
 } */
 
-const inicio = () => {
+const inicio = async () => {
     const url = "pages/inicio/inicio.html",
-        body = document.getElementById("corpo_index"),
-        css = `<link rel="stylesheet" href="pages/inicio/inicio.css">`
-
-    body.innerHTML = css
+        body = document.getElementById("corpo_index");
 
     fetch(url)
         .then(res => res.text())
@@ -60,46 +57,39 @@ const inicio = () => {
         .catch(error => {
             body.innerHTML = "<p>Página indisponével</p>"
         });
-    goUp()
+    //goUp(400)
 }
+
+// const adm = () =>{} 
 
 const reciclar = () => {
     const url = "pages/comoReciclar/comoReciclar.html",
-        body = document.getElementById("corpo_index"),
-        css = `<link rel="stylesheet" href="pages/comoReciclar/comoReciclar.css">`
-
-    body.innerHTML = css
+        body = document.getElementById("corpo_index");
 
     fetch(url)
         .then(res => res.text())
         .then(text => body.innerHTML += text)
-    goUp()
+    //goUp(400)
 }
 
 const horarios = () => {
     const url = "pages/horarios/horarios.html",
-        body = document.getElementById("corpo_index"),
-        css = `<link rel="stylesheet" href="pages/horarios/horarios.css">`
-
-    body.innerHTML = css;
+        body = document.getElementById("corpo_index");
 
     fetch(url)
         .then(res => res.text())
         .then(text => body.innerHTML += text)
-    goUp()
+    //goUp(400)
 }
 
 const doacao = () => {
     const url = "pages/doacao/doacao.html",
-        body = document.getElementById("corpo_index"),
-        css = `<link rel="stylesheet" href="pages/doacao/doacao.css">`
-
-    body.innerHTML = css
+        body = document.getElementById("corpo_index");
 
     fetch(url)
         .then(res => res.text())
         .then(text => body.innerHTML += text)
-    goUp()
+    //goUp(400)
 }
 
 const foot = () => {
