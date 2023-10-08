@@ -16,10 +16,7 @@ const renderPage = () => {
 
 const nav = () => {
     const url = "pages/navbar/navbar.html",
-        nav = document.getElementById("nav_index"),
-        css = `<link rel="stylesheet" href="pages/navbar/navbar.css">`
-
-    nav.innerHTML = css;
+        nav = document.getElementById("nav_index");
 
     fetch(url)
         .then(res => res.text())
@@ -96,10 +93,7 @@ const doacao = () => {
 
 const foot = () => {
     const url = "pages/footer/footer.html",
-        footer = document.getElementById("footer_index"),
-        css = `<link rel="stylesheet" href="pages/footer/footer.css">`
-
-    footer.innerHTML = css
+        footer = document.getElementById("footer_index");
 
     fetch(url)
         .then(res => res.text())
