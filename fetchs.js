@@ -47,6 +47,8 @@ const verif = () => {
 // const login = () =>{}
 
 const inicio = async () => {
+    window.location.hash = "#inicio";
+
     const url = "pages/inicio/inicio.html",
         body = document.getElementById("corpo_index");
 
