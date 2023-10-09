@@ -24,8 +24,8 @@ const nav = () => {
 }
 
 const verif = () => {
-    init()
     renderPage()
+    init()
 }
 
 /* const lost = () => {
