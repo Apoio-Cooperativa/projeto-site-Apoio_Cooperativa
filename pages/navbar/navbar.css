@@ -13,12 +13,12 @@
    }
 
    #a-logo {
-     text-decoration: none;
-     color: var(--color-texto-b);
+      height: 4rem;
+      width: 11rem;
+      background-color: var(--cor-base-3);
    }
 
    .logo_navbar {
-     background-color: var(--cor-base-2);
      grid-column: 1 / 2;
      height: 100%;
      margin-top: 0;
