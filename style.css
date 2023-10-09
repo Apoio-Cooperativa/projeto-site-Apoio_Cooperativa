@@ -1,8 +1,7 @@
 /* foundation framework */
 
 /* https://developer.mozilla.org/pt-BR/docs/Web/CSS/:not
-https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/blockquote
-https://codemyui.com/pure-css-material-quotation-cards/ */
+https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/blockquote*/
 
 :root {
   --cor-base-0: rgb(126, 217, 86);
@@ -18,6 +17,8 @@ https://codemyui.com/pure-css-material-quotation-cards/ */
   --cor-letras-b: rgb(0, 0, 0);
 
   --font: 'Inter', sans-serif;
+  --bold-text-900: 900;
+  --bold-text-700: 700;
 
   --margin-base: 10rem;
 }
@@ -70,4 +71,12 @@ section {
 
 .seta-ao-topo:hover {
   transform: scale(110%);
+}
+
+.bold_text_900 {
+  font-weight: var(--bold-text-900);
+}
+
+.bold_text_700 {
+  font-weight: var(--bold-text-700);
 }

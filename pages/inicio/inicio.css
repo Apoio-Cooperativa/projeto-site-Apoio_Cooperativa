@@ -39,10 +39,37 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
   }
 
   .content_sobre_inicio {
     font-size: .8rem;
+  }
+
+  .marked_text::before {
+    font-family: Georgia, serif;
+    content: "“";
+    position: absolute;
+    display: block;
+    font-size: 25em;
+    color: rgba(128, 128, 128, .3);
+    font-weight: normal;
+    top: -7rem;
+    left: -5rem;
+    text-align: justify;
+  }
+
+  .marked_text::after {
+    font-family: Georgia, serif;
+    content: "”";
+    position: absolute;
+    display: block;
+    font-size: 25em;
+    color: rgba(128, 128, 128, .3);
+    font-weight: normal;
+    top: -3rem;
+    right: -5rem;
+    text-align: justify;
   }
   
   .btn_sobre_inicio {
@@ -52,10 +79,11 @@
     border-radius: 5px 15px 5px 15px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    width: 10rem;
+    width: auto;
     font-weight: bold;
     font-size: 1rem;
     margin-top: .5rem;
+    white-space: nowrap;
   }
   
   .btn_sobre_inicio:hover {
@@ -71,13 +99,14 @@
   
   .titulo_principal_inicio {
     font-size: 3rem;
-    font-style: normal;
     font-weight: 300;
     line-height: 50.4px;
     letter-spacing: -1.68px;
     text-transform: uppercase;
     margin-top: 2rem;
     position: relative;
+    margin: 0 65% 2rem 0;
+    text-align: left;
   }
 
   .titulo_principal_inicio::before {
@@ -103,7 +132,7 @@
   }
   
   .texto_principal_inicio:last-of-type {
-    margin: 0 70% 2rem 0;
+    margin: 0 65% 2rem 0;
   }
   
   /*-------------section-perguntas-inicio-------------*/
