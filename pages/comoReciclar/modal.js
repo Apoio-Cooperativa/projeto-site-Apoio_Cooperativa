@@ -17,27 +17,36 @@ const closeModal = () => {
     foto.src = ""
 }
 
-const card = () => {/*aqui vai ficar a automatização do card*/
-
+const card = () => {
     const site = new XMLHttpRequest();
 
     site.addEventListener("load", function () {
-        if (site.status === 200) { // Verificar se a solicitação foi bem-sucedida (status 200 OK)
+        if (site.status === 200) {
             const dados = JSON.parse(site.responseText);
+            const cardRows = document.querySelectorAll(".card_row_reciclar");
+            const list = dados.card;
+            const listSize = list.titulo.length;//8
 
-            const cardRows = [] = document.querySelectorAll(".card_row_reciclar");
+            let qtdCard = 0; //variavel que conta a posição do card
 
-            for (let i = 0; i < 2; i++) {
-                
+            for (let i = 0; i < cardRows.length; i++) {//2
+                let cardsHTML = '';
+
+                for (let j = 0; j < listSize / 2; j++) {//4
+                    if (qtdCard < listSize) {//8
+                        cardsHTML += `
+                            <div class="card_reciclar">
+                                <h2>${list.titulo[qtdCard]}</h2>
+                                <p>${list.texto[qtdCard]}</p>
+                                <button class="modal-trigger" onclick="modal(${qtdCard})">Ver Detalhes</button>
+                            </div>
+                        `;
+                        qtdCard++;
+                    }
+                }
+
+                cardRows[i].innerHTML = cardsHTML;
             }
-            alert(cardRows[0].innerHTML)
-            alert(cardRows[1].innerHTML)
-            // const cardRow2 = document.getElementById("paragrafo-reciclar");
-            // const foto = document.getElementById("foto-reciclar");
-
-            // titulo.innerHTML = dados.conteudo.titulo[id]
-            // paragrafo.innerHTML = dados.conteudo.texto[id]
-            // foto.src = dados.conteudo.img[id]
         } else {
             console.error("Erro ao carregar o arquivo JSON");
         }
@@ -45,10 +54,7 @@ const card = () => {/*aqui vai ficar a automatização do card*/
 
     site.open("GET", 'pages/comoReciclar/comoReciclar.json');
     site.send();
-
-    /* fim */
-}
-
+};
 
 const modal = async (id) => {
 
