@@ -17,7 +17,9 @@ const closeModal = () => {
     foto.src = ""
 }
 
-const card = () => {
+const card = async () => {
+    if (window.location.hash !== "#reciclar") return
+
     const site = new XMLHttpRequest();
 
     site.addEventListener("load", function () {
@@ -55,7 +57,6 @@ const card = () => {
     site.open("GET", 'pages/comoReciclar/comoReciclar.json');
     site.send();
 };
-
 const modal = async (id) => {
 
     const site = new XMLHttpRequest();
@@ -84,4 +85,14 @@ const modal = async (id) => {
     site.send();
 
     //await delay(160);
+}
+
+const cardIsSet = async () => {
+    while (true) {
+        if (document.getElementsByClassName('card_container_reciclar')) {
+            await delay(100);
+            await card();
+            break;
+        }
+    }
 }

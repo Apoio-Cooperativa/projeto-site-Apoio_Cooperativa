@@ -1,6 +1,6 @@
 let isAdmin;
 
-const delay = (ms) => {
+const delay = async (ms) => {
     return new Promise((resolve) => {
         setTimeout(resolve, ms);
     });
@@ -16,10 +16,8 @@ const goUp = async (t) => {
 
 //Seta:
 
-window.addEventListener('scroll', verificarPosicaoRolagem);
-// Função para verificar a posição de rolagem e mostrar/ocultar a seta
-function verificarPosicaoRolagem() {
-    const setaAoTopo = document.querySelector('.seta-ao-topo');
+const verificarPosicaoRolagem = () => {
+    const setaAoTopo = document.getElementById('topo');
     const limiteExibicao = 0; // Define a altura da página em pixels para mostrar a seta
 
     if (window.scrollY > limiteExibicao) {
@@ -33,3 +31,5 @@ function verificarPosicaoRolagem() {
         goUp(0);
     });
 }
+
+window.addEventListener('scroll', verificarPosicaoRolagem);

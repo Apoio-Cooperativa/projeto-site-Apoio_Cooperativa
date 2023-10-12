@@ -1,17 +1,18 @@
 const init = () => window.addEventListener('hashchange', renderPage);
 const validateHash = (hash) => hash === "" ? 'inicio' : hash.replace('#', '');
 
-const renderPage = () => {
+const renderPage = async () => {
     const page = validateHash(window.location.hash);
     switch (page) {
         case ("inicio"): inicio(); break
-        case ("reciclar"): reciclar(); break
+        case ("reciclar"): await reciclar(); await cardIsSet(); break
         case ("doacao"): doacao(); break
         case ("horarios"): horarios(); break
         case ("adm"): adm(); break
         case ("login"): login(); break
         default: inicio() //lost();
     }
+    await goUp()
 }
 
 const nav = () => {
@@ -41,7 +42,7 @@ const verif = () => {
         .catch(error => {
             body.innerHTML = "<p>Página indisponével</p>"
         });
-    //goUp(400)
+    
 } */
 
 // const login = () =>{}
@@ -58,19 +59,17 @@ const inicio = async () => {
         .catch(error => {
             body.innerHTML = "<p>Página indisponével</p>"
         });
-    //goUp(400)
 }
 
 // const adm = () =>{} 
 
-const reciclar = () => {
+const reciclar = async () => {
     const url = "pages/comoReciclar/comoReciclar.html",
         body = document.getElementById("corpo_index");
 
     fetch(url)
         .then(res => res.text())
         .then(text => body.innerHTML = text)
-    //goUp(400)
 }
 
 const horarios = () => {
@@ -80,7 +79,6 @@ const horarios = () => {
     fetch(url)
         .then(res => res.text())
         .then(text => body.innerHTML = text)
-    //goUp(400)
 }
 
 const doacao = () => {
@@ -90,7 +88,6 @@ const doacao = () => {
     fetch(url)
         .then(res => res.text())
         .then(text => body.innerHTML = text)
-    //goUp(400)
 }
 
 const foot = () => {
