@@ -12,7 +12,7 @@ const renderPage = async () => {
         case ("login"): login(); break
         default: inicio() //lost();
     }
-    await goUp()
+    await goUp(50)
 }
 
 const nav = () => {
