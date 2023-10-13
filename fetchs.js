@@ -4,15 +4,15 @@ const validateHash = (hash) => hash === "" ? 'inicio' : hash.replace('#', '');
 const renderPage = async () => {
     const page = validateHash(window.location.hash);
     switch (page) {
-        case ("inicio"): inicio(); break
-        case ("reciclar"): reciclar(); break
-        case ("doacao"): doacao(); break
-        case ("horarios"): horarios(); break
-        case ("adm"): adm(); break
-        case ("login"): login(); break
+        case ("inicio"): await inicio(); break
+        case ("reciclar"): await reciclar(); break
+        case ("doacao"): await doacao(); break
+        case ("horarios"): await horarios(); break
+        case ("adm"): await adm(); break
+        case ("login"): await login(); break
         default: /* inicio() */ lost();
     }
-    goUp()
+    await goUp()
 }
 
 const nav = () => {
@@ -69,13 +69,14 @@ const reciclar = async () => {
 }
 
 const horarios = async () => {
-    await goUp(300)
     const url = "pages/horarios/horarios.html",
         body = document.getElementById("corpo_index");
 
     fetch(url)
         .then(res => res.text())
         .then(text => body.innerHTML = text)
+
+    // await goUp()
 }
 
 const doacao = async () => {
