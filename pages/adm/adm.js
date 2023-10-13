@@ -1,1 +1,1 @@
-isAdmin = true
+let isAdmin;
