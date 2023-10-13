@@ -9,7 +9,7 @@
 .sidebar {
     position: fixed;
     left: 0;
-    width: 15.6rem;
+    width: 15.26rem;
     height: 100%;
     background: #042331;
     color: white;
@@ -34,9 +34,11 @@
     padding-left: 2.5rem;
     box-sizing: border-box;
     border-top: 1px solid rgb(255,255,255,.1);
+    border-bottom: 1px solid black;
+    transition: .3s;
 }
-ul li:hover{
-    padding-left:2.5rem;
+ul li:hover a{
+    padding-left: 60px;
 
 }
 
