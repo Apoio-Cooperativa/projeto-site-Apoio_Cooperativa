@@ -10,7 +10,7 @@ const renderPage = async () => {
         case ("horarios"): horarios(); break
         case ("adm"): adm(); break
         case ("login"): login(); break
-        default: inicio() //lost();
+        default: /* inicio() */ lost();
     }
     await goUp(50)
 }
@@ -29,12 +29,9 @@ const verif = () => {
     init()
 }
 
-/* const lost = () => {
-    const url = "pages/inicio/inicio.html",
-        body = document.getElementById("corpo_index"),
-        css = `<link rel="stylesheet" href="pages/inicio/inicio.css">`
-
-    body.innerHTML = css
+const lost = () => {
+    const url = "pages/lost/lost.html",
+        body = document.getElementById("corpo_index");
 
     fetch(url)
         .then(res => res.text())
@@ -42,8 +39,7 @@ const verif = () => {
         .catch(error => {
             body.innerHTML = "<p>Página indisponével</p>"
         });
-    
-} */
+}
 
 // const login = () =>{}
 
