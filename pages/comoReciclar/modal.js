@@ -33,12 +33,12 @@ const card = async () => {
 
             for (let i = 0; i < cardRows.length; i++) {//2
                 let cardsHTML = '';
-
                 for (let j = 0; j < listSize / 2; j++) {//4
                     if (qtdCard < listSize) {//8
+                        let idTitulo = list.titulo[qtdCard].toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/ /g, '-');
                         cardsHTML += `
-                            <div class="card_reciclar">
-                                <h2>${list.titulo[qtdCard]}</h2>
+                            <div class="card_reciclar" id="card-${idTitulo}">
+                                <h2 id="titulo-${idTitulo}">${list.titulo[qtdCard]}</h2>
                                 <p>${list.texto[qtdCard]}</p>
                                 <button class="modal-trigger" onclick="modal(${qtdCard})">Ver Detalhes</button>
                             </div>
@@ -58,7 +58,7 @@ const card = async () => {
     site.send();
 };
 const modal = async (id) => {
-
+/* 
     const site = new XMLHttpRequest();
 
     site.addEventListener("load", function () {
@@ -71,12 +71,12 @@ const modal = async (id) => {
 
             titulo.innerHTML = dados.conteudo.titulo[id]
             paragrafo.innerHTML = dados.conteudo.texto[id]
-            foto.src = dados.conteudo.img[id]
+            foto.src = dados.conteudo.img[id] */
 
-            const modal = document.querySelector('.modal_reciclar');
+            const modal = document.getElementById(`modal_reciclar${id}`);
             modal.style.display = 'flex';
 
-        } else {
+        /* } else {
             console.error("Erro ao carregar o arquivo JSON");
         }
     });
@@ -84,15 +84,5 @@ const modal = async (id) => {
     site.open("GET", 'pages/comoReciclar/comoReciclar.json');
     site.send();
 
-    //await delay(160);
-}
-
-const cardIsSet = async () => {
-    while (true) {
-        if (document.getElementsByClassName('card_container_reciclar')) {
-            await delay(100);
-            await card();
-            break;
-        }
-    }
+    //await delay(160); */
 }

@@ -5,7 +5,7 @@ const renderPage = async () => {
     const page = validateHash(window.location.hash);
     switch (page) {
         case ("inicio"): inicio(); break
-        case ("reciclar"): await reciclar(); await cardIsSet(); break
+        case ("reciclar"): reciclar(); break
         case ("doacao"): doacao(); break
         case ("horarios"): horarios(); break
         case ("adm"): adm(); break
