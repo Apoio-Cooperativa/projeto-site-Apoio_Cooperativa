@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    width: 15.6rem;
+    height: 100%;
+    background: #042331;
+    color: white;
+}
+
+.sidebar header {
+    font-size: 1.3rem;
+    color: white;
+    text-align: center;
+    line-height: 4.3rem;
+    background: #063146;
+    user-select: none;
+}
+
+.sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 4.06rem;
+    font-size: 1.2rem;
+    color: white;
+    padding-left: 2.5rem;
+    box-sizing: border-box;
+    border-top: 1px solid rgb(255,255,255,.1);
+}
+ul li:hover{
+    padding-left:2.5rem;
+
+}
+
+
