@@ -12,7 +12,7 @@ const renderPage = async () => {
         case ("login"): login(); break
         default: /* inicio() */ lost();
     }
-    await goUp(50)
+    goUp()
 }
 
 const nav = () => {
@@ -68,7 +68,8 @@ const reciclar = async () => {
         .then(text => body.innerHTML = text)
 }
 
-const horarios = () => {
+const horarios = async () => {
+    await goUp(300)
     const url = "pages/horarios/horarios.html",
         body = document.getElementById("corpo_index");
 
@@ -77,7 +78,7 @@ const horarios = () => {
         .then(text => body.innerHTML = text)
 }
 
-const doacao = () => {
+const doacao = async () => {
     const url = "pages/doacao/doacao.html",
         body = document.getElementById("corpo_index");
 
