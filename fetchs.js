@@ -37,7 +37,7 @@ const lost = () => {
         .then(res => res.text())
         .then(text => body.innerHTML = text)
         .catch(error => {
-            body.innerHTML = "<p>Página indisponével</p>"
+            body.innerHTML = "<p>Página indisponível</p>"
         });
 }
 
@@ -66,6 +66,9 @@ const reciclar = async () => {
     fetch(url)
         .then(res => res.text())
         .then(text => body.innerHTML = text)
+        .catch(error => {
+            body.innerHTML = "<p>Página indisponével</p>"
+        });
 }
 
 const horarios = async () => {
@@ -75,6 +78,9 @@ const horarios = async () => {
     fetch(url)
         .then(res => res.text())
         .then(text => body.innerHTML = text)
+        .catch(error => {
+            body.innerHTML = "<p>Página indisponével</p>"
+        });
 
     // await goUp()
 }
@@ -86,6 +92,9 @@ const doacao = async () => {
     fetch(url)
         .then(res => res.text())
         .then(text => body.innerHTML = text)
+        .catch(error => {
+            body.innerHTML = "<p>Página indisponével</p>"
+        });
 }
 
 const foot = () => {
