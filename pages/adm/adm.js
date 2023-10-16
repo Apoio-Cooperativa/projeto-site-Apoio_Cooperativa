@@ -1,5 +1,5 @@
 const adm = async () => {
-    const url = "admPainel.html",
+    const url = "painelAdm/admPainel.html",
         body = document.getElementById("corpo_adm");
 
     fetch(url)
