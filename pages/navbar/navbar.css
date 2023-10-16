@@ -9,7 +9,8 @@
      display: grid;
      grid-template-columns: .2fr 1fr .5fr .25fr;
      background: whitesmoke;
-     font-weight: bold;
+     word-wrap: none;
+     white-space: nowrap;
    }
 
    #a-logo {
@@ -50,15 +51,16 @@
      font-family: var(--font);
      text-transform: uppercase;
      cursor: pointer;
+     font-weight: var(--weight-text-300);
    }
 
    nav a::before {
      content: '';
      display: block;
-     height: 2px;
+     height: 1px;
      background: var(--cor-base-3);
      position: absolute;
-     top: 1.2em;
+     top: 1.3em;
      left: 0;
      right: 0;
      transform: scale(0, 1);

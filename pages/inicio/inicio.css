@@ -6,7 +6,7 @@
     justify-content: flex-start;
     align-items: flex-end;
     background: var(--cor-base-4);
-    color: white;
+    color: var(--cor-letras-w);
     position: relative;
     overflow: hidden;
     min-height: calc(100svh - 3rem);
@@ -14,23 +14,19 @@
   
   .video_background_inicio {
     position: absolute;
-    z-index: -1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    z-index: 0;
     min-height: 100%;
     min-width: 100%;
-  }
-  
-  .container_background_inicio h1 {
-    font-family: "Source Code Pro", monospace;
-    font-size: clamp(3rem, 8vw, 5rem);
-  }
+    display: block;
+    }
   
   .texto_background_inicio {
     transition: opacity 400ms ease-in-out;
     margin-bottom: 10rem;
     margin-left: var(--margin-base);
+    font-size: clamp(4rem, 5vw, 10rem);
+    z-index: 2;
+    font-weight: var(--weight-text-200);
   }
 
   /*-------------section-sobre-inicio-------------*/
@@ -46,16 +42,20 @@
     font-size: .8rem;
   }
 
+  .marked_text {
+    font-size: 1.3rem;
+  }
+
   .marked_text::before {
     font-family: Georgia, serif;
     content: "“";
     position: absolute;
     display: block;
     font-size: 25em;
-    color: rgba(128, 128, 128, .3);
+    color: rgba(128, 128, 128, .2);
     font-weight: normal;
-    top: -7rem;
-    left: -5rem;
+    top: -8rem;
+    left: -10rem;
     text-align: justify;
   }
 
@@ -65,25 +65,11 @@
     position: absolute;
     display: block;
     font-size: 25em;
-    color: rgba(128, 128, 128, .3);
+    color: rgba(128, 128, 128, .2);
     font-weight: normal;
-    top: -3rem;
-    right: -5rem;
+    top: -2rem;
+    right: -10rem;
     text-align: justify;
-  }
-  
-  .btn_sobre_inicio {
-    background-color: var(--cor-base-3);
-    color: var(--cor-letras-w);
-    padding: 1rem;
-    border-radius: 5px 15px 5px 15px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    width: auto;
-    font-weight: bold;
-    font-size: 1rem;
-    margin-top: .5rem;
-    white-space: nowrap;
   }
   
   .btn_sobre_inicio:hover {
@@ -288,7 +274,7 @@
   .texto_localizacao_inicio h2 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
-    font-weight: var(--weight-text-600);
+    font-weight: var(--weight-text-700);
   }
   
   .texto_localizacao_inicio p {
