@@ -8,7 +8,7 @@ const renderPage = async () => {
         case ("reciclar"): await reciclar(); break
         case ("doacao"): await doacao(); break
         case ("horarios"): await horarios(); break
-        case ("adm"): await adm(); break
+        // case ("adm"): await adm(); break
         case ("login"): await login(); break
         default: /* inicio() */ lost();
     }
