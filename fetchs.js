@@ -4,15 +4,15 @@ const validateHash = (hash) => hash === "" ? 'inicio' : hash.replace('#', '');
 const renderPage = async () => {
     const page = validateHash(window.location.hash);
     switch (page) {
-        case ("inicio"): await inicio(); break
-        case ("reciclar"): await reciclar(); break
-        case ("doacao"): await doacao(); break
-        case ("horarios"): await horarios(); break
-        // case ("adm"): await adm(); break
-        case ("login"): await login(); break
+        case ("inicio"): inicio(); break
+        case ("reciclar"): reciclar(); break
+        case ("doacao"): doacao(); break
+        case ("horarios"): horarios(); break
+        // case ("adm"): adm(); break
+        case ("login"): login(); break
         default: /* inicio() */ lost();
     }
-    await goUp()
+    await goUp(100)
 }
 
 const nav = () => {
@@ -21,7 +21,7 @@ const nav = () => {
 
     fetch(url)
         .then(res => res.text())
-        .then(text => nav.innerHTML += text)
+        .then(text => nav.innerHTML = text)
 }
 
 const verif = () => {
@@ -37,13 +37,18 @@ const lost = () => {
         .then(res => res.text())
         .then(text => body.innerHTML = text)
         .catch(error => {
-            body.innerHTML = "<p>Página indisponével</p>"
+            errorOnLoad()
         });
+}
+
+const errorOnLoad = () => {
+    const body = document.getElementById("corpo_index");
+    body.innerHTML = "<p>Página indisponível</p>"
 }
 
 // const login = () =>{}
 
-const inicio = async () => {
+const inicio = () => {
     window.location.hash = "#inicio";
 
     const url = "pages/inicio/inicio.html",
@@ -53,39 +58,46 @@ const inicio = async () => {
         .then(res => res.text())
         .then(text => body.innerHTML = text)
         .catch(error => {
-            body.innerHTML = "<p>Página indisponével</p>"
+            errorOnLoad()
         });
 }
 
 // const adm = () =>{} 
 
-const reciclar = async () => {
+const reciclar = () => {
     const url = "pages/comoReciclar/comoReciclar.html",
         body = document.getElementById("corpo_index");
 
     fetch(url)
         .then(res => res.text())
         .then(text => body.innerHTML = text)
+        .catch(error => {
+            errorOnLoad()
+        });
 }
 
-const horarios = async () => {
+const horarios = () => {
     const url = "pages/horarios/horarios.html",
         body = document.getElementById("corpo_index");
 
     fetch(url)
         .then(res => res.text())
         .then(text => body.innerHTML = text)
-
-    // await goUp()
+        .catch(error => {
+            errorOnLoad()
+        });
 }
 
-const doacao = async () => {
+const doacao = () => {
     const url = "pages/doacao/doacao.html",
         body = document.getElementById("corpo_index");
 
     fetch(url)
         .then(res => res.text())
         .then(text => body.innerHTML = text)
+        .catch(error => {
+            errorOnLoad()
+        });
 }
 
 const foot = () => {
@@ -94,5 +106,5 @@ const foot = () => {
 
     fetch(url)
         .then(res => res.text())
-        .then(text => footer.innerHTML += text)
+        .then(text => footer.innerHTML = text)
 }
