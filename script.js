@@ -5,7 +5,7 @@ const delay = async (ms) => {
 };
 
 const goUp = async (t) => {
-    // await delay(t);
+    await delay(t);
     window.scrollTo({
         top: 0,
         behavior: 'smooth'
