@@ -99,10 +99,9 @@
   
   .titulo_principal_inicio {
     font-size: 3rem;
-    font-weight: 300;
+    font-weight: var(--weight-text-200);
     line-height: 50.4px;
     letter-spacing: -1.68px;
-    text-transform: uppercase;
     margin-top: 2rem;
     position: relative;
     margin: 0 65% 2rem 0;
@@ -117,6 +116,7 @@
     width: 10.5rem;
     background: var(--cor-letras-w);
     display: block;
+    font-weight: var(--weight-text-200) !important;
   }
   
   .texto_principal_inicio {
@@ -208,7 +208,7 @@
 .card_content_inicio h2 {
     color: var(--cor-base-2);
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: var(--weight-text-700);
     text-transform: uppercase;
     margin: 2rem 1rem .5rem 1rem;
 }
@@ -218,7 +218,7 @@
     margin: 0.5rem 1rem;
     font-size: 0.9rem;
     text-align: left;
-    font-weight: bold;
+    font-weight: var(--weight-text-300);
 }
   
   .card_content_inicio button {
@@ -288,11 +288,13 @@
   .texto_localizacao_inicio h2 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
+    font-weight: var(--weight-text-600);
   }
   
   .texto_localizacao_inicio p {
     font-size: 1rem;
     text-align: left;
+    font-weight: var(--weight-text-300);
   }
   
   .mapa_inicio {

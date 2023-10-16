@@ -35,7 +35,7 @@ https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/blockquote*/
 *::before,
 *::after {
   box-sizing: border-box;
-  font-weight: var(--weight-text-400);
+  font-weight: var(--weight-text-200);
 }
 
 body {
