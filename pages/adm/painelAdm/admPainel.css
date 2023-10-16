@@ -1,0 +1,68 @@
+:root {
+    --cor-base-0: rgb(126, 217, 86);
+    --cor-base-1: rgb(52, 89, 37);
+    --cor-base-2: rgb(176, 223, 155);
+    --cor-base-3: rgb(71, 89, 63);
+    --cor-base-4: rgb(96, 166, 67);
+    --primary-color: rgb(4, 82, 20);
+    --cor-fundo: rgb(255, 255, 255);
+    --cor-fundo-subir: rgb(27, 61, 12);
+  
+    --cor-letras-w: rgb(255, 255, 255);
+    --cor-letras-b: rgb(0, 0, 0);
+  
+    --font: 'Inter', sans-serif;
+    --bold-text-900: 900;
+    --bold-text-700: 700;
+  
+    --margin-base: 10rem;
+  }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: var(--font);
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    width: 15.26rem;
+    height: 100%;
+    background: var(--cor-fundo-subir);
+    color: white;
+}
+
+.sidebar header {
+    font-size: 1.3rem;
+    color: white;
+    text-align: center;
+    line-height: 4.3rem;
+    background: #0c5d10;
+    user-select: none;
+}
+
+.sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 4.06rem;
+    font-size: 1.2rem;
+    color: white;
+    padding-left: 2.5rem;
+    box-sizing: border-box;
+    border-top: 1px solid rgb(27, 61, 12. 1);
+    border-bottom: 1px solid rgba(0, 85, 24, 0.811);
+    transition: .3s;
+}
+ul li:hover a{
+    padding-left: 60px;
+
+}
+
+
+
+
