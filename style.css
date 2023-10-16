@@ -118,15 +118,3 @@ section {
 .weight_text_100 {
   font-weight: var(--weight-text-100);
 }
-
-button:hover {
-  animation: treme .1s;
-}
-
-@keyframes treme {
-  0% {margin-left: 0;}
-  25% {margin-left: 5px;}
-  50% {margin-left: 0;}
-  75% {margin-left: -5px;}
-  100% {margin-left: 0;}
-}
