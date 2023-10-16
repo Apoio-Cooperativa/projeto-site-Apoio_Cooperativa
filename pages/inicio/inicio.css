@@ -44,6 +44,7 @@
 
   .marked_text {
     font-size: 1.3rem;
+    position: relative;
   }
 
   .marked_text::before {
@@ -51,12 +52,11 @@
     content: "“";
     position: absolute;
     display: block;
-    font-size: 25em;
-    color: rgba(128, 128, 128, .2);
+    font-size: 30em;
+    color: rgba(128, 128, 128, .1);
     font-weight: normal;
-    top: -8rem;
+    top: -12rem;
     left: -10rem;
-    text-align: justify;
   }
 
   .marked_text::after {
@@ -64,12 +64,11 @@
     content: "”";
     position: absolute;
     display: block;
-    font-size: 25em;
-    color: rgba(128, 128, 128, .2);
+    font-size: 30em;
+    color: rgba(128, 128, 128, .1);
     font-weight: normal;
-    top: -2rem;
+    top: -8rem;
     right: -10rem;
-    text-align: justify;
   }
   
   .btn_sobre_inicio:hover {
@@ -98,11 +97,10 @@
     content: "";
     position: absolute;
     top: -1.5rem;
-    height: 1.5px;
+    height: 1px; 
     width: 10.5rem;
     background: var(--cor-letras-w);
     display: block;
-    font-weight: var(--weight-text-200) !important;
   }
   
   .texto_principal_inicio {
@@ -137,7 +135,7 @@
     font-family: Inter;
     font-size: 47px;
     font-style: normal;
-    font-weight: 300;
+    font-weight: var(--weight-text-300);
     line-height: 52.8px; /* 112.34% */
     letter-spacing: -1.68px;
     text-transform: uppercase;
@@ -148,7 +146,7 @@
     justify-content: center;
     gap: 2rem;
     margin-top: 3rem;
-}
+  }
   
 .card_inicio {
   margin-top: 5rem;
@@ -194,7 +192,7 @@
 .card_content_inicio h2 {
     color: var(--cor-base-2);
     font-size: 1.5rem;
-    font-weight: var(--weight-text-700);
+    font-weight: var(--weight-text-600);
     text-transform: uppercase;
     margin: 2rem 1rem .5rem 1rem;
 }
@@ -204,7 +202,7 @@
     margin: 0.5rem 1rem;
     font-size: 0.9rem;
     text-align: left;
-    font-weight: var(--weight-text-300);
+    font-weight: var(--weight-text-400);
 }
   
   .card_content_inicio button {
@@ -274,7 +272,7 @@
   .texto_localizacao_inicio h2 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
-    font-weight: var(--weight-text-700);
+    font-weight: var(--weight-text-800);
   }
   
   .texto_localizacao_inicio p {
