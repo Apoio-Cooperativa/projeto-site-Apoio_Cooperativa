@@ -59,7 +59,6 @@ footer {
 .copyright_footer {
   display: flex;
   justify-content: space-between;
-  gap: 2rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -68,9 +67,14 @@ footer {
     gap: 2rem;
     justify-items: left;
   }
+
   .cooperativa_footer {
     gap: 1rem;
     flex-direction: column;
+  }
+  
+  .copyright_footer {
+    gap: 5rem;
   }
 }
 
