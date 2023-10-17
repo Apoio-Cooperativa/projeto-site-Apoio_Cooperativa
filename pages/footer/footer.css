@@ -79,15 +79,13 @@ footer {
   }
   
   .copyright_footer {
-    gap: 5rem;
+    gap: 2rem;
+    flex-direction: column;
   }
 }
 
 @media screen and (max-width: 426px) {
   .conteudo_footer {
     grid-template-columns: repeat(1, 1fr);
-  }
-  .copyright_footer {
-    flex-direction: column;
   }
 }
