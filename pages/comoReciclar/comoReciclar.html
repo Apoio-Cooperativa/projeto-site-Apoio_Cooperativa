@@ -1,14 +1,39 @@
 <section class="card_container_reciclar">
     <div class="card_row_reciclar" id="row-reciclar">
 
-        <!-- Modal e Card 1 -->
-        <div class="card_reciclar">
+        <!-- Card 1 -->
+        <div class="card_reciclar card_1 " id="card-1">
             <h2>Papel</h2>
             <p>Aprenda como reciclar papel, entendendo quais são as melhores formas de descarte e entendendo qual é o
                 papel recomendado para descarte reciclável e qual material não é recomendado descartar.</p>
             <button class="modal-trigger" onclick="modal(0)">Ver Detalhes</button>
         </div>
-        <div class="modal_reciclar" id="modal-1">
+
+        <!-- Card 2 -->
+        <div class="card_reciclar card_2" id="card-2">
+            <h2>Vidro</h2>
+            <p>colocar texto de vidro aqui</p>
+            <button class="modal-trigger" onclick="modal(1)">Ver Detalhes</button>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card_reciclar card_3" id="card-3">
+            <h2>Plástico</h2>
+            <p>colocar texto de plastico aqui</p>
+            <button class="modal-trigger" onclick="modal(2)">Ver Detalhes</button>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card_reciclar card_4" id="card-4">
+            <h2>Metal</h2>
+            <p>colocar texto de metal aqui</p>
+            <button class="modal-trigger" onclick="modal(3)">Ver Detalhes</button>
+        </div>
+    </div>
+
+    <div class="informacoes_cards_reciclar">
+
+        <div class="modal_cards_reciclar" id="modal-1">
             <div class="modal_content_reciclar">
                 <h2 class="modal_title_reciclar" id="titulo-reciclar"><span id='txt-papel'>PAPEL</span>, COMO RECICLAR?
                 </h2>
@@ -27,13 +52,7 @@
             </div>
         </div>
 
-        <!-- Modal e Card 2 -->
-        <div class="card_reciclar">
-            <h2>Vidro</h2>
-            <p>colocar texto de vidro aqui</p>
-            <button class="modal-trigger" onclick="modal(1)">Ver Detalhes</button>
-        </div>
-        <div class="modal_reciclar" id="modal-2">
+        <div class="modal_cards_reciclar " id="modal-2">
             <div class="modal_content_reciclar">
                 <h2 class="modal_title_reciclar" id="titulo-reciclar"><span id='txt-vidro'>VIDRO</span>, COMO RECICLAR?
                 </h2>
@@ -52,13 +71,7 @@
             </div>
         </div>
 
-        <!-- Modal e Card 3 -->
-        <div class="card_reciclar">
-            <h2>Plástico</h2>
-            <p>colocar texto de plastico aqui</p>
-            <button class="modal-trigger" onclick="modal(2)">Ver Detalhes</button>
-        </div>
-        <div class="modal_reciclar" id="modal-3">
+        <div class="modal_cards_reciclar" id="modal-3">
             <div class="modal_content_reciclar">
                 <h2 class="modal_title_reciclar" id="titulo-reciclar"><span id='txt-plastico'>PLÁSTICO</span>, COMO
                     RECICLAR?</h2>
@@ -77,13 +90,7 @@
             </div>
         </div>
 
-        <!-- Modal e Card 4 -->
-        <div class="card_reciclar">
-            <h2>Metal</h2>
-            <p>colocar texto de metal aqui</p>
-            <button class="modal-trigger" onclick="modal(3)">Ver Detalhes</button>
-        </div>
-        <div class="modal_reciclar" id="modal-4">
+        <div class="modal_cards_reciclar" id="modal-4">
             <div class="modal_content_reciclar">
                 <h2 class="modal_title_reciclar" id="titulo-reciclar"><span id='txt-metal'>METAL</span>, COMO RECICLAR?</h2>
                 <p class="modal_text_reciclar" id="paragrafo-reciclar">Cor: amarelo
@@ -97,17 +104,8 @@
                 <button class="modal_close_reciclar" onclick="closeModal()">Fechar</button>
             </div>
         </div>
-    </div>
 
-    <div class="card_row_reciclar" id="row-reciclar2">
-
-        <!-- Modal e Card 5 -->
-        <div class="card_reciclar">
-            <h2>Orgânico</h2>
-            <p>Texto do Orgânico</p>
-            <button class="modal-trigger" onclick="modal(4)">Ver Detalhes</button>
-        </div>
-        <div class="modal_reciclar" id="modal-5">
+        <div class="modal_cards_reciclar" id="modal-5">
             <div class="modal_content_reciclar">
                 <h2 class="modal_title_reciclar" id="titulo-reciclar"><span id='txt-organico'>ORGÂNICO</span>, COMO
                     RECICLAR?</h2>
@@ -127,13 +125,7 @@
             </div>
         </div>
 
-        <!-- Modal e Card 6 -->
-        <div class="card_reciclar">
-            <h2>Pilhas e baterias</h2>
-            <p>Texto de Pilhas e baterias</p>
-            <button class="modal-trigger" onclick="modal(5)">Ver Detalhes</button>
-        </div>
-        <div class="modal_reciclar" id="modal-6">
+        <div class="modal_cards_reciclar" id="modal-6">
             <div class="modal_content_reciclar">
                 <h2 class="modal_title_reciclar" id="titulo-reciclar"><span id='txt-pilhas-e-baterias'>PILHAS E
                         BATERIAS</span>, COMO RECICLAR?</h2>
@@ -150,13 +142,7 @@
             </div>
         </div>
 
-        <!-- Modal e Card 7 -->
-        <div class="card_reciclar">
-            <h2>Não recicláveis</h2>
-            <p>Texto dos não recicláveis</p>
-            <button class="modal-trigger" onclick="modal(6)">Ver Detalhes</button>
-        </div>
-        <div class="modal_reciclar" id="modal-7">
+        <div class="modal_cards_reciclar" id="modal-7">
             <div class="modal_content_reciclar">
                 <h2 class="modal_title_reciclar" id="titulo-reciclar"><span id='txt-nao-reciclaveis'>NÃO
                         RECICLÁVEIS</span>, COMO RECICLAR?</h2>
@@ -170,14 +156,8 @@
                 <button class="modal_close_reciclar" onclick="closeModal()">Fechar</button>
             </div>
         </div>
-        
-        <!-- Modal e Card 8 -->
-        <div class="card_reciclar">
-            <h2>Madeira</h2>
-            <p>Texto da Madeira</p>
-            <button class="modal-trigger" onclick="modal(7)">Ver Detalhes</button>
-        </div>
-        <div class="modal_reciclar" id="modal-8">
+
+        <div class="modal_cards_reciclar" id="modal-8">
             <div class="modal_content_reciclar">
                 <h2 class="modal_title_reciclar" id="titulo-reciclar"><span id='txt-madeira'>MADEIRA</span>, COMO
                     RECICLAR?</h2>
@@ -185,6 +165,37 @@
                 <img src="" alt="" class="modal_image_reciclar" id="foto-reciclar" alt="sem foto">
                 <button class="modal_close_reciclar" onclick="closeModal()">Fechar</button>
             </div>
+        </div>
+    </div>
+
+    <div class="card_row_reciclar" id="row-reciclar2">
+
+        <!-- Card 5 -->
+        <div class="card_reciclar card_5" id="card-5">
+            <h2>Orgânico</h2>
+            <p>Texto do Orgânico</p>
+            <button class="modal-trigger" onclick="modal(4)">Ver Detalhes</button>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card_reciclar card_6" id="card-6">
+            <h2>Pilhas e baterias</h2>
+            <p>Texto de Pilhas e baterias</p>
+            <button class="modal-trigger" onclick="modal(5)">Ver Detalhes</button>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="card_reciclar card_7" id="card-7">
+            <h2>Não recicláveis</h2>
+            <p>Texto dos não recicláveis</p>
+            <button class="modal-trigger" onclick="modal(6)">Ver Detalhes</button>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="card_reciclar card_8" id="card-8">
+            <h2>Madeira</h2>
+            <p>Texto da Madeira</p>
+            <button class="modal-trigger" onclick="modal(7)">Ver Detalhes</button>
         </div>
     </div>
 </section>
