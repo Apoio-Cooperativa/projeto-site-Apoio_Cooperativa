@@ -53,7 +53,7 @@ body {
   min-height: 75vh;
 }
 
-section {
+section, footer {
   padding: 5rem var(--margin-base) 5rem var(--margin-base);
   color: var(--cor-letras-b);
   text-align: justify;
