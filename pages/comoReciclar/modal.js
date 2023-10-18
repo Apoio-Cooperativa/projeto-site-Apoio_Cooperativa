@@ -41,7 +41,7 @@ const goModal = (id) => {
 
 const goCenter = async () => {
     const corpo = document.getElementById('corpo_index');
-    document.body.scrollIntoView({
+    corpo.scrollIntoView({
         behavior: "smooth",
         block: "start",
         inline: "nearest"
