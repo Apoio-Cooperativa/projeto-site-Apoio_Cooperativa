@@ -7,11 +7,11 @@ window.onkeydown = function (event) {
 };
 
 const closeModal = async () => {
-    goCenter()
     const modal = document.getElementById(`modal-${idModal}`);
     triangle(idModal);
     modal.style.display = 'none';
     if (!idModal == '') idModal = '';
+    goCenter()
 }
 
 const modal = async (id) => {
