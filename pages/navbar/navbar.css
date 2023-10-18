@@ -6,10 +6,14 @@
      height: 4rem;
      width: 100%;
      display: grid;
-     grid-template-columns: .2fr 1fr .5fr .25fr;
+     grid-template-columns: auto 1fr auto auto;
      background: rgb(250, 250, 250);
      word-wrap: none;
      white-space: nowrap;
+   }
+
+   header:not(#a-logo) {
+    align-content: center;
    }
 
    #a-logo {
@@ -19,7 +23,6 @@
    }
 
    .logo_navbar {
-     grid-column: 1 / 2;
      height: 100%;
      margin-top: 0;
      text-decoration: none;
@@ -27,7 +30,6 @@
 
    nav {
      all: unset;
-     grid-column: 3 / 4;
      display: flex;
      align-items: center;
    }
@@ -73,19 +75,19 @@
    #a-doar {
      text-decoration: none;
      color: var(--color-texto-w);
-     grid-column: 7 / 8;
    }
 
    .btn_doar_navbar {
-     width: 3rem;
-     height: 2rem;
+    display: flex;
      margin: 1rem 2rem 1rem 1rem;
      background-color: var(--cor-base-3);
      color: var(--cor-fundo);
      cursor: pointer;
      border: none;
      border-radius: 5px;
-     /* grid-column: 7 / 8; */
+     padding: 1rem 2rem 1rem 2rem;
+     align-items: center;
+     justify-content: center;
    }
 
    .icones_redes_navbar {
