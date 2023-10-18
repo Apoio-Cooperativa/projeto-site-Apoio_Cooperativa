@@ -1,16 +1,16 @@
 .card_container_reciclar {
   display: flex;
   flex-wrap: wrap;
-  gap: 4rem;
+  gap: 2rem;
   justify-content: center;
-  margin: 3rem 0 3rem 0;
+  margin: 1rem -5rem 1rem -5rem;
 }
 
 .card_row_reciclar {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .card_row_reciclar .card_reciclar {
@@ -32,50 +32,53 @@
 .card_reciclar h2 {
   font-weight: var(--weight-text-800);
   text-transform: uppercase;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   white-space: wrap;
 }
 
 .card_reciclar p {
-  margin: 1rem 2rem 7rem 2rem;
+  margin: 0 1rem 2rem 1rem;
   text-align: left;
   font-weight: var(--weight-text-400);
-  font-size: 1.3rem;
+  font-size: 1rem;
+  text-align: left;
 }
 
 .card_reciclar button {
   background-color: var(--cor-base-4);
   color: var(--cor-fundo);
-  padding: 1em 2rem;
+  padding: .5em 1rem;
   text-transform: uppercase;
   border: none;
   border-radius: 5px 15px 5px 15px;
-  transition: background-color 0.3s ease;
-  width: 50%;
-  height: 4rem;
+  transition: 0.3s ease;
+  width: 80%;
+  height: 3rem;
   font-size: 1rem;
   font-weight: var(--weight-text-600);
   margin-bottom: 1.5rem;
   }
-  
-  .card_reciclar button:hover {
-    background-color: var(--cor-base-3);
+
+  .informacoes_cards_reciclar {
+    position: relative;
   }
 
-.modal_cards_reciclar {
+.modal_cards_reciclar
+ {
   display: none;
-  height: 45rem;
-  width: auto;
+  height: auto;
+  width: 100%;
   color: var(--cor-base-1);
   background-color: rgb(236, 243, 233);
   position: relative;
   border-radius: 10px;
   border: 3px solid black;
   padding: 4rem;
+  z-index: 5;
 }
 
 .modal_title_reciclar{
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: var(--weight-text-400);
 }
 
@@ -90,8 +93,11 @@
 }
 
 .modal_text_reciclar {
-  font-size: 1.8rem;
   font-weight: var(--weight-text-400);
+}
+
+.modal_content_reciclar p {
+  font-size: 1.25rem;
 }
 
 .modal_close_reciclar{
@@ -121,36 +127,84 @@
   font-weight: var(--weight-text-800);
 }
 
-.card_1 {
-  border: 3px solid #0000ff;
+.card_1, .card_1 button {
+  --color-card: #0000ff;
+  border: 3px solid var(--color-card);
+  background: var(--color-card);
 }
 
-.card_2 {
-  border: 3px solid #00B100;
+.card_1 button:hover {
+  --color-card: rgb(0, 0, 173)
 }
 
-.card_3 {
-  border: 3px solid #ff0000;
+.card_2, .card_2 button{
+  --color-card: #00B100;
+  border: 3px solid var(--color-card);
+  background: var(--color-card);
 }
 
-.card_4 {
-  border: 3px solid #B8C800;
+.card_2 button:hover {
+  --color-card: #007d00;
 }
 
-.card_5 {
-  border: 3px solid #964B00;
+.card_3, .card_3 button {
+  --color-card: #ff0000;
+  border: 3px solid var(--color-card);
+  background: var(--color-card);
 }
 
-.card_6 {
-  border: 3px solid #FFA500;
+.card_3 button:hover {
+  --color-card: #b10000;
 }
 
-.card_7 {
-  border: 3px solid #6E737B;
+.card_4, .card_4 button {
+  --color-card: #B8C800;
+  border: 3px solid var(--color-card);
+  background: var(--color-card);
 }
 
-.card_8 {
-  border: 3px solid #000000;
+.card_4 button:hover {
+  --color-card: #889400;
+}
+
+.card_5, .card_5 button {
+  --color-card: #964B00;
+  border: 3px solid var(--color-card);
+  background: var(--color-card);
+}
+
+.card_5 button:hover {
+  --color-card: #743a00;
+}
+
+.card_6, .card_6 button {
+  --color-card: #FFA500;
+  border: 3px solid var(--color-card);
+  background: var(--color-card);
+}
+
+.card_6 button:hover {
+  --color-card: #9a6400;
+}
+
+.card_7, .card_7 button {
+  --color-card: #6E737B;
+  border: 3px solid var(--color-card);
+  background: var(--color-card);
+}
+
+.card_7 button:hover {
+  --color-card: #4b4f54;
+}
+
+.card_8, .card_8 button {
+  --color-card: #000000;
+  border: 3px solid var(--color-card);
+  background: var(--color-card);
+}
+
+.card_8 button:hover {
+  --color-card: #5a5a5a;
 }
 
 #txt-papel, .card_1 h2 {
@@ -200,7 +254,7 @@
   left: calc(50% - 2rem);
 }
 
-.card_5::after, .card_6::after, .card_7::after, .card_8::after{
+.card_5::before, .card_6::before, .card_7::before, .card_8::before{
   content: "";
   position: absolute;
   width: 0; 
@@ -214,6 +268,10 @@
 }
 
 .show_triangle::after{
+  display: block;
+}
+
+.show_triangle::before {
   display: block;
 }
 

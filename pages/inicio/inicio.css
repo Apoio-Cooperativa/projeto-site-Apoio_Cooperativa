@@ -53,7 +53,7 @@
     position: absolute;
     display: block;
     font-size: 30em;
-    color: rgba(128, 128, 128, .1);
+    color: rgba(128, 128, 128, .15);
     font-weight: normal;
     top: -12rem;
     left: -10rem;
@@ -65,7 +65,7 @@
     position: absolute;
     display: block;
     font-size: 30em;
-    color: rgba(128, 128, 128, .1);
+    color: rgba(128, 128, 128, .15);
     font-weight: normal;
     top: -8rem;
     right: -10rem;
