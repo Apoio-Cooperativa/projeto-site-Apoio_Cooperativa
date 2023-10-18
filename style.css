@@ -1,7 +1,7 @@
-/* foundation framework */
-
-/* https://developer.mozilla.org/pt-BR/docs/Web/CSS/:not
-https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/blockquote*/
+/* 
+https://developer.mozilla.org/pt-BR/docs/Web/CSS/:not
+https://www.youtube.com/watch?v=SUFzgCwJZkk
+*/
 
 :root {
   --cor-base-0: rgb(126, 217, 86);
@@ -9,6 +9,7 @@ https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/blockquote*/
   --cor-base-2: rgb(176, 223, 155);
   --cor-base-3: rgb(71, 89, 63);
   --cor-base-4: rgb(96, 166, 67);
+
   --primary-color: rgb(4, 82, 20);
   --cor-fundo: rgb(255, 255, 255);
   --cor-fundo-subir: rgb(27, 61, 12);
@@ -17,8 +18,15 @@ https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/blockquote*/
   --cor-letras-b: rgb(0, 0, 0);
 
   --font: 'Inter', sans-serif;
-  --bold-text-900: 900;
-  --bold-text-700: 700;
+  --weight-text-900: 900;
+  --weight-text-800: 800;
+  --weight-text-700: 700;
+  --weight-text-600: 600;
+  --weight-text-500: 500;
+  --weight-text-400: 400;
+  --weight-text-300: 300;
+  --weight-text-200: 200;
+  --weight-text-100: 100;
 
   --margin-base: 10rem;
 }
@@ -27,6 +35,7 @@ https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/blockquote*/
 *::before,
 *::after {
   box-sizing: border-box;
+  font-weight: var(--weight-text-200);
 }
 
 body {
@@ -44,10 +53,11 @@ body {
   min-height: 75vh;
 }
 
-section {
+section, footer {
   padding: 5rem var(--margin-base) 5rem var(--margin-base);
   color: var(--cor-letras-b);
   text-align: justify;
+  zoom: 80%;
 }
 
 .seta-ao-topo {
@@ -73,10 +83,38 @@ section {
   transform: scale(110%);
 }
 
-.bold_text_900 {
-  font-weight: var(--bold-text-900);
+.weight_text_900 {
+  font-weight: var(--weight-text-900);
 }
 
-.bold_text_700 {
-  font-weight: var(--bold-text-700);
+.weight_text_800 {
+  font-weight: var(--weight-text-800);
+}
+
+.weight_text_700 {
+  font-weight: var(--weight-text-700);
+}
+
+.weight_text_600 {
+  font-weight: var(--weight-text-600);
+}
+
+.weight_text_500 {
+  font-weight: var(--weight-text-500);
+}
+
+.weight_text_400 {
+  font-weight: var(--weight-text-400);
+}
+
+.weight_text_300 {
+  font-weight: var(--weight-text-300);
+}
+
+.weight_text_200 {
+  font-weight: var(--weight-text-200);
+}
+
+.weight_text_100 {
+  font-weight: var(--weight-text-100);
 }
