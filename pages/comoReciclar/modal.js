@@ -2,21 +2,21 @@ let idModal = '';
 
 window.onkeydown = function (event) {
     if (event.keyCode === 27 && !idModal == '') {
-        if (document.getElementById(`modal-${idModal}`).style.display === 'flex') closeModal();
+        if (document.getElementById(`modal-${idModal}`).style.display === 'flex') closeModal(true);
     }
 };
 
-const closeModal = async () => {
+const closeModal = async (teste) => {
     const modal = document.getElementById(`modal-${idModal}`);
     triangle(idModal);
     modal.style.display = 'none';
-    if (!idModal == '') idModal = '';
-    goCenter()
+    if(teste){goCenter(); }
+    if (!idModal == ''){idModal = ''; return}
 }
 
 const modal = async (id) => {
     if (id == idModal) { goModal(id); return; }
-    if (!idModal == '') closeModal();
+    if (!idModal == ''){ closeModal(false);}
 
     const modal = document.getElementById(`modal-${id}`);
     triangle(id);
