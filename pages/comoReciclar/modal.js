@@ -7,10 +7,9 @@ window.onkeydown = function (event) {
 };
 
 const closeModal = async () => {
-    await goCenter()
-    await delay(100)
     const modal = document.getElementById(`modal-${idModal}`);
     triangle(idModal);
+    goCenter()
     modal.style.display = 'none';
     if (!idModal == '') idModal = '';
 }
@@ -42,7 +41,7 @@ const goModal = (id) => {
 
 const goCenter = async () => {
     const corpo = document.getElementById('corpo_index');
-    corpo.scrollIntoView({
+    document.body.scrollIntoView({
         behavior: "smooth",
         block: "start",
         inline: "nearest"
