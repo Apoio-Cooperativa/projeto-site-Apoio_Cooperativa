@@ -7,7 +7,7 @@ window.onkeydown = function (event) {
 };
 
 const closeModal = async () => {
-    await goCenter()
+    goCenter()
     const modal = document.getElementById(`modal-${idModal}`);
     triangle(idModal);
     modal.style.display = 'none';
