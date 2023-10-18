@@ -21,3 +21,63 @@
     padding: 0.5rem;
     text-align: center;
   }
+
+  /* Estilo para a seção 'table_horarios' */
+.table_horarios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.table_horarios_row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* Estilo para cada célula da tabela 'table_horarios_cell' */
+.table_horarios_cell {
+  flex: 0 0 0; /* Duas colunas, com margem entre elas */
+  padding: 2rem;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para as tabelas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Estilo para o título da tabela (caption) */
+table caption {
+  font-size: 1.2em;
+  font-weight: var(--weight-text-700);
+  margin: 0 1rem 1rem 1rem;
+}
+
+/* Estilo para o cabeçalho da tabela (thead) */
+table thead {
+  background-color: var(--primary-color);
+  color: #fff;
+  white-space: nowrap;
+}
+
+/* Estilo para as células do cabeçalho (th) */
+table th {
+  padding: 10px;
+}
+
+/* Estilo para as células da tabela (td) */
+table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Estilo para as linhas pares da tabela (tr) */
+table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
