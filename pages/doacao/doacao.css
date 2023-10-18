@@ -17,9 +17,49 @@
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   flex-direction: row;
-
-
 }
+
+/*------provisório------*/
+#msg-verificacao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* Centraliza o texto */
+  padding: 20px; /* Adiciona algum espaço interno para o conteúdo */
+  background-color: #ffffff; /* Cor de fundo */
+  border-radius: 10px; /* Adiciona cantos arredondados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+  color: #333; /* Cor do texto */
+  max-width: 300px; /* Largura máxima para evitar que ele se estenda demais */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  margin: 2rem 0 -4rem 0;
+}
+
+#msg-verificacao p {
+  margin: 0; /* Remove margem padrão do parágrafo */
+  font-size: 1.2rem; /* Tamanho da fonte do texto */
+}
+
+#msg-verificacao input[type="button"] {
+  margin: 10px; /* Espaçamento entre os botões */
+  padding: 10px 20px; /* Espaçamento interno dos botões */
+  background-color: var(--primary-color); /* Cor de fundo dos botões */
+  color: #fff; /* Cor do texto dos botões */
+  border: none; /* Remove bordas dos botões */
+  border-radius: 5px; /* Cantos arredondados dos botões */
+  cursor: pointer; /* Cursor de mão ao passar sobre os botões */
+}
+
+#msg-verificacao input[type="button"]:hover {
+  background-color: #03610f; /* Cor de fundo ao passar sobre os botões */
+}
+
+#valor-cash {
+  font-weight: bold; /* Texto em negrito */
+  color: #045214; /* Cor do valor em destaque */
+}
+
+/*----------------------*/
 
 .qd_doacao {
   display: flex;
@@ -52,8 +92,9 @@
  text-decoration: none;
  border-radius: 0.5rem;
  color: #ffff;
- background:#045214; 
- 
+ background:#045214;
+ cursor: pointer;
+ display: none;
 }
 
 /* ------------------------------------------------- */

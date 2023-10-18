@@ -4,15 +4,17 @@
 
             <div id="msg-verificacao">
                 <p>Deseja doar <span id="valor-cash"></span>?</p>
-                <input type='button' value='Sim' onclick='qrcode(true)'>
-                <input type='button' value='Não' onclick='qrcode(false)'>
+                <div class="button-container">
+                    <input type='button' value='Sim' onclick='qrcode(true)'>
+                    <input type='button' value='Não' onclick='qrcode(false)'>
+                </div>
             </div>
 
             <img src="" class="img_qr_code_doacao" alt="" id="image">
 
             <h1 class="text_qr">QR PIX</h1>
 
-            <button class="botao_copia_pix_doaca">Copiar Chave pix </button>
+            <button class="botao_copia_pix_doaca" onclick="copy()" id="copy">Copiar Chave pix </button>
         </div>
 
 
