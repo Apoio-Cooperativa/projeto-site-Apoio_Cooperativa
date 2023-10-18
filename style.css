@@ -29,6 +29,8 @@ https://www.youtube.com/watch?v=SUFzgCwJZkk
   --weight-text-100: 100;
 
   --margin-base: 10rem;
+
+  --zoom: 90%;
 }
 
 *,
@@ -57,7 +59,7 @@ section, footer {
   padding: 5rem var(--margin-base) 5rem var(--margin-base);
   color: var(--cor-letras-b);
   text-align: justify;
-  zoom: 80%;
+  zoom: var(--zoom);
 }
 
 .seta-ao-topo {

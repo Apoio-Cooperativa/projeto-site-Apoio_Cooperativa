@@ -5,6 +5,14 @@ footer {
   color: var(--cor-letras-w);
 }
 
+footer a {
+  transition: .3s;
+}
+
+footer a:hover {
+  color: var(--cor-base-0);
+}
+
 .cooperativa_footer {
   display: flex;
   justify-content: space-between;

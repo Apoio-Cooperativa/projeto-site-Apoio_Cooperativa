@@ -1,40 +1,82 @@
 .card_container_reciclar {
   display: flex;
   flex-wrap: wrap;
-  gap: 3rem;
+  gap: 4rem;
   justify-content: center;
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  margin: 3rem 0 3rem 0;
 }
 
 .card_row_reciclar {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  gap: 3rem;
 }
 
 .card_row_reciclar .card_reciclar {
   background-color: #f7f7f7;
-  border: 1px solid #ddd;
   padding: 1rem;
-  width: calc(50% - 1rem);
+  width: 50%;
   text-align: center;
-  margin: 1rem;
 }
 
 .card_reciclar{
   position: relative;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
+
+.card_reciclar h2 {
+  font-weight: var(--weight-text-800);
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  white-space: wrap;
+}
+
+.card_reciclar p {
+  margin: 1rem 2rem 7rem 2rem;
+  text-align: left;
+  font-weight: var(--weight-text-400);
+  font-size: 1.3rem;
+}
+
+.card_reciclar button {
+  background-color: var(--cor-base-4);
+  color: var(--cor-fundo);
+  padding: 1em 2rem;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px 15px 5px 15px;
+  transition: background-color 0.3s ease;
+  width: 50%;
+  height: 4rem;
+  font-size: 1rem;
+  font-weight: var(--weight-text-600);
+  margin-bottom: 1.5rem;
+  }
+  
+  .card_reciclar button:hover {
+    background-color: var(--cor-base-3);
+  }
 
 .modal_cards_reciclar {
   display: none;
-  height: auto;
+  height: 45rem;
   width: auto;
   color: var(--cor-base-1);
   background-color: rgb(236, 243, 233);
   position: relative;
   border-radius: 10px;
-  border: 1px solid black;
+  border: 3px solid black;
   padding: 4rem;
+}
+
+.modal_title_reciclar{
+  font-size: 2.5rem;
+  font-weight: var(--weight-text-400);
 }
 
 .modal_title_reciclar::after{
@@ -47,11 +89,103 @@
   display: block;
 }
 
+.modal_text_reciclar {
+  font-size: 1.8rem;
+  font-weight: var(--weight-text-400);
+}
+
+.modal_close_reciclar{
+  background-color: var(--cor-base-4);
+  color: var(--cor-fundo);
+  padding: 1.2rem 1.2rem;
+  text-transform: uppercase;
+  border: none;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  font-weight: var(--weight-text-600);
+  margin-top: 2rem;
+  border-radius: 10px;
+}
+
+.modal_close_reciclar:hover {
+  background-color: var(--cor-base-3);
+}
+
 .show_reciclar {
   display: block !important;
 }
 
-/* CARDS */
+/* cards */
+
+#txt-papel, #txt-vidro, #txt-plastico, #txt-metal, #txt-organico, #txt-pilhas-e-baterias, #txt-nao-reciclaveis, #txt-madeira  {
+  font-weight: var(--weight-text-800);
+}
+
+.card_1 {
+  border: 3px solid #0000ff;
+}
+
+.card_2 {
+  border: 3px solid #00B100;
+}
+
+.card_3 {
+  border: 3px solid #ff0000;
+}
+
+.card_4 {
+  border: 3px solid #B8C800;
+}
+
+.card_5 {
+  border: 3px solid #964B00;
+}
+
+.card_6 {
+  border: 3px solid #FFA500;
+}
+
+.card_7 {
+  border: 3px solid #6E737B;
+}
+
+.card_8 {
+  border: 3px solid #000000;
+}
+
+#txt-papel, .card_1 h2 {
+  color: #0000ff;
+}
+
+#txt-vidro, .card_2 h2 {
+  color: #00B100;
+}
+
+#txt-plastico, .card_3 h2 {
+  color: #ff0000;
+}
+
+#txt-metal, .card_4 h2 {
+  color: #B8C800;
+}
+
+#txt-organico, .card_5 h2 {
+  color: #964B00;
+}
+
+#txt-pilhas-e-baterias, .card_6 h2 {
+  color: #FFA500;
+}
+
+#txt-nao-reciclaveis, .card_7 h2 {
+  color: #6E737B;
+}
+
+#txt-madeira, .card_8 h2 {
+  color: #000000;
+}
+
+/* triangulos */
 
 .card_1::after, .card_2::after, .card_3::after, .card_4::after{
   content: "";
@@ -60,7 +194,7 @@
   height: 0; 
   border-left: 2rem solid transparent;
   border-right: 2rem solid transparent;
-  border-bottom: 4rem solid #949396;
+  border-bottom: 4rem solid #000000;
   display: none;
   bottom: -4rem;
   left: calc(50% - 2rem);
@@ -73,7 +207,7 @@
   height: 0; 
   border-left: 2rem solid transparent;
   border-right: 2rem solid transparent;
-  border-top: 4rem solid #949396;
+  border-top: 4rem solid #000000;
   display: none;
   top: -4rem;
   left: calc(50% - 2rem);
@@ -81,4 +215,64 @@
 
 .show_triangle::after{
   display: block;
+}
+
+.container_vocabulario_reciclar {
+  background: var(--cor-base-4);
+}
+
+.titulo_vocabulario_reciclar {
+  color: var(--cor-letras-w);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 2.3rem;
+  font-weight: var(--weight-text-600);
+  margin-bottom: 6rem;
+}
+
+.titulo_vocabulario_reciclar::before, .titulo_vocabulario_reciclar::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 15rem;
+  background: var(--cor-letras-w);
+  margin: 0 4rem 0 4rem;
+}
+
+.container_box_reciclar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 6rem;
+}
+
+.box_vocabulario_reciclar {
+  background: var(--cor-letras-w);
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 30px;
+}
+
+.titulo_box_reciclar h1{
+  font-size: 2rem;
+  font-weight: var(--weight-text-700);
+}
+
+.texto_box_reciclar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.texto_box_reciclar p{
+  font-size: 1.2rem;
+  font-weight: var(--weight-text-300);
+  text-align: left;
 }
