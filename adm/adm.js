@@ -8,7 +8,7 @@ const adm = async () => {
 }
 
 const doacao = async () => {
-    const url = "pages/horarios/horarios.html..",
+    const url = "adm/horariosAdm/horarios.html",
         body = document.getElementById("corpo_adm");
 
     fetch(url)
