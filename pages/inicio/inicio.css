@@ -45,6 +45,7 @@
   .marked_text {
     font-size: 1.3rem;
     position: relative;
+    font-style: italic;
   }
 
   .marked_text::before {
