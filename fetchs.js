@@ -8,9 +8,8 @@ const renderPage = async () => {
         case ("descartar"): descartar(); break
         case ("doacao"): doacao(); break
         case ("horarios"): horarios(); break
-        // case ("adm"): adm(); break
         case ("login"): login(); break
-        default: /* inicio() */ lost();
+        default: lost();
     }
     await goUp(100)
 }
@@ -45,8 +44,6 @@ const errorOnLoad = () => {
     const body = document.getElementById("corpo_index");
     body.innerHTML = "<p>Página indisponível</p>"
 }
-
-// const login = () =>{}
 
 const inicio = () => {
     window.location.hash = "#inicio";
