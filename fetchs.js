@@ -5,7 +5,7 @@ const renderPage = async () => {
     const page = validateHash(window.location.hash);
     switch (page) {
         case ("inicio"): inicio(); break
-        case ("reciclar"): reciclar(); break
+        case ("descartar"): descartar(); break
         case ("doacao"): doacao(); break
         case ("horarios"): horarios(); break
         // case ("adm"): adm(); break
@@ -64,8 +64,8 @@ const inicio = () => {
 
 // const adm = () =>{} 
 
-const reciclar = () => {
-    const url = "pages/comoReciclar/comoReciclar.html",
+const descartar = () => {
+    const url = "pages/comoDescartar/comoDescartar.html",
         body = document.getElementById("corpo_index");
 
     fetch(url)
