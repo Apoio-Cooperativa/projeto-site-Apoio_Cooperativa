@@ -58,6 +58,7 @@
   font-size: 1rem;
   font-weight: var(--weight-text-600);
   margin-bottom: 1.5rem;
+  cursor: pointer;
   }
 
   .informacoes_cards_reciclar {
@@ -112,6 +113,7 @@
   font-weight: var(--weight-text-600);
   margin-top: 2rem;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .modal_close_reciclar:hover {
