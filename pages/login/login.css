@@ -1,107 +1,121 @@
-:root {
-    --cor-base-0: rgb(126, 217, 86);
-    --cor-base-1: rgb(52, 89, 37);
-    --cor-base-2: rgb(176, 223, 155);
-    --cor-base-3: rgb(71, 89, 63);
-    --cor-base-4: rgb(96, 166, 67);
-  
-    --color-card: #000000;
-  
-    --primary-color: rgb(4, 82, 20);
-    --cor-fundo: rgb(255, 255, 255);
-    --cor-fundo-subir: rgb(27, 61, 12);
-  
-    --cor-letras-w: rgb(255, 255, 255);
-    --cor-letras-b: rgb(0, 0, 0);
-}  
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
 
-
-
-#sair{
-    margin-top: 1rem;
-    background-color: rgb(22, 44, 13) ;
-    padding-left: 0.9rem;
-    color: white;
-    border: none;
-    height: 2rem;
-    outline: none;
-    border-radius: 0.2rem;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
 }
 
-body{
-    background-color:white;
-    font-family: Arial, Helvetica, sans-serif;
-    overflow:hidden;
-
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.login img{
-    max-width: 12rem;
-    max-height: 11rem;
-    width: auto;
-    height: auto;
+.container {
+  background-color: whitesmoke;
+  padding: 6px;
+  width: 350px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0 darkgrey;
 }
 
-.area_login{
-    display: flex;
-    height: 100vh;
-    align-items: center;
-    justify-items: center;
-    flex-direction: column;
-    justify-content: space-around;
-
-}
-
-.login{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color:var(--cor-base-1);
-    width: 22rem;
-    height: 24rem;
-    padding: 3rem;
-    border-radius: 1rem;
-
-}
-
-.login form{
-display: flex;
-width: 100%;
-flex-direction: column;
-}
-
-.login input{
-    margin-top: 1rem;
-    background-color: rgb(22, 44, 13) ;
-    padding-left: 0.9rem;
-    color: white;
-    border: none;
-    height: 2rem;
-    outline: none;
-    border-radius: 0.2rem;
-}
-
-input::placeholder{
-    color: white;
-    font-size: 1rem;
-}
-
-#entrar{
-    display: block;
-    background-color: #02661b;
-    font-size: 1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    cursor: pointer;
-
-}
-
-p{
-    color:white ;
+form {
+  position: absolute;
+  margin-top: 80px;
+  transition: .5s;
+  width: 300px;
+  height: 400px;
 }
 
 a{
-    color: #36da4c;
-    text-decoration: none;
-    margin-left: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.buttonsForm {
+  margin-top: 40px;
+  position: relative;
+  border-radius: 30px;
+  box-shadow: 0 0 7px 0 rgb(49, 177, 92);
+}
+
+.buttonsForm button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  position: relative;
+  padding: 10px 29px;
+}
+
+.btnColor {
+  position: absolute;
+  width: 108px;
+  height: 100%;
+  background: linear-gradient(to right, #359e31, #61c081);
+  border-radius: 30px;
+  transition: .3s;
+}
+
+input[type="text"], input[type="password"] {
+  border: none;
+  margin-top: 40px;
+  border-radius: 60px;
+  padding: 8px 0 8px 35px;
+  outline: none;
+  width: 100%;
+}
+
+button[type="submit"] {
+  background: #359e31;
+  color: white;
+  border-radius: 30px;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 8px 0 8px 15px;
+  font-size: 15px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.divCheck {
+  margin: 10px 0 0 5px;
+  width: 80%;
+  font-size: 13px;
+}
+
+#signin {
+  left: 25px;
+}
+
+#signup {
+  left: 450px;
+}
+
+i {
+  position: absolute;
+  left: 0;
+  padding: 10px 10px;
+}
+
+.iEmail {
+  top: 40px;
+}
+
+.iPassword {
+  top: 114px;
+}
+
+.iPassword2 {
+  top: 190px;
 }
