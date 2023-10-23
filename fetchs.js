@@ -46,8 +46,6 @@ const errorOnLoad = () => {
     body.innerHTML = "<p>Página indisponível</p>"
 }
 
-// const login = () =>{}
-
 const inicio = () => {
     window.location.hash = "#inicio";
 
@@ -62,7 +60,18 @@ const inicio = () => {
         });
 }
 
-// const adm = () =>{} 
+const login = () => {
+    const url = "pages/login/login.html",
+        body = document.getElementById("corpo_index");
+
+    fetch(url)
+        .then(res => res.text())
+        .then(text => body.innerHTML = text)
+        .catch(error => {
+            errorOnLoad()
+        });
+    }
+
 
 const reciclar = () => {
     const url = "pages/comoReciclar/comoReciclar.html",
