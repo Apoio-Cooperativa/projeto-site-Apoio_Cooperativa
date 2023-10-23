@@ -59,7 +59,18 @@ const inicio = () => {
         });
 }
 
-// const adm = () =>{} 
+const login = () => {
+    const url = "pages/login/login.html",
+        body = document.getElementById("corpo_index");
+
+    fetch(url)
+        .then(res => res.text())
+        .then(text => body.innerHTML = text)
+        .catch(error => {
+            errorOnLoad()
+        });
+    }
+
 
 const descartar = () => {
     const url = "pages/comoDescartar/comoDescartar.html",

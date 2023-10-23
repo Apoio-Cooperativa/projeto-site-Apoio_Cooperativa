@@ -37,6 +37,11 @@ form {
   height: 400px;
 }
 
+a{
+  color: white;
+  text-decoration: none;
+}
+
 .buttonsForm {
   margin-top: 40px;
   position: relative;

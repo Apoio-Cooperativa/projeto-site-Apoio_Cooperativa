@@ -1,3 +1,6 @@
+
+
+
 .table_horarios {
     padding: 10rem;
     background-color: #DFF2D7;
@@ -24,9 +27,11 @@
 
   /* Estilo para a seção 'table_horarios' */
 .table_horarios {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
 }
 
 .table_horarios_row {
@@ -82,4 +87,15 @@ table tbody tr:nth-child(even) {
   background-color: #f2f2f2;
 }
 
+.btn_alterar_tabela{
+  display: flex;
+  margin: 0 2rem 0 2rem;
+  background-color: var(--cor-base-3);
+  color: var(--cor-fundo);
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 2rem 1rem 2rem;
+  font-size: 1rem;
+  }
 
