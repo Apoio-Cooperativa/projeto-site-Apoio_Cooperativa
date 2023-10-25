@@ -50,7 +50,6 @@ a{
 }
 
 .buttonsForm button {
-  cursor: pointer;
   background: transparent;
   border: none;
   position: relative;
@@ -93,12 +92,10 @@ button[type="submit"] {
   font-size: 13px;
 }
 
-#signin {
-  left: 25px;
-}
+
 
 #signup {
-  left: 450px;
+  left: 25px;
 }
 
 i {
