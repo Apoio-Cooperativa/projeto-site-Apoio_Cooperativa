@@ -1,14 +1,14 @@
 <?php
 // Parâmetros de conexão com o banco de dados
-/* $servername = "localhost";
+$servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "dbcooperativa"; */
+$dbname = "dbcooperativa";
 
-$servername = "db4free.net";
+/* $servername = "db4free.net";
 $username = "coopsj";
 $password = "@tcc2023";
-$dbname = "dbcooperativa";
+$dbname = "dbcooperativa"; */
 
 // Cria a conexão
 $conn = new mysqli($servername, $username, $password, $dbname);
