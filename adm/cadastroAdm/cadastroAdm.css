@@ -19,7 +19,7 @@ body {
   background-color: whitesmoke;
   padding: 6px;
   width: 350px;
-  height: 30.5rem;
+  height: 33.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,6 +91,22 @@ input[type="text"], input[type="password"] {
   font-size: 15px;
   margin-top: 30px;
   cursor: pointer;
+}
+
+.btn_voltar_adm{
+
+  background: #359e31;
+  color: white;
+  border-radius: 30px;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 8px 0 8px 15px;
+  font-size: 15px;
+  margin-top: 1rem;
+  cursor: pointer;
+  font
+
 }
 
 .divCheck {
