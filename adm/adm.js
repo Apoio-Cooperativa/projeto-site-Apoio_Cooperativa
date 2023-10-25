@@ -44,3 +44,12 @@ const horariosadm = async () => {
     if (tbIsRead) { await read(); tbIsRead = false }
     else { read(json); }
 }
+
+const doacao = () => {
+    const url = "../pages/horarios/horarios.html",
+        body = document.getElementById("horarios_adm");
+
+    fetch(url)
+        .then(res => res.text())
+        .then(text => body.innerHTML = text)
+}
