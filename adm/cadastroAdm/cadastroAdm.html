@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="cadastroAdm.css">
     <script src="https://kit.fontawesome.com/cf6fa412bd.js" crossorigin="anonymous"></script>
 </head>
 
@@ -14,23 +13,25 @@
     <div class="container">
         <div class="buttonsForm">
             <div class="btnColor"></div>
-            <button id="btnSignin">Login</button>
             
+            <button id="btnSignup">Cadastro</button>
         </div>
 
-        <form id="signin">
+        <form id="signup">
             <input type="text" placeholder="Email" required />
             <i class="fas fa-envelope iEmail"></i>
-            <input type="password" placeholder="Senha" requireds />
+            <input type="password" placeholder="Senha" required />
             <i class="fas fa-lock iPassword"></i>
-            <button type="submit"><a href="/adm/index.html">Login</a></button>
-            <button type="submit"><a onclick="voltar()">Voltar</a></button>
+            <input type="password" placeholder="Cofirmar senha" required />
+            <i class="fas fa-lock iPassword2"></i>
+            <button type="submit" class="btn_cadastrar_adm">Cadastrar</button>
+            <button type="submit" class="btn_admnistrar_adm">Administrar</button>
+
+            <button type="submit" class="btn_voltar_adm" onclick="voltar()">Voltar</button>
         </form>
-
-
     </div>
 
-    <script src="login.js"></script>
+    <script src="cadastroAdm.js"></script>
 </body>
 
 </html>
