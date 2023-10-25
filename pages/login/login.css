@@ -51,11 +51,11 @@ a{
 }
 
 .buttonsForm button {
-  cursor: pointer;
   background: transparent;
   border: none;
   position: relative;
   padding: 10px 29px;
+  font-size: 1.3rem;
 }
 
 .btnColor {
