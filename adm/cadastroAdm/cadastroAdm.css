@@ -50,6 +50,7 @@ a{
 }
 
 .buttonsForm button {
+  cursor: pointer;
   background: transparent;
   border: none;
   position: relative;
@@ -58,6 +59,7 @@ a{
 
 .btnColor {
   position: absolute;
+  width: 108px;
   height: 100%;
   background: linear-gradient(to right, #359e31, #61c081);
   border-radius: 30px;
@@ -92,10 +94,12 @@ button[type="submit"] {
   font-size: 13px;
 }
 
-
+#signin {
+  left: 25px;
+}
 
 #signup {
-  left: 25px;
+  left: 450px;
 }
 
 i {
@@ -112,3 +116,6 @@ i {
   top: 114px;
 }
 
+.iPassword2 {
+  top: 190px;
+}
