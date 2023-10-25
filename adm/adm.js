@@ -1,3 +1,9 @@
+const delay = async (ms) => {
+    return new Promise((resolve) => {
+        setTimeout(resolve, ms);
+    });
+};
+
 const init = () => window.addEventListener('hashchange', renderPage);
 const validateHash = (hash) => hash === "" ? 'inicio' : hash.replace('#', '');
 
@@ -27,10 +33,14 @@ const paineladm = async () => {
 }
 
 const horariosadm = async () => {
-    const url = "horariosAdm/horariosAdm.html",
+    const url = "../pages/horarios/horarios.html",
         body = document.getElementById("horarios_adm");
 
     fetch(url)
         .then(res => res.text())
         .then(text => body.innerHTML = text)
+
+    await delay(200)
+    if (tbIsRead) { await read(); tbIsRead = false }
+    else { read(json); }
 }

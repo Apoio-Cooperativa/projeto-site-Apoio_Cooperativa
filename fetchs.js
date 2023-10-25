@@ -69,11 +69,11 @@ const login = () => {
         .catch(error => {
             errorOnLoad()
         });
-    }
+}
 
 
 const descartar = () => {
-    const url = "pages/comoDescartar/comoDescartar.html",
+    const url = "pages/descartar/descartar.html",
         body = document.getElementById("corpo_index");
 
     fetch(url)
@@ -84,7 +84,7 @@ const descartar = () => {
         });
 }
 
-const horarios = () => {
+const horarios = async () => {
     const url = "pages/horarios/horarios.html",
         body = document.getElementById("corpo_index");
 
@@ -94,6 +94,10 @@ const horarios = () => {
         .catch(error => {
             errorOnLoad()
         });
+
+    await delay(200)
+    if (tbIsRead) { await read(); tbIsRead = false }
+    else { read(json); }
 }
 
 const doacao = () => {
