@@ -13,6 +13,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: rgb(221, 218, 218);
 }
 
 .container {
