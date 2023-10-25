@@ -8,6 +8,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
+    height: 80vh;
   }
   
   .table_horarios table {
@@ -15,7 +16,7 @@
     border: 1px solid #000;
     width: calc(50% - 1rem);
     /* 2 tabelas por linha */
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
   
   .table_horarios table th,
@@ -29,7 +30,7 @@
 .table_horarios {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-direction: column;
     align-items: center;
 }

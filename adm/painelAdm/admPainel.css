@@ -4,6 +4,9 @@
     --cor-base-2: rgb(176, 223, 155);
     --cor-base-3: rgb(71, 89, 63);
     --cor-base-4: rgb(96, 166, 67);
+  
+    --color-card: #000000;
+  
     --primary-color: rgb(4, 82, 20);
     --cor-fundo: rgb(255, 255, 255);
     --cor-fundo-subir: rgb(27, 61, 12);
@@ -12,31 +15,106 @@
     --cor-letras-b: rgb(0, 0, 0);
   
     --font: 'Inter', sans-serif;
-    --bold-text-900: 900;
-    --bold-text-700: 700;
+    --weight-text-900: 900;
+    --weight-text-800: 800;
+    --weight-text-700: 700;
+    --weight-text-600: 600;
+    --weight-text-500: 500;
+    --weight-text-400: 400;
+    --weight-text-300: 300;
+    --weight-text-200: 200;
+    --weight-text-100: 100;
   
     --margin-base: 10rem;
+  
+    --zoom: 80%;
   }
 
 
 * {
     margin: 0;
     padding: 0;
-    list-style: none;
-    text-decoration: none;
     font-family: var(--font);
 }
 
-.sidebar {
+.sidebar_adm nav{
     position: fixed;
     left: 0;
-    width: 15.26rem;
+    width: 4rem;
     height: 100%;
     background: var(--cor-fundo-subir);
-    color: white;
+    color: var(--cor-letras-w);
+    transition: all .4s ease;
 }
 
-.sidebar header {
+.sidebar_adm li, .sidebar_adm header{
+    list-style: none;
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.sidebar_adm li{
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar_adm li > a {
+    color: var(--cor-letras-w);
+    text-decoration: none;
+}
+
+.sidebar_adm li > a:hover {
+    color: var(--cor-base-0);
+
+}
+
+.sidebar_adm li:first-child {
+    margin-top: 5rem;
+}
+
+
+.sidebar_adm span {
+    font-size: 0;
+    display: block;
+    transition: all .4s ease;
+}
+
+.sidebar_adm label {
+    font-size: 2rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 1rem;
+    color: #fff;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.sidebar_adm #toogle {
+    display: none;
+}
+
+.sidebar_adm #toogle:checked + nav{
+    width: 13rem;
+}
+
+.sidebar_adm #toogle:checked + nav li{
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.sidebar_adm #toogle:checked + nav a > span {
+    line-height: 3rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    display: inline-block;
+    padding-left: .8rem ;
+}
+
+
+/* 
+.sidebar_adm header {
     font-size: 1.3rem;
     color: white;
     text-align: center;
@@ -45,7 +123,7 @@
     user-select: none;
 }
 
-.sidebar ul a{
+.sidebar_adm ul a{
     display: block;
     height: 100%;
     width: 100%;
@@ -61,4 +139,4 @@
 ul li:hover a{
     padding-left: 60px;
 
-}
+} */
