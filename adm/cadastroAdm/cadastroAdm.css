@@ -57,14 +57,7 @@ a{
   padding: 10px 29px;
 }
 
-.btnColor {
-  position: absolute;
-  width: 108px;
-  height: 100%;
-  background: linear-gradient(to right, #359e31, #61c081);
-  border-radius: 30px;
-  transition: .3s;
-}
+
 
 input[type="text"], input[type="password"] {
   border: none;
@@ -94,13 +87,6 @@ button[type="submit"] {
   font-size: 13px;
 }
 
-#signin {
-  left: 25px;
-}
-
-#signup {
-  left: 450px;
-}
 
 i {
   position: absolute;
