@@ -82,7 +82,7 @@
 
 .sidebar_adm label {
     font-size: 2rem;
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     padding: 1rem;
