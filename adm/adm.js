@@ -5,23 +5,23 @@ const delay = async (ms) => {
 };
 
 const init = () => window.addEventListener('hashchange', renderPage);
-const validateHash = (hash) => hash === "" ? 'inicio' : hash.replace('#', '');
+const validateHash = (hash) => hash === "" ? 'horarios' : hash.replace('#', '');
 
 const renderPage = async () => {
     const page = validateHash(window.location.hash);
     switch (page) {
-        case ("inicio"): inicio(); break
-        case ("reciclar"): reciclar(); break
-        case ("doacao"): doacao(); break
-        case ("horarios"): horarios(); break
-        // case ("adm"): adm(); break
-        case ("login"): login(); break
-        default: /* inicio() */ lost();
+        // case ("doacao"): doacao(); break
+        case ("horarios"): horarios(); window.location.hash = "#horarios"; break;
+        //case ("usuarios"): user(); break
+        default: /* lost(); */ horarios();
     }
-    await goUp(100)
+    //await goUp(100)
 }
 
-
+const verif = () => {
+    renderPage()
+    init()
+}
 
 const paineladm = async () => {
     const url = "painelAdm/admPainel.html",
@@ -32,7 +32,16 @@ const paineladm = async () => {
         .then(text => body.innerHTML = text)
 }
 
-const horariosadm = async () => {
+const user = () => {
+    const url = "cadastroAdm/cadastroAdm.html",
+        body = document.getElementById("horarios_adm");
+
+    fetch(url)
+        .then(res => res.text())
+        .then(text => body.innerHTML = text)
+}
+
+const horarios = async () => { 
     const url = "../pages/horarios/horarios.html",
         body = document.getElementById("horarios_adm");
 
@@ -46,7 +55,7 @@ const horariosadm = async () => {
 }
 
 const doacao = () => {
-    const url = "../pages/horarios/horarios.html",
+    const url = "../pages/doacao/doacao.html",
         body = document.getElementById("horarios_adm");
 
     fetch(url)
