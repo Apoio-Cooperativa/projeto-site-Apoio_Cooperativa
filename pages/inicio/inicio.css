@@ -155,7 +155,6 @@
   background-color: var(--cor-fundo);
   border-radius: 5px;
   padding: 3rem 1rem 1rem 1rem;
-  text-align: center;
   flex: 1;
   flex-direction: column;
   max-width: 17rem;
