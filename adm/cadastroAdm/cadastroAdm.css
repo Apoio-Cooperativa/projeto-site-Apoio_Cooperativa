@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  
+  
   font-family: 'poppins', sans-serif;
 }
 
-body {
+
+
+.tela_cadastro_adm {
+  
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -16,7 +18,7 @@ body {
   background-color: rgb(221, 218, 218);
 }
 
-.container {
+.painel_cadastro_adm {
   background-color: whitesmoke;
   padding: 6px;
   width: 350px;
@@ -117,20 +119,9 @@ input[type="text"], input[type="password"] {
 }
 
 
-i {
+#teste{
   position: absolute;
   left: 0;
   padding: 10px 10px;
 }
 
-.iEmail {
-  top: 40px;
-}
-
-.iPassword {
-  top: 114px;
-}
-
-.iPassword2 {
-  top: 190px;
-}
