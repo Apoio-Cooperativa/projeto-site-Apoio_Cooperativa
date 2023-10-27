@@ -10,6 +10,11 @@ $username = "coopsj";
 $password = "@tcc2023";
 $dbname = "dbcooperativa"; */
 
+/* $servername = "carmine";
+$username = "aluno";
+$password = "etec@147";
+$dbname = "dbcooperativa"; */
+
 // Cria a conexão
 $conn = new mysqli($servername, $username, $password, $dbname);
 

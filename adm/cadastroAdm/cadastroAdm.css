@@ -20,7 +20,7 @@ body {
   background-color: whitesmoke;
   padding: 6px;
   width: 350px;
-  height: 450px;
+  height: 33.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,16 +55,9 @@ a{
   border: none;
   position: relative;
   padding: 10px 29px;
-  font-size: 1.3rem;
 }
 
-.btnColor {
-  position: absolute;
-  height: 100%;
-  background: linear-gradient(to right, #359e31, #61c081);
-  border-radius: 30px;
-  transition: .3s;
-}
+
 
 input[type="text"], input[type="password"] {
   border: none;
@@ -75,7 +68,7 @@ input[type="text"], input[type="password"] {
   width: 100%;
 }
 
-button[type="submit"] {
+ .btn_cadastrar_adm{
   background: #359e31;
   color: white;
   border-radius: 30px;
@@ -86,6 +79,35 @@ button[type="submit"] {
   font-size: 15px;
   margin-top: 40px;
   cursor: pointer;
+}
+
+.btn_admnistrar_adm{
+  background: #359e31;
+  color: white;
+  border-radius: 30px;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 8px 0 8px 15px;
+  font-size: 15px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.btn_voltar_adm{
+
+  background: #359e31;
+  color: white;
+  border-radius: 30px;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 8px 0 8px 15px;
+  font-size: 15px;
+  margin-top: 1rem;
+  cursor: pointer;
+ 
+
 }
 
 .divCheck {
@@ -109,3 +131,6 @@ i {
   top: 114px;
 }
 
+.iPassword2 {
+  top: 190px;
+}
