@@ -12,7 +12,7 @@ const renderPage = async () => {
     switch (page) {
         // case ("doacao"): doacao(); break
         case ("horarios"): horarios(); window.location.hash = "#horarios"; break;
-        //case ("usuarios"): user(); break
+        case ("usuarios"): user(); break
         default: /* lost(); */ horarios();
     }
     //await goUp(100)
