@@ -1,15 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
 
 * {
-  
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: 'poppins', sans-serif;
 }
 
-
-
-.tela_cadastro_adm {
-  
+.tela_cad_adm{
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -18,7 +16,7 @@
   background-color: rgb(221, 218, 218);
 }
 
-.painel_cadastro_adm {
+.container {
   background-color: whitesmoke;
   padding: 6px;
   width: 350px;
@@ -32,7 +30,7 @@
   box-shadow: 0 0 20px 0 darkgrey;
 }
 
-form {
+.formulario_adm{
   position: absolute;
   margin-top: 80px;
   transition: .5s;
@@ -61,7 +59,16 @@ a{
 
 
 
-input[type="text"], input[type="password"] {
+.input_password_adm{
+  border: none;
+  margin-top: 40px;
+  border-radius: 60px;
+  padding: 8px 0 8px 35px;
+  outline: none;
+  width: 100%;
+}
+
+.input_text_adm{
   border: none;
   margin-top: 40px;
   border-radius: 60px;
@@ -119,9 +126,20 @@ input[type="text"], input[type="password"] {
 }
 
 
-#teste{
+.i_adm{
   position: absolute;
   left: 0;
   padding: 10px 10px;
 }
 
+.iEmail {
+  top: 40px;
+}
+
+.iPassword {
+  top: 114px;
+}
+
+.iPassword2 {
+  top: 190px;
+}
