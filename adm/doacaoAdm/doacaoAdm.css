@@ -5,7 +5,6 @@
   align-items: center;
 }
 
-
 .pg_doacao {
   display: flex;
   margin-top: 1rem;
@@ -19,9 +18,9 @@
   flex-direction: row;
 }
 
-/*------provisório------*/
+/*------msg de confirmação------*/
 #msg-verificacao {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   text-align: center; /* Centraliza o texto */
@@ -30,7 +29,7 @@
   border-radius: 10px; /* Adiciona cantos arredondados */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
   color: #333; /* Cor do texto */
-  max-width: 300px; /* Largura máxima para evitar que ele se estenda demais */
+  width: 15.5rem; /* Largura máxima para evitar que ele se estenda demais */
   margin: 0 auto; /* Centraliza horizontalmente */
   margin: 2rem 0 -4rem 0;
 }
@@ -177,15 +176,11 @@ input:checked+.radio-tile label {
   background-color: #f5f5f5;
   border-radius: 7px;
   color: #045214;
-  margin: 11.5rem 0rem 0rem 0rem;
+  margin: 11.5rem 1rem 0rem 0rem;
 }
 
 
 /* ---------------------------------------------- */
-
-#msg-verificacao{
-  display: none;
-}
 
 .resultado_doacao {
   display: flex;

@@ -10,7 +10,7 @@ const validateHash = (hash) => hash === "" ? 'horarios' : hash.replace('#', '');
 const renderPage = async () => {
     const page = validateHash(window.location.hash);
     switch (page) {
-        // case ("doacao"): doacao(); break
+        case ("doacoes"): doacao(); break
         case ("horarios"): horarios(); window.location.hash = "#horarios"; break;
         case ("usuarios"): user(); break
         default: /* lost(); */ horarios();
@@ -55,7 +55,7 @@ const horarios = async () => {
 }
 
 const doacao = () => {
-    const url = "../pages/doacao/doacao.html",
+    const url = "doacaoAdm/doacaoAdm.html",
         body = document.getElementById("horarios_adm");
 
     fetch(url)
