@@ -34,7 +34,7 @@ const paineladm = async () => {
 
 const user = () => {
     const url = "cadastroAdm/cadastroAdm.html",
-        body = document.getElementById("horarios_adm");
+        body = document.getElementById("content_adm");
 
     fetch(url)
         .then(res => res.text())
@@ -42,8 +42,8 @@ const user = () => {
 }
 
 const horarios = async () => { 
-    const url = "../pages/horarios/horarios.html",
-        body = document.getElementById("horarios_adm");
+    const url = "horariosAdm/horariosAdm.html",
+        body = document.getElementById("content_adm");
 
     fetch(url)
         .then(res => res.text())
@@ -56,7 +56,7 @@ const horarios = async () => {
 
 const doacao = () => {
     const url = "doacaoAdm/doacaoAdm.html",
-        body = document.getElementById("horarios_adm");
+        body = document.getElementById("content_adm");
 
     fetch(url)
         .then(res => res.text())
