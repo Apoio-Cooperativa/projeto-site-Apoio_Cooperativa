@@ -43,6 +43,7 @@
   }
 
   .marked_text {
+    --cor-traco: rgba(128, 128, 128, .13);
     font-size: 1.3rem;
     position: relative;
     font-style: italic;
@@ -54,10 +55,10 @@
     position: absolute;
     display: block;
     font-size: 30em;
-    color: rgba(128, 128, 128, .15);
+    color: var(--cor-traco);
     font-weight: normal;
     top: -12rem;
-    left: -10rem;
+    right: 95%;
   }
 
   .marked_text::after {
@@ -66,10 +67,10 @@
     position: absolute;
     display: block;
     font-size: 30em;
-    color: rgba(128, 128, 128, .15);
+    color: var(--cor-traco);
     font-weight: normal;
     top: -8rem;
-    right: -10rem;
+    right: -5%;
   }
   
   .btn_sobre_inicio:hover {

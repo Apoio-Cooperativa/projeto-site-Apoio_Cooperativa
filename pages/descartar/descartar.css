@@ -1,3 +1,12 @@
+/* .titulo_pagina_reciclar {
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: var(--weight-text-400);
+} */
 
 .card_container_reciclar {
   display: flex;
@@ -277,6 +286,8 @@
 .show_triangle::before {
   display: block;
 }
+
+/* oie */
 
 .container_vocabulario_reciclar {
   background: var(--cor-base-4);
