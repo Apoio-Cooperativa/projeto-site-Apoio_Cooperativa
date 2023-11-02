@@ -87,3 +87,62 @@ table td {
 table tbody tr:nth-child(even) {
   background-color: #f2f2f2;
 }
+
+/*------MODAL-------*/
+
+/* Adicione este CSS ao seu arquivo modal.css */
+.modal {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  padding: 20px;
+  background-color: #DFF2D7;
+  border: 1px solid #000;
+  width: 50%;
+}
+
+.close {
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form-group {
+  margin: 10px 0;
+}
+
+label {
+  display: block;
+  font-weight: var(--weight-text-700);
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #387E3A;
+}

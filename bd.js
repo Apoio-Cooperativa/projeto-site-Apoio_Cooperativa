@@ -1,4 +1,4 @@
-let json = [];
+let json = [], json2 = [];
 let tbIsRead = true;
 
 const read = async () => {
@@ -18,6 +18,24 @@ const read = async () => {
         });
     });
 }
+
+const update = async () => {
+    $(document).ready(function () {
+        $.ajax({
+            url: '../bd.php',
+            type: 'GET',
+            dataType: 'json',
+            success: function (data) {
+                json2 = data;
+                tables(data);
+            },
+            error: function (xhr, status, error) {
+                console.error(status + ': ' + error);
+            }
+        });
+    });
+}
+
 
 function gamb() {
     document.getElementById("tables").innerHTML = `<div class="table_horarios_row">

@@ -134,3 +134,29 @@
 
     </div> -->
 </section>
+
+<div class="modal" id="myModal">
+    <div class="modal-content">
+        <span class="close" id="closeModal" onclick="closeModal()">&times;</span>
+        <h2>Agendamento</h2>
+        <form>
+            <div class="form-group">
+                <label for="descricao">Descrição:</label>
+                <input type="text" id="descricao" name="descricao">
+            </div>
+            <div class="form-group">
+                <label for="diaSemana">Dia da Semana:</label>
+                <select id="diaSemana" name="diaSemana">
+                    <option value="1">Domingo</option>
+                    <option value="2">Segunda-feira</option>
+                    <option value="3">Terça-feira</option>
+                    <option value="4">Quarta-feira</option>
+                    <option value="5">Quinta-feira</option>
+                    <option value="6">Sexta-feira</option>
+                    <option value="7">Sábado</option>
+                </select>
+            </div>
+            <button>Agendar</button>
+        </form>
+    </div>
+</div>

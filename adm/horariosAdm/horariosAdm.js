@@ -27,6 +27,7 @@ function tables(data) {
                     <td>${item.hora.slice(0, 5)}</td>
                 </tr>
             </tbody>
+            <input type="button" value="Editar" onclick="edit(${item.id})">
         </table>
         `;
 
@@ -39,3 +40,23 @@ function tables(data) {
         }
     });
 }
+
+/*modal*/
+
+const edit = (table) => {
+    let modal = document.getElementById('myModal');
+    console.log(table);
+    modal.style.display = 'block';
+}
+
+const closeModal = () => {
+    let modal = document.getElementById('myModal');
+    modal.style.display = 'none';
+}
+
+window.addEventListener('click', (event) => {
+    let modal = document.getElementById('myModal');
+    if (event.target === modal) {
+        modal.style.display = 'none';
+    }
+});
