@@ -5,10 +5,10 @@ $username = "root";
 $password = "";
 $dbname = "dbcooperativa"; */
 
-/* $servername = "db4free.net";
+$servername = "db4free.net";
 $username = "coopsj";
 $password = "@tcc2023";
-$dbname = "dbcooperativa"; */
+$dbname = "dbcooperativa";
 
 /* $servername = "carmine";
 $username = "aluno";
