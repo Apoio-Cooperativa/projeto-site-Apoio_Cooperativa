@@ -48,7 +48,6 @@ const horarios = async () => {
     fetch(url)
         .then(res => res.text())
         .then(text => body.innerHTML = text)
-        .catch(errorOnLoad())
 
     await delay(200)
     if (tbIsRead) { await read(); tbIsRead = false }
@@ -66,9 +65,4 @@ const doacao = () => {
 
 const voltar = () => {
     window.location.hash = "#horarios";
-}
-
-const errorOnLoad = () => {
-    const body = document.getElementById("content_adm");
-    body.innerHTML = "<p>Página indisponível</p>"
 }
