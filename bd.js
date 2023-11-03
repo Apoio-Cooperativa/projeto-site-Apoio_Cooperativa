@@ -45,6 +45,7 @@ const update = async (id) => {
 // const create = async () =>{}
 
 function gamb() {
+    tbIsRead = true;
     document.getElementById("tables").innerHTML = `<div class="table_horarios_row"><div class="table_horarios_cell">
     <input type="button" value="Editar" onclick="edit(0, 4)"><table>
         <caption>Água Espraiada</caption>
