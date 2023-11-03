@@ -63,6 +63,6 @@ const doacao = () => {
         .then(text => body.innerHTML = text)
 }
 
-const voltar = () => {
+const voltar = async () => {
     window.location.hash = "#horarios";
 }
