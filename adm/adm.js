@@ -64,5 +64,6 @@ const doacao = () => {
 }
 
 const voltar = async () => {
+    await delay(100)
     window.location.hash = "#horarios";
 }
