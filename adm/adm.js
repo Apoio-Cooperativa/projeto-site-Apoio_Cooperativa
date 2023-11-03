@@ -11,7 +11,7 @@ const renderPage = async () => {
     const page = validateHash(window.location.hash);
     switch (page) {
         case ("doacoes"): doacao(); break
-        case ("horarios"): horarios(); window.location.hash = "#horarios"; break;
+        case ("horarios"): horarios(); break;
         case ("usuarios"): user(); break
         default: /* lost(); */ horarios();
     }
@@ -41,7 +41,7 @@ const user = () => {
         .then(text => body.innerHTML = text)
 }
 
-const horarios = async () => { 
+const horarios = async () => {
     const url = "horariosAdm/horariosAdm.html",
         body = document.getElementById("content_adm");
 
@@ -61,4 +61,8 @@ const doacao = () => {
     fetch(url)
         .then(res => res.text())
         .then(text => body.innerHTML = text)
+}
+
+const voltar = () => {
+    window.location.hash = "#horarios";
 }

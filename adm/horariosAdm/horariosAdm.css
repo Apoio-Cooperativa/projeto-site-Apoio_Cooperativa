@@ -113,10 +113,13 @@ table tbody tr:nth-child(even) {
 }
 
 .modal-content {
-  padding: 20px;
-  background-color: #DFF2D7;
-  border: 1px solid #000;
+  padding: 1.5rem;
   width: 50%;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  align-self: center;
 }
 
 .close {

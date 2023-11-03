@@ -2,11 +2,11 @@
 
 * {
   font-family: 'poppins', sans-serif;
-  
+
 }
 
-.tela_cad_adm{
-  box-sizing: border-box
+.tela_cad_adm {
+  box-sizing: border-box;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -29,7 +29,7 @@
   box-shadow: 0 0 20px 0 darkgrey;
 }
 
-.formulario_adm{
+.formulario_adm {
   position: absolute;
   margin-top: 80px;
   transition: .5s;
@@ -37,7 +37,7 @@
   height: 400px;
 }
 
-a{
+a {
   color: white;
   text-decoration: none;
 }
@@ -58,7 +58,7 @@ a{
 
 
 
-.input_password_adm{
+.input_password_adm {
   border: none;
   margin-top: 40px;
   border-radius: 60px;
@@ -67,7 +67,7 @@ a{
   width: 100%;
 }
 
-.input_text_adm{
+.input_text_adm {
   border: none;
   margin-top: 40px;
   border-radius: 60px;
@@ -76,7 +76,7 @@ a{
   width: 100%;
 }
 
- .btn_cadastrar_adm{
+.btn_cadastrar_adm {
   background: #359e31;
   color: white;
   border-radius: 30px;
@@ -90,7 +90,7 @@ a{
 }
 
 
-.btn_voltar_adm{
+.btn_voltar_adm {
 
   background: #359e31;
   color: white;
@@ -102,7 +102,7 @@ a{
   font-size: 15px;
   margin-top: 1rem;
   cursor: pointer;
- 
+
 
 }
 
@@ -113,7 +113,7 @@ a{
 }
 
 
-.i_adm{
+.i_adm {
   position: absolute;
   left: 0;
   padding: 10px 10px;
@@ -121,7 +121,7 @@ a{
 
 .iEmail {
   top: 40px;
-  
+
 }
 
 .iPassword {
