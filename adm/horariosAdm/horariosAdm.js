@@ -1,6 +1,6 @@
-function tables(data) {
+const tables = (data) => {
     const tabelasContainer = document.getElementById("tables");
-
+    let cont = 0;
     let tabelaDiv; // Variável para armazenar o div de tabelas
     data.forEach(function (item, index) {
         if (index % 3 === 0) {
@@ -27,7 +27,7 @@ function tables(data) {
                     <td>${item.hora.slice(0, 5)}</td>
                 </tr>
             </tbody>
-            <input type="button" value="Editar" onclick="edit(${item.id})">
+            <input type="button" value="Editar" onclick="edit(${cont}, ${[item.id]})">
         </table>
         `;
 
@@ -38,25 +38,41 @@ function tables(data) {
         if (index % 3 === 2) {
             tabelasContainer.appendChild(tabelaDiv);
         }
+
+        idTb = [item.id];
+        cont++;
+        console.log(idTb, cont);
     });
 }
 
 /*modal*/
 
-const edit = (table) => {
-    let modal = document.getElementById('myModal');
-    console.log(table);
-    modal.style.display = 'block';
+const edit = (table, id) => {
+    let modal = document.getElementById('modal'),
+        modalScreen = document.getElementById('myModal');
+    console.log(table + ' ' + id);
+    modal.style.scale = '1.0';
+    modalScreen.style.scale = '1.0';
+
+    document.getElementById("confirmar").onclick = function () {
+        // Coloque o código que deseja executar quando o botão é clicado aqui
+        console.log("O botão foi clicado! " + id);
+        update(id)
+    };
 }
 
 const closeModal = () => {
-    let modal = document.getElementById('myModal');
-    modal.style.display = 'none';
+    let modal = document.getElementById('modal'),
+        modalScreen = document.getElementById('myModal');
+    modal.style.scale = '0';
+    modalScreen.style.scale = '0';
 }
 
 window.addEventListener('click', (event) => {
-    let modal = document.getElementById('myModal');
-    if (event.target === modal) {
-        modal.style.display = 'none';
+    let modal = document.getElementById('modal'),
+        modalScreen = document.getElementById('myModal');
+    if (event.target === modalScreen) {
+        modal.style.scale = '0';
+        modalScreen.style.scale = '0';
     }
 });

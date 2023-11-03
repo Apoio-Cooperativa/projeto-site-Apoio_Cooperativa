@@ -1,149 +1,10 @@
-<section class="table_horarios" id="tables">
-    <!-- <div class="table_horarios_row">
-        <div class="table_horarios_cell">
-            <table>
-                <caption>Alvinópolis</caption>
-                <thead>
-                    <tr>
-                        <th>Dia da Semana</th>
-                        <th>Horários</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            terça-feira
-                        </td>
-                        <td>
-                            07:00
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="table_horarios_cell">
-            <table>
-                <caption>Alvinópolis II</caption>
-                <thead>
-                    <tr>
-                        <th>Dia da Semana</th>
-                        <th>Horários</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            sábado
-                        </td>
-                        <td>
-                            07:00
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="table_horarios_cell">
-            <table>
-                <caption>Atibaia Jardim</caption>
-                <thead>
-                    <tr>
-                        <th>Dia da Semana</th>
-                        <th>Horários</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            terça-feira
-                        </td>
-                        <td>
-                            07:00
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-    <div class="table_horarios_row">
-
-        <div class="table_horarios_cell">
-            <table>
-                <caption>Caetetuba</caption>
-                <thead>
-                    <tr>
-                        <th>Dia da Semana</th>
-                        <th>Horários</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            segunda-feira
-                        </td>
-                        <td>
-                            18:00
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <div class="table_horarios_cell">
-            <table>
-                <caption>Jardim Cerejeiras</caption>
-                <thead>
-                    <tr>
-                        <th>Dia da Semana</th>
-                        <th>Horários</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            segunda-feira
-                        </td>
-                        <td>
-                            18:00
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <div class="table_horarios_cell">
-            <table>
-                <caption>Parque Arco-Íris</caption>
-                <thead>
-                    <tr>
-                        <th>Dia da Semana</th>
-                        <th>Horários</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            terça-feira
-                        </td>
-                        <td>
-                            07:00
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-    </div> -->
-</section>
+<section class="table_horarios" id="tables"></section>
 
 <div class="modal" id="myModal">
-    <div class="modal-content">
+    <div class="modal-content" id="modal">
         <span class="close" id="closeModal" onclick="closeModal()">&times;</span>
-        <h2>Agendamento</h2>
+        <h2>Editar horário da coleta</h2>
         <form>
-            <div class="form-group">
-                <label for="descricao">Descrição:</label>
-                <input type="text" id="descricao" name="descricao">
-            </div>
             <div class="form-group">
                 <label for="diaSemana">Dia da Semana:</label>
                 <select id="diaSemana" name="diaSemana">
@@ -156,7 +17,11 @@
                     <option value="7">Sábado</option>
                 </select>
             </div>
-            <button>Agendar</button>
+            <div class="form-group">
+                <label for="descricao">Horário:</label>
+                <input type="time" id="descricao" name="descricao">
+            </div>
+            <input type="button" id="confirmar" value="Confirmar">
         </form>
     </div>
 </div>
