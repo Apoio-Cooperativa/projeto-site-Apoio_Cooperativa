@@ -44,109 +44,240 @@ const update = async (id) => {
 
 // const create = async () =>{}
 
-function gamb() {
+const gamb = async () => {
     tbIsRead = true;
-    document.getElementById("tables").innerHTML = `<div class="table_horarios_row"><div class="table_horarios_cell">
-    <input type="button" value="Editar" onclick="edit(0, 4)"><table>
-        <caption>Água Espraiada</caption>
-        <thead>
-            <tr>
-                <th>Dia da Semana</th>
-                <th>Horários</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Segunda-feira</td>
-                <td>07:00</td>
-            </tr>
-        </tbody>
-        
-    </table>
-    </div><div class="table_horarios_cell">
-    <input type="button" value="Editar" onclick="edit(1, 5)"><table>
-        <caption>Água Verde</caption>
-        <thead>
-            <tr>
-                <th>Dia da Semana</th>
-                <th>Horários</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Quarta-feira</td>
-                <td>18:00</td>
-            </tr>
-        </tbody>
-        
-    </table>
-    </div><div class="table_horarios_cell">
-    <input type="button" value="Editar" onclick="edit(2, 6)"><table>
-        <caption>Alto da Floresta</caption>
-        <thead>
-            <tr>
-                <th>Dia da Semana</th>
-                <th>Horários</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Sexta-feira</td>
-                <td>07:00</td>
-            </tr>
-        </tbody>
-        
-    </table>
-    </div></div><div class="table_horarios_row"><div class="table_horarios_cell">
-    <input type="button" value="Editar" onclick="edit(3, 2)"><table>
-        <caption>Alvinópolis</caption>
-        <thead>
-            <tr>
-                <th>Dia da Semana</th>
-                <th>Horários</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Terça-feira</td>
-                <td>07:00</td>
-            </tr>
-        </tbody>
-        
-    </table>
-    </div><div class="table_horarios_cell">
-    <input type="button" value="Editar" onclick="edit(4, 7)"><table>
-        <caption>Alvinópolis II </caption>
-        <thead>
-            <tr>
-                <th>Dia da Semana</th>
-                <th>Horários</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Sábado</td>
-                <td>07:00</td>
-            </tr>
-        </tbody>
-        
-    </table>
-    </div><div class="table_horarios_cell">
-    <input type="button" value="Editar" onclick="edit(5, 8)"><table>
-        <caption>Atibaia Jardim</caption>
-        <thead>
-            <tr>
-                <th>Dia da Semana</th>
-                <th>Horários</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Terça-feira</td>
-                <td>07:00</td>
-            </tr>
-        </tbody>
-        
-    </table>
-    </div></div>`;
+    if (typeof isAdm !== 'undefined') {
+        document.getElementById("tables").innerHTML = `<div class="table_horarios_row">
+        <div class="table_horarios_cell">
+            <input type="button" value="Editar" onclick="edit(0, 4)">
+            <table>
+                <caption>Água Espraiada</caption>
+                <thead>
+                    <tr>
+                        <th>Dia da Semana</th>
+                        <th>Horários</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Segunda-feira</td>
+                        <td>07:00</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+        <div class="table_horarios_cell">
+            <input type="button" value="Editar" onclick="edit(1, 5)">
+            <table>
+                <caption>Água Verde</caption>
+                <thead>
+                    <tr>
+                        <th>Dia da Semana</th>
+                        <th>Horários</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Quarta-feira</td>
+                        <td>18:00</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+        <div class="table_horarios_cell">
+            <input type="button" value="Editar" onclick="edit(2, 6)">
+            <table>
+                <caption>Alto da Floresta</caption>
+                <thead>
+                    <tr>
+                        <th>Dia da Semana</th>
+                        <th>Horários</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sexta-feira</td>
+                        <td>07:00</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+    <div class="table_horarios_row">
+        <div class="table_horarios_cell">
+            <input type="button" value="Editar" onclick="edit(3, 2)">
+            <table>
+                <caption>Alvinópolis</caption>
+                <thead>
+                    <tr>
+                        <th>Dia da Semana</th>
+                        <th>Horários</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Terça-feira</td>
+                        <td>07:00</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+        <div class="table_horarios_cell">
+            <input type="button" value="Editar" onclick="edit(4, 7)">
+            <table>
+                <caption>Alvinópolis II </caption>
+                <thead>
+                    <tr>
+                        <th>Dia da Semana</th>
+                        <th>Horários</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sábado</td>
+                        <td>07:00</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+        <div class="table_horarios_cell">
+            <input type="button" value="Editar" onclick="edit(5, 8)">
+            <table>
+                <caption>Atibaia Jardim</caption>
+                <thead>
+                    <tr>
+                        <th>Dia da Semana</th>
+                        <th>Horários</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Terça-feira</td>
+                        <td>07:00</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+    </div>`;
+    }
+    else {
+        document.getElementById("tables").innerHTML = `    <div class="table_horarios_row">
+        <div class="table_horarios_cell">
+            <table>
+                <caption>Água Espraiada</caption>
+                <thead>
+                    <tr>
+                        <th>Dia da Semana</th>
+                        <th>Horários</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Segunda-feira</td>
+                        <td>07:00</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+        <div class="table_horarios_cell">
+            <table>
+                <caption>Água Verde</caption>
+                <thead>
+                    <tr>
+                        <th>Dia da Semana</th>
+                        <th>Horários</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Quarta-feira</td>
+                        <td>18:00</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+        <div class="table_horarios_cell">
+            <table>
+                <caption>Alto da Floresta</caption>
+                <thead>
+                    <tr>
+                        <th>Dia da Semana</th>
+                        <th>Horários</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sexta-feira</td>
+                        <td>07:00</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+    <div class="table_horarios_row">
+        <div class="table_horarios_cell">
+            <table>
+                <caption>Alvinópolis</caption>
+                <thead>
+                    <tr>
+                        <th>Dia da Semana</th>
+                        <th>Horários</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Terça-feira</td>
+                        <td>07:00</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+        <div class="table_horarios_cell">
+            <table>
+                <caption>Alvinópolis II </caption>
+                <thead>
+                    <tr>
+                        <th>Dia da Semana</th>
+                        <th>Horários</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sábado</td>
+                        <td>07:00</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+        <div class="table_horarios_cell">
+            <table>
+                <caption>Atibaia Jardim</caption>
+                <thead>
+                    <tr>
+                        <th>Dia da Semana</th>
+                        <th>Horários</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Terça-feira</td>
+                        <td>07:00</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+    </div>`
+    }
 }

@@ -1,3 +1,5 @@
+let isAdm = true;
+
 const delay = async (ms) => {
     return new Promise((resolve) => {
         setTimeout(resolve, ms);
@@ -51,7 +53,7 @@ const horarios = async () => {
 
     await delay(200)
     if (tbIsRead) { await read(); tbIsRead = false }
-    else {tables(json); }
+    else { tables(json); }
 }
 
 const doacao = () => {
