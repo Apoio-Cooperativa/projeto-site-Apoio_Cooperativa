@@ -41,6 +41,8 @@ const user = () => {
     fetch(url)
         .then(res => res.text())
         .then(text => body.innerHTML = text)
+
+    //uncheck();
 }
 
 const horarios = async () => {
@@ -54,6 +56,8 @@ const horarios = async () => {
     await delay(200)
     if (tbIsRead) { await read(); tbIsRead = false }
     else { tables(json); }
+
+    uncheck();
 }
 
 const doacao = () => {
@@ -63,6 +67,13 @@ const doacao = () => {
     fetch(url)
         .then(res => res.text())
         .then(text => body.innerHTML = text)
+
+    //uncheck();
+}
+
+const uncheck = () => {
+    const check = document.getElementById("toogle");
+    check.checked = false;
 }
 
 const voltar = async () => {
