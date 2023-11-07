@@ -53,6 +53,11 @@
   align-self: center;
 }
 
+.edit_icon {
+  cursor: pointer;
+  color: #1b3d0c;
+}
+
 /* Estilo para as tabelas */
 table {
   width: 100%;
@@ -91,7 +96,6 @@ table tbody tr:nth-child(even) {
 
 /*------MODAL-------*/
 
-/* Adicione este CSS ao seu arquivo modal.css */
 .modal {
   /* display: none; */
   scale: 0;
@@ -106,7 +110,7 @@ table tbody tr:nth-child(even) {
   align-items: center;
   justify-content: center;
   z-index: 999;
-  padding: 0 0 10rem 0; 
+  padding: 0 0 10rem 0;
 
 }
 

@@ -47,68 +47,67 @@ const update = async (id) => {
 const gamb = async () => {
     tbIsRead = true;
     if (typeof isAdm !== 'undefined') {
-        document.getElementById("tables").innerHTML = `<div class="table_horarios_row">
-        <div class="table_horarios_cell">
-            <input type="button" value="Editar" onclick="edit(0, 4)">
-            <table>
-                <caption>Água Espraiada</caption>
-                <thead>
-                    <tr>
-                        <th>Dia da Semana</th>
-                        <th>Horários</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Segunda-feira</td>
-                        <td>07:00</td>
-                    </tr>
-                </tbody>
-
-            </table>
-        </div>
-        <div class="table_horarios_cell">
-            <input type="button" value="Editar" onclick="edit(1, 5)">
-            <table>
-                <caption>Água Verde</caption>
-                <thead>
-                    <tr>
-                        <th>Dia da Semana</th>
-                        <th>Horários</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Quarta-feira</td>
-                        <td>18:00</td>
-                    </tr>
-                </tbody>
-
-            </table>
-        </div>
-        <div class="table_horarios_cell">
-            <input type="button" value="Editar" onclick="edit(2, 6)">
-            <table>
-                <caption>Alto da Floresta</caption>
-                <thead>
-                    <tr>
-                        <th>Dia da Semana</th>
-                        <th>Horários</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Sexta-feira</td>
-                        <td>07:00</td>
-                    </tr>
-                </tbody>
-
-            </table>
-        </div>
+        document.getElementById("tables").innerHTML = `<div class="table_horarios_cell">
+        <i class="fa-regular fa-pen-to-square edit_icon" onclick="edit(0, 4)"></i>
+        <table>
+            <caption>Água Espraiada</caption>
+            <thead>
+                <tr>
+                    <th>Dia da Semana</th>
+                    <th>Horários</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunda-feira</td>
+                    <td>07:00</td>
+                </tr>
+            </tbody>
+    
+        </table>
+    </div>
+    <div class="table_horarios_cell">
+        <i class="fa-regular fa-pen-to-square edit_icon" onclick="edit(1, 5)"></i>
+        <table>
+            <caption>Água Verde</caption>
+            <thead>
+                <tr>
+                    <th>Dia da Semana</th>
+                    <th>Horários</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Quarta-feira</td>
+                    <td>18:00</td>
+                </tr>
+            </tbody>
+    
+        </table>
+    </div>
+    <div class="table_horarios_cell">
+        <i class="fa-regular fa-pen-to-square edit_icon" onclick="edit(2, 6)"></i>
+        <table>
+            <caption>Alto da Floresta</caption>
+            <thead>
+                <tr>
+                    <th>Dia da Semana</th>
+                    <th>Horários</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sexta-feira</td>
+                    <td>07:00</td>
+                </tr>
+            </tbody>
+    
+        </table>
+    </div>
     </div>
     <div class="table_horarios_row">
         <div class="table_horarios_cell">
-            <input type="button" value="Editar" onclick="edit(3, 2)">
+            <i class="fa-regular fa-pen-to-square edit_icon" onclick="edit(3, 2)"></i>
             <table>
                 <caption>Alvinópolis</caption>
                 <thead>
@@ -123,11 +122,11 @@ const gamb = async () => {
                         <td>07:00</td>
                     </tr>
                 </tbody>
-
+    
             </table>
         </div>
         <div class="table_horarios_cell">
-            <input type="button" value="Editar" onclick="edit(4, 7)">
+            <i class="fa-regular fa-pen-to-square edit_icon" onclick="edit(4, 7)"></i>
             <table>
                 <caption>Alvinópolis II </caption>
                 <thead>
@@ -142,11 +141,11 @@ const gamb = async () => {
                         <td>07:00</td>
                     </tr>
                 </tbody>
-
+    
             </table>
         </div>
         <div class="table_horarios_cell">
-            <input type="button" value="Editar" onclick="edit(5, 8)">
+            <i class="fa-regular fa-pen-to-square edit_icon" onclick="edit(5, 8)"></i>
             <table>
                 <caption>Atibaia Jardim</caption>
                 <thead>
@@ -161,7 +160,7 @@ const gamb = async () => {
                         <td>07:00</td>
                     </tr>
                 </tbody>
-
+    
             </table>
         </div>
     </div>`;
