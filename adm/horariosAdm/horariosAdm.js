@@ -27,7 +27,7 @@ const tables = (data) => {
                     <td>${item.hora.slice(0, 5)}</td>
                 </tr>
             </tbody>
-            <i class="fa-regular fa-pen-to-square" style="color: #1b3d0c;" onclick="edit(${cont}, ${[item.id]})></i>
+            <input type="button" value="Editar" onclick="edit(${cont}, ${[item.id]})">
         </table>
         `;
 
