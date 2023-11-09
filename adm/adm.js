@@ -42,7 +42,7 @@ const user = () => {
         .then(res => res.text())
         .then(text => body.innerHTML = text)
 
-    //uncheck();
+    uncheckBar();
 }
 
 const horarios = async () => {
@@ -57,7 +57,7 @@ const horarios = async () => {
     if (tbIsRead) { await read(); tbIsRead = false }
     else { tables(json); }
 
-    uncheck();
+    uncheckBar();
 }
 
 const doacao = () => {
@@ -68,12 +68,15 @@ const doacao = () => {
         .then(res => res.text())
         .then(text => body.innerHTML = text)
 
-    //uncheck();
+    uncheckBar();
 }
 
-const uncheck = () => {
-    const check = document.getElementById("toogle");
-    check.checked = false;
+const uncheckBar = () => {
+    try {
+        const check = document.getElementById("toogle");
+        check.checked = false;
+    }
+    catch { }
 }
 
 const voltar = async () => {

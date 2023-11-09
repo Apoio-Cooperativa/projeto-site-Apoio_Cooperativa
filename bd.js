@@ -22,10 +22,10 @@ const read = async () => {
     });
 }
 
-const update = async (id) => {
-    console.log(id)
+const update = async (id, week, hour) => {
     crud = 'update';
-    let idUpdate = 100, horaUpdate = '01:00', diaUpdate = 5;
+    console.log(id, week, hour);
+    let idUpdate = id, diaUpdate = week, horaUpdate = hour;
     $(document).ready(function () {
         $.ajax({
             url: '../bd.php',
@@ -34,6 +34,7 @@ const update = async (id) => {
             dataType: 'json',
             success: function (data) {
                 console.log(data); // Manipule a resposta do PHP, se necessário
+                location.reload()
             },
             error: function (xhr, status, error) {
                 console.error(status + ': ' + error);

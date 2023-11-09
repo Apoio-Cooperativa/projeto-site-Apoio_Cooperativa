@@ -27,7 +27,7 @@ const tables = (data) => {
                     <td>${item.hora.slice(0, 5)}</td>
                 </tr>
             </tbody>
-            <i class="fa-regular fa-pen-to-square edit_icon" onclick="edit(${cont}, ${item.id})"></i>
+            <i class="fa-regular fa-pen-to-square edit_icon" onclick="edit(${item.id}, '${weekToNumber[item.semana.toLowerCase()]}', '${item.hora.slice(0, 5)}')"></i>
         </table>
         `;
 
@@ -41,23 +41,41 @@ const tables = (data) => {
 
         idTb = [item.id];
         cont++;
-        console.log(idTb, cont);
     });
 }
 
+const weekToNumber = {
+    'domingo': 1,
+    'segunda-feira': 2,
+    'terça-feira': 3,
+    'quarta-feira': 4,
+    'quinta-feira': 5,
+    'sexta-feira': 6,
+    'sábado': 7,
+};
+
 /*modal*/
 
-const edit = (table, id) => {
+const edit = (id, week, hour) => {
     let modal = document.getElementById('modal'),
         modalScreen = document.getElementById('myModal');
-    console.log(table + ' ' + id);
+
+    document.getElementById('diaSemana').value = week
+    document.getElementById('hora').value = hour
+
     modal.style.scale = '1.0';
     modalScreen.style.scale = '1.0';
 
     document.getElementById("confirmar").onclick = function () {
-        // Coloque o código que deseja executar quando o botão é clicado aqui
-        console.log("O botão foi clicado! " + id);
-        update(id)
+        let semana = document.getElementById('diaSemana').value;
+        let hora = document.getElementById('hora').value;
+
+        if (semana === week && hora === hour) {return;}
+        console.log(semana + " " + hora);
+
+        console.log("O botão foi clicado! " + id + " \nSemana: " + week + " \nHora: " + hour);
+        console.log("O botão foi clicado! " + id + " \nSemana: " + semana + " \nHora: " + hora);
+        update(id, semana, hora)
     };
 }
 
