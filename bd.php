@@ -33,8 +33,8 @@ if ($operacao === 'select') {
     FROM tb04_informacoes
     JOIN tb06_dias_semana ON tb04_dias_semana = tb06_id
     JOIN tb07_bairros ON tb04_bairros = tb07_id
-    ORDER BY tb07_nome ASC
-    LIMIT 6;";
+    ORDER BY tb07_nome ASC 
+    limit 6;";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
