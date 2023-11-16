@@ -53,7 +53,7 @@ const horarios = async () => {
         .then(res => res.text())
         .then(text => body.innerHTML = text)
 
-    await delay(200)
+    await delay(350)
     if (tbIsRead) { await read(); tbIsRead = false }
     else { tables(json); }
 

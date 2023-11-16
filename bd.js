@@ -45,6 +45,8 @@ const update = async (id, week, hour) => {
 
 // const create = async () =>{}
 
+// const delete = async () =>{}
+
 const gamb = async () => {
     tbIsRead = true;
     if (typeof isAdm !== 'undefined') {

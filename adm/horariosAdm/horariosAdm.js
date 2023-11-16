@@ -27,7 +27,7 @@ const tables = (data) => {
                     <td>${item.hora.slice(0, 5)}</td>
                 </tr>
             </tbody>
-            <i class="fa-regular fa-pen-to-square edit_icon" onclick="edit(${item.id}, '${weekToNumber[item.semana.toLowerCase()]}', '${item.hora.slice(0, 5)}')"></i>
+            <i class="fa-regular fa-pen-to-square edit_icon" onclick="edit(${item.id}, '${item.bairro}', '${weekToNumber[item.semana.toLowerCase()]}', '${item.hora.slice(0, 5)}')"></i>
         </table>
         `;
 
@@ -56,10 +56,11 @@ const weekToNumber = {
 
 /*modal*/
 
-const edit = (id, week, hour) => {
-    let modal = document.getElementById('modal'),
+const edit = (id, nome, week, hour) => {
+    const modal = document.getElementById('modal'),
         modalScreen = document.getElementById('myModal');
 
+    document.getElementById('bairro').innerText = nome    
     document.getElementById('diaSemana').value = week
     document.getElementById('hora').value = hour
 
@@ -70,7 +71,7 @@ const edit = (id, week, hour) => {
         let semana = document.getElementById('diaSemana').value;
         let hora = document.getElementById('hora').value;
 
-        if (semana === week && hora === hour) {return;}
+        if (semana === week && hora === hour) { return; }
         console.log(semana + " " + hora);
 
         console.log("O botão foi clicado! " + id + " \nSemana: " + week + " \nHora: " + hour);

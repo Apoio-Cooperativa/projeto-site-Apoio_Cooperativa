@@ -25,7 +25,6 @@ if ($conn->connect_error) {
 
 $operacao = $_POST['operacao'];
 
-
 // Consulta SELECT
 if ($operacao === 'select') {
     // Consulta SELECT
@@ -34,7 +33,7 @@ if ($operacao === 'select') {
     JOIN tb06_dias_semana ON tb04_dias_semana = tb06_id
     JOIN tb07_bairros ON tb04_bairros = tb07_id
     ORDER BY tb07_nome ASC 
-    limit 6;";
+    LIMIT 6;";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
