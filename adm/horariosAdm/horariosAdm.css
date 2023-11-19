@@ -1,7 +1,7 @@
 #tables {
   min-height: 80vh;
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
 }
 
 .table_horarios {
@@ -171,6 +171,17 @@ select {
   border-radius: 10px;
 }
 
+.deletar_horariosadm {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin: 1rem;
+  border-radius: 10px;
+}
+
 input[type="button"]:hover {
   background-color: #387E3A;
+  transition: 0.25s;
 }

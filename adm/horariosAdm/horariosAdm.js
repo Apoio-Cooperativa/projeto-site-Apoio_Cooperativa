@@ -60,7 +60,7 @@ const edit = (id, nome, week, hour) => {
     const modal = document.getElementById('modal'),
         modalScreen = document.getElementById('myModal');
 
-    document.getElementById('bairro').innerText = nome    
+    document.getElementById('bairro').innerText = nome
     document.getElementById('diaSemana').value = week
     document.getElementById('hora').value = hour
 
@@ -78,6 +78,12 @@ const edit = (id, nome, week, hour) => {
         console.log("O botão foi clicado! " + id + " \nSemana: " + semana + " \nHora: " + hora);
         update(id, semana, hora)
     };
+    document.getElementById("deletar").onclick = function () {
+        decisao = window.confirm(`Deseja realmente apagar o registro de ${nome}?`)
+        if (decisao) {
+            alert(decisao)
+        }
+    }
 }
 
 const closeModal = () => {

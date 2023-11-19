@@ -47,6 +47,7 @@ if ($operacao === 'select') {
         // Se não houver resultados, retorne um JSON vazio
         echo json_encode(array());
     }
+} elseif ($operacao === 'insert') {
 } elseif ($operacao === 'update') {
     // Operação de UPDATE
     $id = $_POST['id'];
@@ -63,6 +64,7 @@ if ($operacao === 'select') {
         $data = array("resultado" => "Erro na atualização: " . $conn->error);
     }
     echo json_encode($data);
+} elseif ($operacao === 'delete') {
 } else {
     echo json_encode(array("erro" => "Operação não reconhecida"));
 }
