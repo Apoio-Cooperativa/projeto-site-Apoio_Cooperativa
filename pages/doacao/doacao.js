@@ -93,3 +93,23 @@ const copy = () => {
             console.error("Erro ao copiar texto:", err);
         });
 }
+
+// function createPercentageBar(current, goal, barWidth = 200) {
+//     if (goal <= current) {
+//         return 'Meta alcançada!';
+//     }
+
+//     const percentage = (current / goal) * 100;
+//     const bar = document.getElementById('percentageBar');
+//     bar.innerHTML = '<div style="background-color: #f3f3f3; border: 1px solid #c3c3c3; width: ' + barWidth + 'px;">' +
+//                         '<div style="background-color: #4CAF50; width: ' + Math.round(percentage) + '%;">' +
+//                         '</div>' +
+//                     '</div>';
+// }
+
+// // Exemplo de dados - atualize conforme necessário
+// const currentDonation = 500;
+// const goalDonation = 1000;
+
+// // Exibir a barra de porcentagem
+// createPercentageBar(currentDonation, goalDonation);

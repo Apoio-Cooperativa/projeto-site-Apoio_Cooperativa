@@ -3,13 +3,14 @@
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
+  font-family: var(--font);
 }
 
 .pg_doacao {
   display: flex;
-  margin-top: 1rem;
-  width: 53.125rem;
-  height: 46.75rem;
+  margin: 2rem 0 1rem 0;
+  width: 55rem;
+  height: 50rem;
   border-radius: 15px;
   background: linear-gradient(135deg, rgba(19, 111, 39, 0.9), rgba(95, 236, 33, 0.7));
   box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
@@ -31,22 +32,26 @@
   color: #333; /* Cor do texto */
   width: 15.5rem; /* Largura máxima para evitar que ele se estenda demais */
   margin: 0 auto; /* Centraliza horizontalmente */
-  margin: 2rem 0 -4rem 0;
+  position: absolute;
+  top: 18rem;
+  width: 50%;
 }
 
 #msg-verificacao p {
   margin: 0; /* Remove margem padrão do parágrafo */
-  font-size: 1.2rem; /* Tamanho da fonte do texto */
+  font-size: 1.4rem; /* Tamanho da fonte do texto */
+  font-weight: 300;
 }
 
 #msg-verificacao input[type="button"] {
-  margin: 10px; /* Espaçamento entre os botões */
-  padding: 10px 20px; /* Espaçamento interno dos botões */
+  margin: 15px; /* Espaçamento entre os botões */
+  padding: 20px 30px; /* Espaçamento interno dos botões */
   background-color: var(--primary-color); /* Cor de fundo dos botões */
   color: #fff; /* Cor do texto dos botões */
   border: none; /* Remove bordas dos botões */
   border-radius: 5px; /* Cantos arredondados dos botões */
   cursor: pointer; /* Cursor de mão ao passar sobre os botões */
+  font-size: 1.2rem;
 }
 
 #msg-verificacao input[type="button"]:hover {
@@ -62,9 +67,9 @@
 
 .qd_doacao {
   display: flex;
-  width: 20rem;
-  height: 47em;
-  margin: 0rem 0rem 0rem 1.5rem;
+  width: 18rem;
+  height: calc(100% - 5rem);
+  margin: 0rem 1rem 0rem 2.2rem;
   background-color: #47593F;
   border-radius: 0 0 0.5rem 0.5rem;
   flex-direction: column;
@@ -73,16 +78,15 @@
 
 .img_qr_code_doacao {
   width: 15rem;
-  margin: 5rem 0rem 0rem 0rem;
+  margin: 1rem 0 1rem 0 ;
 }
 
 .text_qr {
   text-align: center;
   color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: italic;
   font-size: 2.5rem;
-
+  margin-top: 5rem;
+  font-weight: 500;
 }
 
 .botao_copia_pix_doaca{
@@ -100,15 +104,16 @@
 
 .escolha_de_pagamento_doacao {
   display: flex;
-  margin: 2.5rem 0rem 0rem 1.5rem;
+  justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  font-family: sans-serif;
   color: #ffff;
+  margin: 0rem .5rem 0rem 1.5rem;
 }
 
 .radio_valor_doacao {
   display: flex;
+  margin-top: 1rem;
 }
 
 .input-container {
@@ -146,7 +151,7 @@
 .input-container label {
   color: var(--primary-color);
   font-size: 0.90rem;
-  font-weight: 600;
+  font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -171,12 +176,12 @@ input:checked+.radio-tile label {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 17rem;
-  width: 31rem;
+  height: 15rem;
+  width: 30rem;
   background-color: #f5f5f5;
   border-radius: 7px;
   color: #045214;
-  margin: 11.5rem 1rem 0rem 0rem;
+  margin: auto auto 5rem auto;
 }
 
 
