@@ -54,7 +54,7 @@ const create = async (name, week, hour) =>{
             dataType: 'json',
             success: function (data) {
                 console.log(data); // Manipule a resposta do PHP, se necessário
-                // location.reload()
+                //location.reload()
             },
             error: function (xhr, status, error) {
                 console.error(status + ': ' + error);
