@@ -34,15 +34,19 @@ const tables = (data) => {
         // Adicione a tabela ao div de tabelas
         tabelaDiv.appendChild(tabela);
 
-        // Se este é o terceiro div de tabela, adicione-o ao container de tabelas
-        if (index % 3 === 2) {
+        // Se este é o último item do loop, adicione o div ao container de tabelas
+        if (index === data.length - 1) {
+            tabelasContainer.appendChild(tabelaDiv);
+        } else if (index % 3 === 2) {
+            // Se este é o terceiro div de tabela, adicione-o ao container de tabelas
             tabelasContainer.appendChild(tabelaDiv);
         }
 
         idTb = [item.id];
         cont++;
     });
-}
+};
+
 
 const weekToNumber = {
     'domingo': 1,
@@ -64,8 +68,8 @@ const edit = (id, nome, week, hour) => {
     document.getElementById('diaSemana').value = week
     document.getElementById('hora').value = hour
 
-    modal.style.scale = '1.0';
-    modalScreen.style.scale = '1.0';
+    modal.style.display = 'block';
+    modalScreen.style.display = 'flex';
 
     document.getElementById("confirmar").onclick = function () {
         let semana = document.getElementById('diaSemana').value;
@@ -81,23 +85,43 @@ const edit = (id, nome, week, hour) => {
     document.getElementById("deletar").onclick = function () {
         decisao = window.confirm(`Deseja realmente apagar o registro de ${nome}?`)
         if (decisao) {
-            alert(decisao)
-        }
+            del(`${id}`)
+        } else return;
+    }
+}
+
+const add = () => {
+    const modal = document.getElementById('modal2'),
+        modalScreen = document.getElementById('myModal');
+
+    modal.style.display = 'block';
+    modalScreen.style.display = 'flex';
+
+    document.getElementById("confirmar-create").onclick = function () {
+        let nome = document.getElementById("nome").value
+        let sem = document.getElementById("diaSemana2").value
+        let hor = document.getElementById("hora2").value
+
+        create(nome, sem, hor);
     }
 }
 
 const closeModal = () => {
     let modal = document.getElementById('modal'),
-        modalScreen = document.getElementById('myModal');
-    modal.style.scale = '0';
-    modalScreen.style.scale = '0';
+        modalScreen = document.getElementById('myModal'),
+        modal2 = document.getElementById('modal2');
+    modal.style.display = 'none';
+    modalScreen.style.display = 'none';
+    modal2.style.display = 'none';
 }
 
 window.addEventListener('click', (event) => {
     let modal = document.getElementById('modal'),
-        modalScreen = document.getElementById('myModal');
+        modalScreen = document.getElementById('myModal'),
+        modal2 = document.getElementById('modal2');
     if (event.target === modalScreen) {
-        modal.style.scale = '0';
-        modalScreen.style.scale = '0';
+        modal.style.display = 'none';
+        modalScreen.style.display = 'none';
+        modal2.style.display = 'none';
     }
 });

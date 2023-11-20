@@ -21,3 +21,25 @@
 .seta-ao-topo:hover {
   transform: scale(110%);
 }
+
+.add {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  font-size: 1.5rem;
+  background-color: var(--cor-fundo-subir);
+  font-family: 'inter', sans-serif;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 999;
+  transition: 0.3s ease-in-out;
+}
+
+.add:hover{
+  transform: scale(110%);
+}

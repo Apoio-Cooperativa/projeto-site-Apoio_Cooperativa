@@ -34,7 +34,7 @@ const update = async (id, week, hour) => {
             dataType: 'json',
             success: function (data) {
                 console.log(data); // Manipule a resposta do PHP, se necessário
-                location.reload()
+                // location.reload()
             },
             error: function (xhr, status, error) {
                 console.error(status + ': ' + error);
@@ -43,9 +43,46 @@ const update = async (id, week, hour) => {
     });
 }
 
-// const create = async () =>{}
+const create = async (name, week, hour) =>{
+    crud = 'insert';
+    console.log(name, week, hour);
+    $(document).ready(function () {
+        $.ajax({
+            url: '../bd.php',
+            type: 'POST',
+            data: { operacao: crud, nome: name, hour: hour, dia: week },
+            dataType: 'json',
+            success: function (data) {
+                console.log(data); // Manipule a resposta do PHP, se necessário
+                // location.reload()
+            },
+            error: function (xhr, status, error) {
+                console.error(status + ': ' + error);
+            }
+        });
+    });
+}
 
-// const delete = async () =>{}
+const del = async (id) =>{
+    crud = 'delete';
+    console.log(id);
+    let idUpdate = id;
+    $(document).ready(function () {
+        $.ajax({
+            url: '../bd.php',
+            type: 'POST',
+            data: { operacao: crud, id: idUpdate},
+            dataType: 'json',
+            success: function (data) {
+                console.log(data); // Manipule a resposta do PHP, se necessário
+                // location.reload()
+            },
+            error: function (xhr, status, error) {
+                console.error(status + ': ' + error);
+            }
+        });
+    });
+}
 
 const gamb = async () => {
     tbIsRead = true;

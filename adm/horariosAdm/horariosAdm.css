@@ -53,6 +53,7 @@
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   align-self: center;
+  /* white-space: nowrap; */
 }
 
 .edit_icon {
@@ -61,7 +62,6 @@
   position: relative;
   left: 13.5rem;
   top: -.5rem;
-
 }
 
 /* Estilo para as tabelas */
@@ -104,8 +104,7 @@ table tbody tr:nth-child(even) {
 
 .modal {
   /* display: none; */
-  scale: 0;
-  display: flex;
+  display: none;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -121,7 +120,13 @@ table tbody tr:nth-child(even) {
 }
 
 #modal {
-  scale: 0;
+  display: none;
+  z-index: 999;
+  position: relative;
+}
+
+#modal2 {
+  display: none;
   z-index: 999;
   position: relative;
 }
@@ -153,8 +158,21 @@ label {
   font-weight: var(--weight-text-700);
 }
 
-input[type="time"],
+input[type="time"] {
+  width: 90%;
+  padding: 0.7rem;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+}
+
 select {
+  width: 93.5%;
+  padding: 0.7rem;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+}
+
+#modal2 input[type="text"] {
   width: 90%;
   padding: 0.7rem;
   background-color: #f0f0f0;

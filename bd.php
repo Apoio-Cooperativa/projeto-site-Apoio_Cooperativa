@@ -33,7 +33,7 @@ if ($operacao === 'select') {
     JOIN tb06_dias_semana ON tb04_dias_semana = tb06_id
     JOIN tb07_bairros ON tb04_bairros = tb07_id
     ORDER BY tb07_nome ASC 
-    LIMIT 6;";
+    /*LIMIT 6*/;";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
@@ -48,6 +48,29 @@ if ($operacao === 'select') {
         echo json_encode(array());
     }
 } elseif ($operacao === 'insert') {
+    $nome = $_POST['nome'];
+    $hora = $_POST['hour'];
+    $dia = $_POST['dia'];
+
+    // Inserir o bairro na tabela tb07_bairros
+    $sql = "INSERT INTO tb07_bairros (tb07_nome) VALUES ('$nome')";
+    if ($conn->query($sql) === TRUE) {
+        // Obter o ID do bairro recém-inserido
+        $bairroId = $conn->insert_id;
+
+        // Inserir os dados na tabela tb04_informacoes
+        $sql = "INSERT INTO tb04_informacoes (tb04_horario, tb04_dias_semana, tb04_bairros) VALUES ('$hora', '$dia', '$bairroId')";
+        if ($conn->query($sql) === TRUE) {
+            $data = array("resultado" => "Inserção realizada com sucesso");
+        } else {
+            $data = array("resultado" => "Erro na inserção: " . $conn->error);
+        }
+    } else {
+        $data = array("resultado" => "Erro na inserção do bairro: " . $conn->error);
+    }
+
+    echo json_encode($data);
+
 } elseif ($operacao === 'update') {
     // Operação de UPDATE
     $id = $_POST['id'];
@@ -65,6 +88,16 @@ if ($operacao === 'select') {
     }
     echo json_encode($data);
 } elseif ($operacao === 'delete') {
+    $id = $_POST['id'];
+
+    $sql = "DELETE FROM tb04_informacoes WHERE tb04_id = '$id';";
+
+    if ($conn->query($sql) === TRUE) {
+        $data = array("resultado" => "Exclusão realizada com sucesso");
+    } else {
+        $data = array("resultado" => "Erro na exclusão: " . $conn->error);
+    }
+    echo json_encode($data);
 } else {
     echo json_encode(array("erro" => "Operação não reconhecida"));
 }

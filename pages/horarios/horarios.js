@@ -33,8 +33,11 @@ function tables(data) {
         // Adicione a tabela ao div de tabelas
         tabelaDiv.appendChild(tabela);
 
-        // Se este é o terceiro div de tabela, adicione-o ao container de tabelas
-        if (index % 3 === 2) {
+        // Se este é o último item do loop, adicione o div ao container de tabelas
+        if (index === data.length - 1) {
+            tabelasContainer.appendChild(tabelaDiv);
+        } else if (index % 3 === 2) {
+            // Se este é o terceiro div de tabela, adicione-o ao container de tabelas
             tabelasContainer.appendChild(tabelaDiv);
         }
     });
