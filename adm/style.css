@@ -1,0 +1,22 @@
+.seta-ao-topo {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    font-size: 1.5rem;
+    background-color: var(--cor-fundo-subir);
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .seta-ao-topo:hover {
+    transform: scale(110%);
+  }

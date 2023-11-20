@@ -179,9 +179,10 @@ select {
   cursor: pointer;
   margin: 1rem;
   border-radius: 10px;
+  transition: color 0.3s;
 }
 
-input[type="button"]:hover {
+button:hover {
   background-color: #387E3A;
   transition: 0.25s;
 }

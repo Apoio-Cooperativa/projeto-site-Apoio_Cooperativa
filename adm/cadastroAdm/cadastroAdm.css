@@ -56,8 +56,6 @@ a {
   padding: 10px 29px;
 }
 
-
-
 .input_password_adm {
   border: none;
   margin-top: 40px;
@@ -119,15 +117,18 @@ a {
   padding: 10px 10px;
 }
 
-.iEmail {
+.iName{
   top: 40px;
+}
 
+.iEmail {
+  top: 116px;
 }
 
 .iPassword {
-  top: 114px;
+  top: 192px;
 }
 
 .iPassword2 {
-  top: 190px;
+  top: calc((190px - 114px) + 190px);
 }

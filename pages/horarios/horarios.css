@@ -9,6 +9,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
+  zoom: 100%;
 }
 
 .table_horarios table {
