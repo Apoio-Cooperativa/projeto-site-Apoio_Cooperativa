@@ -182,7 +182,7 @@ select {
   transition: color 0.3s;
 }
 
-button:hover {
+.modal-content button:hover {
   background-color: #387E3A;
   transition: 0.25s;
 }
