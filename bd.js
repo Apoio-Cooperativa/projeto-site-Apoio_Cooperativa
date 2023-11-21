@@ -1,6 +1,35 @@
 let json = [], json2 = [], tbIsRead = true,
     idUpdate, crud;
 
+const logar = async () => {
+    crud = 'login'
+    let a = 'paulo'; let b = '1234';
+    $(document).ready(function () {
+        $.ajax({
+            url: '../../bd.php',
+            type: 'POST',
+            data: {operacao: crud, l: a, s: b},
+            dataType: 'json',
+            success: function (data) {
+                alert(data)
+                if (data.resultado === "Login bem-sucedido") {
+                    // Login bem-sucedido, faça o que for necessário, como redirecionar para outra página
+                    console.log("Login bem-sucedido");
+                    console.log("Detalhes do usuário:", response.usuario);
+                } else {
+                    // Credenciais inválidas
+                    alert("Credenciais inválidas. Por favor, verifique seu e-mail e senha.");
+                }
+            },
+            error: function (xhr, status, error) {
+                console.error(status + ': ' + error);
+                alert('a')
+            }
+        });
+    });
+    // Suponha que response seja o JSON retornado do PHP
+}
+
 const read = async () => {
     crud = 'select'
     $(document).ready(function () {
@@ -43,7 +72,7 @@ const update = async (id, week, hour) => {
     });
 }
 
-const create = async (name, week, hour) =>{
+const create = async (name, week, hour) => {
     crud = 'insert';
     console.log(name, week, hour);
     $(document).ready(function () {
@@ -63,7 +92,7 @@ const create = async (name, week, hour) =>{
     });
 }
 
-const del = async (id) =>{
+const del = async (id) => {
     crud = 'delete';
     console.log(id);
     let idUpdate = id;
@@ -71,7 +100,7 @@ const del = async (id) =>{
         $.ajax({
             url: '../bd.php',
             type: 'POST',
-            data: { operacao: crud, id: idUpdate},
+            data: { operacao: crud, id: idUpdate },
             dataType: 'json',
             success: function (data) {
                 console.log(data); // Manipule a resposta do PHP, se necessário

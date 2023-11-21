@@ -25,8 +25,28 @@ if ($conn->connect_error) {
 
 $operacao = $_POST['operacao'];
 
-// Consulta SELECT
-if ($operacao === 'select') {
+
+if ($operacao === 'login') {
+    $email = $_POST['l'];
+    $senha = $_POST['s'];
+
+    // Consulta para verificar o login
+    $sql = "SELECT * FROM tb03_usuario WHERE tb03_email = '$email' AND tb03_senha = '$senha' AND tb03_tipo = 0";
+    $result = $conn->query($sql);
+
+    if ($result->num_rows > 0) {
+        // Login bem-sucedido
+        $usuario = $result->fetch_assoc();
+        $data = array("resultado" => "Login bem-sucedido", "usuario" => $usuario);
+    } else {
+        // Credenciais inválidas
+        $data = array("resultado" => "Credenciais inválidas");
+    }
+
+    echo json_encode($data);
+} elseif ($operacao === 'cad') {
+
+} elseif ($operacao === 'select') {
     // Consulta SELECT
     $sql = "SELECT tb04_id AS id, tb07_nome AS bairro, tb04_horario AS hora, tb06_nome AS semana
     FROM tb04_informacoes
