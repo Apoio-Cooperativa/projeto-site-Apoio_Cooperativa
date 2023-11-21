@@ -182,6 +182,7 @@ input:checked+.radio-tile label {
   border-radius: 7px;
   color: #045214;
   margin: auto auto 5rem auto;
+  opacity: 0;
 }
 
 
