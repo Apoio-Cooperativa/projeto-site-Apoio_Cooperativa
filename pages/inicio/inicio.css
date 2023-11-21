@@ -84,7 +84,7 @@
       display: grid;
       grid-template-columns: auto auto;
       grid-template-rows: auto auto auto;
-      grid-gap: rem;
+      grid-gap: 3rem;
       align-items: center;
     }
 
@@ -95,7 +95,7 @@
       letter-spacing: -1.68px;
       margin-top: 2rem;
       position: relative;
-      margin: 0 65% 2rem 0;
+      margin: 0 50% 2rem 0;
       text-align: left;
 
     }
@@ -111,7 +111,6 @@
     }
 
     .texto_principal_inicio {
-      margin: 0 70% 8rem 0;
       font-size: 19px;
       font-style: normal;
       font-weight: 400;
@@ -124,20 +123,19 @@
     }
 
     .texto_principal_inicio:last-of-type {
-      margin: 0 65% 2rem 0;
+      margin: 0 50% 2rem 0;
     }
 
     .grid_item_inicio {
-      padding: 20px;
       font-size: 30px;
       text-align: center;
-
+      margin-top: 5rem;
   }
 
   .video_inicio {
-    width: 35rem;
-    height: 21rem;
-    background-color: rgba(0, 0, 0, 0.466);
+    width: 38rem;
+    height: 24rem;
+    border: .3rem solid var(--cor-base-1);
   }
 
     /*-------------section-perguntas-inicio-------------*/
