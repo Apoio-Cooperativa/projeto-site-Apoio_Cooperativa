@@ -6,7 +6,7 @@ const logar = async () => {
     let a = 'paulo'; let b = '1234';
     $(document).ready(function () {
         $.ajax({
-            url: '../../bd.php',
+            url: '../bd.php',
             type: 'POST',
             data: {operacao: crud, l: a, s: b},
             dataType: 'json',
